@@ -1,18 +1,62 @@
 <template>
-  <v-app-bar app color="indigo" dark fixed>
-    <v-toolbar-title>Unicon 2020</v-toolbar-title>
-    <v-spacer></v-spacer>
-    <v-toolbar-items>
-      <v-btn text>Link One</v-btn>
-      <v-btn text>Link Two</v-btn>
-      <v-btn text>Link Three</v-btn>
-    </v-toolbar-items>
-  </v-app-bar>
+  <span>
+    <v-navigation-drawer app v-model="drawer" class="indigo" dark disable-resize-watcher>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="title">About</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+      <v-divider></v-divider>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="title">Speakers</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+      <v-divider></v-divider>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="title">Partner</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+      <v-divider></v-divider>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="title">Details</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+      <v-divider></v-divider>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="title">Contact</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+      <v-divider></v-divider>
+    </v-navigation-drawer>
+    <v-app-bar color="indigo" dark fixed>
+    <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-spacer class="hidden-md-and-up"></v-spacer>
+    <img src="../assets/uniconlogo2019.png">
+    <v-spacer class="hidden-sm-and-down"></v-spacer>
+      <v-toolbar-items>
+        <v-btn text class="hidden-sm-and-down">About</v-btn>
+        <v-btn text class="hidden-sm-and-down">Speakers</v-btn>
+        <v-btn text class="hidden-sm-and-down">Partner</v-btn>
+        <v-btn text class="hidden-sm-and-down">Details</v-btn>
+        <v-btn text class="hidden-sm-and-down">Contact</v-btn>
+      </v-toolbar-items>
+    </v-app-bar>
+  </span>
+
 </template>
 
 <script>
 export default {
-  name: "AppNavigation"
+    name: "AppNavigation",
+    data() {
+        return {
+            drawer: false
+        };
+    }
 };
 </script>
 
