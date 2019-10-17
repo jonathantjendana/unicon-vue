@@ -4,8 +4,7 @@
 
         <v-content>
           <Home></Home>
-          <About></About>
-          <current-event></current-event>
+          <router-view></router-view>
         </v-content>
 
         <Footer></Footer>
@@ -15,8 +14,6 @@
 <script>
 import AppNavigation from '@/components/AppNavigation';
 import Home from '@/components/Home';
-import About from '@/components/About';
-import CurrentEvent from '@/components/CurrentEvent';
 import Footer from '@/components/Footer';
 
 export default {
@@ -24,8 +21,6 @@ export default {
     components: {
         AppNavigation,
         Home,
-        About,
-        CurrentEvent,
         Footer
     }
 };

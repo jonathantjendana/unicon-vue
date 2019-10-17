@@ -1,5 +1,5 @@
 module.exports = {
-  "publicPath": "/unicon-vue/",
+  "publicPath": "/",
   "transpileDependencies": [
     "vuetify"
   ]

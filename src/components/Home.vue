@@ -1,9 +1,9 @@
 <template>
   <div>
     <v-responsive :aspect-ratio="16/9">
-      <v-parallax src="../assets/hero.jpeg" height="1000" class="parallax">
+      <v-parallax src="../assets/background.png" height="1000" class="parallax">
         <v-layout column align-center justify-center class="white--text" style="position:relative">
-          <img src="../assets/logo2.svg" alt="Vuetify.js" height="100" class="unicon-logo" />
+          <img src="../assets/big_logo.svg" alt="Vuetify.js" height="100" class="unicon-logo" />
           <orbit-spinner :animation-duration="1200" :size="200" color="#ff1d5e" />
           <!-- <h1 class="white--text mb-2 display-1 text-center">UNICON 2020</h1> -->
           <div class="subheading mb-4 text-center">Organised by NUS Entrepreneurship Society</div>
@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
 .parallax {
-  height: 87% !important;
+  height: 90% !important;
 }
 .unicon-logo {
   /* position: fixed; */
@@ -35,7 +35,7 @@ export default {
 
   position: absolute;
   /* left: 0; */
-  top: 30%;
+  top: 35%;
   /* width: 100%; */
   text-align: center;
   /* font-size: 18px; */

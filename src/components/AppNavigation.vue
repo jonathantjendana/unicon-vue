@@ -35,11 +35,11 @@
     <v-app-bar color="indigo" dark fixed>
     <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
     <v-spacer class="hidden-md-and-up"></v-spacer>
-    <img src="../assets/uniconlogo2019.png">
+    <img src="../assets/logo2.svg" height="80%">
     <v-spacer class="hidden-sm-and-down"></v-spacer>
       <v-toolbar-items>
-        <v-btn text class="hidden-sm-and-down">About</v-btn>
-        <v-btn text class="hidden-sm-and-down">Speakers</v-btn>
+        <v-btn text class="hidden-sm-and-down" to="/">About</v-btn>
+        <v-btn text class="hidden-sm-and-down" to="/currentevent">Speakers</v-btn>
         <v-btn text class="hidden-sm-and-down">Partner</v-btn>
         <v-btn text class="hidden-sm-and-down">Details</v-btn>
         <v-btn text class="hidden-sm-and-down">Contact</v-btn>
