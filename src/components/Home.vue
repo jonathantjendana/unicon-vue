@@ -25,9 +25,6 @@ export default {
 </script>
 
 <style scoped>
-.parallax {
-  height: 90% !important;
-}
 .unicon-logo{
   z-index: 1;
   position: absolute;
