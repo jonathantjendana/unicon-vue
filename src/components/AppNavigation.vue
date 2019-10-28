@@ -3,13 +3,13 @@
     <v-navigation-drawer app v-model="drawer" class="indigo" dark disable-resize-watcher>
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="title">About</v-list-item-title>
+          <v-btn text to="/" @click="$vuetify.goTo(target, options)">About</v-btn>
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="title">Speakers</v-list-item-title>
+          <v-btn text to="/currentevent" @click="$vuetify.goTo(target, options)">Speakers</v-btn>
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
@@ -38,8 +38,8 @@
     <img src="../assets/logo2.svg" height="80%">
     <v-spacer class="hidden-sm-and-down"></v-spacer>
       <v-toolbar-items>
-        <v-btn text class="hidden-sm-and-down" to="/">About</v-btn>
-        <v-btn text class="hidden-sm-and-down" to="/currentevent">Speakers</v-btn>
+        <v-btn text class="hidden-sm-and-down" to="/" @click="$vuetify.goTo(target, options)">About</v-btn>
+        <v-btn text class="hidden-sm-and-down" to="/currentevent" @click="$vuetify.goTo(target, options)">Speakers</v-btn>
         <v-btn text class="hidden-sm-and-down">Partner</v-btn>
         <v-btn text class="hidden-sm-and-down">Details</v-btn>
         <v-btn text class="hidden-sm-and-down">Contact</v-btn>
@@ -50,12 +50,36 @@
 </template>
 
 <script>
+
+  import * as easings from 'vuetify/lib/services/goto/easing-patterns'
+
 export default {
     name: "AppNavigation",
     data() {
         return {
-            drawer: false
+            drawer: false,
+            type: 'selector',
+            selector: '#scroll-with-options',
+            duration: 1000,
+            delayTime: 1000,
+            offset: 50,
+            easing: 'easeInOutCubic',
+            easings: Object.keys(easings),
         };
+    },
+    computed: {
+        target () {
+            const value = this[this.type]
+            if (!isNaN(value)) return Number(value)
+            else return value
+        },
+        options () {
+            return {
+                duration: this.duration,
+                offset: this.offset,
+                easing: this.easing,
+            }
+        }
     }
 };
 </script>
