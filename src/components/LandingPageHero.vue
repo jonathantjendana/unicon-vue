@@ -103,7 +103,7 @@ export default {
   methods: {
     submit() {
       if (this.$refs.form.validate()) {
-        console.log("Valid info");
+        // console.log("Valid info");
       }
     }
   }
