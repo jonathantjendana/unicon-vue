@@ -55,8 +55,13 @@
 
 export default {
     name: "AppNavigation",
+    compiled() {
+        $.on('navigation.hide', () => this.show = false)
+        $.on('navigation.show', () => this.show = true)
+    },
     data() {
         return {
+            show: true,
             drawer: false,
             type: 'selector',
             selector: '#scroll-with-options',
