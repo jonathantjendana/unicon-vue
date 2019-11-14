@@ -1,22 +1,22 @@
 <template>
   <v-container fluid class="home-hero">
     <v-row justify="center" no-gutters>
-      <v-col lg="auto">
+      <v-col cols="auto" lg="auto">
         <v-row justify="center" class="pa-2">
           <img class="logo" src="../assets/big_logo.svg" alt="Vuetify.js" />
         </v-row>
         <v-row justify="end">
-          <img class="year-logo" src="../assets/2020_logo.svg" />
+          <h2 class="font-weight-bold white--text logo-year">2020</h2>
         </v-row>
-        <v-row justify="center" class="pt-2">
-          <h4 class="font-weight-bold white--text">INNOVATORS OF TOMORROW</h4>
+        <v-row justify="center">
+          <h4 class="font-weight-bold white--text tagline">INNOVATORS OF TOMORROW</h4>
         </v-row>
       </v-col>
     </v-row>
 
-    <v-row align="center" class="details">
-      <v-col class="left-details title white--text subtitle-1" cols="12" md="6">
-        <span class="font-weight-bold">
+    <v-row align="center" class="details" justify-center>
+      <v-col class="left-details white--text subtitle-1" cols="12" md="6">
+        <span class="font-weight-bold unicon">
           TECH.
           <br />ENTREPRENUERSHIP.
           <br />BUSINESS.
@@ -40,7 +40,7 @@
         </span>
       </v-col>
 
-      <v-col cols="12" class="right-details" md="6">
+      <v-col cols="12" class="right-details" md="6" >
         <v-form ref="form" v-model="valid" :lazy-validation="lazy" class="reg-form">
           <span class="white--text">I am a</span>
           <v-text-field
@@ -69,7 +69,7 @@
           ></v-text-field>
 
 
-          <v-btn rounded color="#303f9f" class="font-weight-bold" dark min-width="30%" height="40px" @click="submit">REGISTER NOW</v-btn>
+          <v-btn rounded color="#303f9f" dark min-width="30%" height="40px" @click="submit"><bold>REGISTER NOW</bold></v-btn>
 
         </v-form>
 
@@ -118,9 +118,17 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+}
 
-  
+@media only screen and (min-width: 960px) {
+  .home-hero {
+    height: 100vh;
+  }
+
+  .right-details {
+    justify-content: center;
+  }
 }
 
 .year-logo {
@@ -159,5 +167,16 @@ export default {
 
 .disc-text {
   margin-top: 5%;
+}
+
+.tagline {
+  font-family: "twitchy.tvregular";
+  margin-top:1%;
+}
+
+.logo-year {
+  font-family: "twitchy.tvregular";
+  margin-top: -8%;
+  margin-right: 8%;
 }
 </style>

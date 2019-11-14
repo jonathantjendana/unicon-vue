@@ -46,14 +46,14 @@ export default {
 <style>
 @font-face {
   font-family: "twitchy.tvregular";
-  src: url("/assets/fonts/twitchy.tv-webfont.woff2") format("woff2"),
-    url("/assets/fonts/twitchy.tv-webfont.woff") format("woff");
+  src: url("./assets/fonts/twitchy.tv-webfont.woff2") format("woff2"),
+    url("./assets/fonts/twitchy.tv-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 #app {
   width: auto;
-  font-family: "twitchy.tvregular", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -94,5 +94,9 @@ export default {
     transform: translateY(0px);
     opacity: 1;
   }
+}
+
+.unicon {
+    font-family: "twitchy.tvregular"
 }
 </style>
