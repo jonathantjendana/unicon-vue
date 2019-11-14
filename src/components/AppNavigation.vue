@@ -9,13 +9,13 @@
       <v-divider></v-divider>
       <v-list-item>
         <v-list-item-content>
-          <v-btn text to="/currentevent" @click="$vuetify.goTo(target, options)">Speakers</v-btn>
+          <v-btn text to="/currentevent" @click="$vuetify.goTo(target, options)">Agenda</v-btn>
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="title">Partner</v-list-item-title>
+          <v-btn text to="/speakers" @click="$vuetify.goTo(target, options)">Speakers</v-btn>
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
@@ -39,8 +39,8 @@
     <v-spacer class="hidden-sm-and-down"></v-spacer>
       <v-toolbar-items>
         <v-btn text class="hidden-sm-and-down" to="/" @click="$vuetify.goTo(target, options)">About</v-btn>
-        <v-btn text class="hidden-sm-and-down" to="/currentevent" @click="$vuetify.goTo(target, options)">Speakers</v-btn>
-        <v-btn text class="hidden-sm-and-down">Partner</v-btn>
+        <v-btn text class="hidden-sm-and-down" to="/currentevent" @click="$vuetify.goTo(target, options)">Agenda</v-btn>
+        <v-btn text class="hidden-sm-and-down" to="/speakers" @click="$vuetify.goTo(target, options)">Speakers</v-btn>
         <v-btn text class="hidden-sm-and-down">Details</v-btn>
         <v-btn text class="hidden-sm-and-down">Contact</v-btn>
       </v-toolbar-items>
@@ -60,7 +60,7 @@ export default {
             drawer: false,
             type: 'selector',
             selector: '#scroll-with-options',
-            duration: 1000,
+            duration: 1500,
             delayTime: 1000,
             offset: 50,
             easing: 'easeInOutCubic',
