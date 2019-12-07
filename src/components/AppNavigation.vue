@@ -15,7 +15,7 @@
       <v-divider></v-divider>
       <v-list-item>
         <v-list-item-content>
-          <v-btn text to="/speakers" @click="$vuetify.goTo(target, options)">Past Speakers</v-btn>
+          <v-btn text to="/speakers" @click="$vuetify.goTo(target, options)">Speakers</v-btn>
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
@@ -40,7 +40,7 @@
       <v-toolbar-items>
         <v-btn text class="hidden-sm-and-down" to="/" @click="$vuetify.goTo(target, options)">About</v-btn>
         <v-btn text class="hidden-sm-and-down" to="/currentevent" @click="$vuetify.goTo(target, options)">Agenda</v-btn>
-        <v-btn text class="hidden-sm-and-down" to="/speakers" @click="$vuetify.goTo(target, options)">Past Speakers</v-btn>
+        <v-btn text class="hidden-sm-and-down" to="/speakers" @click="$vuetify.goTo(target, options)">Speakers</v-btn>
         <v-btn text class="hidden-sm-and-down">Details</v-btn>
         <v-btn text class="hidden-sm-and-down">Contact</v-btn>
       </v-toolbar-items>
