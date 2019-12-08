@@ -1,102 +1,105 @@
 <template>
-  <v-app id="app">
-    <div v-if="this.$route.path !== '/landingpage'">
-      <app-navigation v-show="this.$route.path !== '/landingpage'"></app-navigation>
-      <Home></Home>
-      <v-content id="scroll-with-options">
-        <transition name="router-animate">
-          <router-view></router-view>
-        </transition>
-      </v-content>
-      <Footer></Footer>
-    </div>
-    <v-content v-else>
-      <landing-page-hero></landing-page-hero>
-      <landing-page-details></landing-page-details>
-      <v-footer padless>
-        <v-col class="text-center" cols="12">
-         &copy; {{ new Date().getFullYear() }} —
-          <strong>Brought to you by NUS Entrepreneurship Society</strong>
-        </v-col>
-      </v-footer>
-    </v-content>
-  </v-app>
+    <v-app id="app">
+        <div v-if="this.$route.path !== '/landingpage'">
+            <app-navigation v-show="this.$route.path !== '/landingpage'"></app-navigation>
+            <Carousel></Carousel>
+            <v-content id="scroll-with-options">
+                <transition name="router-animate">
+                    <router-view></router-view>
+                </transition>
+            </v-content>
+            <Footer></Footer>
+        </div>
+        <v-content v-else>
+            <landing-page-hero></landing-page-hero>
+            <landing-page-details></landing-page-details>
+            <v-footer padless>
+                <v-col class="text-center" cols="12">
+                    &copy; {{ new Date().getFullYear() }} —
+                    <strong>Brought to you by NUS Entrepreneurship Society</strong>
+                </v-col>
+            </v-footer>
+        </v-content>
+    </v-app>
 </template>
 
 <script>
-import AppNavigation from "@/components/AppNavigation";
-import Home from "@/components/Home";
-import Footer from "@/components/Footer";
+    import AppNavigation from "@/components/AppNavigation";
+    import Footer from "@/components/Footer";
 
-import LandingPageHero from "@/components/LandingPageHero";
-import LandingPageDetails from "@/components/LandingPageDetails";
+    import LandingPageHero from "@/components/LandingPageHero";
+    import LandingPageDetails from "@/components/LandingPageDetails";
+    import Carousel from "./components/Carousel";
+    import Pricing from "./components/Pricing";
 
-export default {
-  name: "App",
-  components: {
-    AppNavigation,
-    Home,
-    Footer,
-    LandingPageHero,
-    LandingPageDetails
-  }
-};
+    export default {
+        name: "App",
+        components: {
+            AppNavigation,
+            Carousel,
+            Footer,
+            LandingPageHero,
+            LandingPageDetails,
+            Pricing
+        }
+    };
 </script>
 
 <style>
-@font-face {
-  font-family: "twitchy.tvregular";
-  src: url("./assets/fonts/twitchy.tv-webfont.woff2") format("woff2"),
-    url("./assets/fonts/twitchy.tv-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-#app {
-  width: auto;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #ffffff;
-  margin: 0;
-}
+    @font-face {
+        font-family: "twitchy.tvregular";
+        src: url("./assets/fonts/twitchy.tv-webfont.woff2") format("woff2"),
+        url("./assets/fonts/twitchy.tv-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
 
-.white--text {
-  color: #ffffff;
-}
+    #app {
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+    }
 
-.router-animate-enter-active {
-  animation: coming 1s;
-  animation-delay: 1s;
-  opacity: 0;
-}
+    .white--text {
+        color: #ffffff;
+    }
 
-.router-animate-leave-active {
-  animation: going 1s;
-}
+    .router-animate-enter-active {
+        animation: coming 1s;
+        animation-delay: 1s;
+        opacity: 0;
+    }
 
-@keyframes going {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-}
+    .router-animate-leave-active {
+        animation: going 1s;
+    }
 
-@keyframes coming {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
+    @keyframes going {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+    }
 
-.unicon {
-    font-family: "twitchy.tvregular"
-}
+    @keyframes coming {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    .unicon {
+        font-family: "twitchy.tvregular"
+    }
 </style>
