@@ -68,7 +68,7 @@ export default {
             drawer: false,
             type: 'selector',
             selector: '#scroll-with-options',
-            duration: 1500,
+            duration: 1000,
             delayTime: 1000,
             offset: 50,
             easing: 'easeInOutCubic',

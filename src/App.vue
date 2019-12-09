@@ -30,7 +30,6 @@
     import LandingPageHero from "@/components/LandingPageHero";
     import LandingPageDetails from "@/components/LandingPageDetails";
     import Carousel from "./components/Carousel";
-    import Pricing from "./components/Pricing";
 
     export default {
         name: "App",
@@ -40,7 +39,6 @@
             Footer,
             LandingPageHero,
             LandingPageDetails,
-            Pricing
         }
     };
 </script>
@@ -80,21 +78,21 @@
 
     @keyframes going {
         from {
-            transform: translateY(0);
+            /*transform: translateX(0);*/
         }
         to {
-            transform: translateY(-50px);
+            /*transform: translateX(-50px);*/
             opacity: 0;
         }
     }
 
     @keyframes coming {
         from {
-            transform: translateY(50px);
+            /*transform: translateX(50px);*/
             opacity: 0;
         }
         to {
-            transform: translateY(0px);
+            /*transform: translateX(0px);*/
             opacity: 1;
         }
     }
