@@ -15,7 +15,7 @@
       <landing-page-details></landing-page-details>
       <v-footer padless>
         <v-col class="text-center" cols="12">
-         &copy; {{ new Date().getFullYear() }} —
+          &copy; {{ new Date().getFullYear() }} —
           <strong>Brought to you by NUS Entrepreneurship Society</strong>
         </v-col>
       </v-footer>
@@ -44,6 +44,9 @@ export default {
 </script>
 
 <style>
+html {
+  overflow-y: auto;
+}
 @font-face {
   font-family: "twitchy.tvregular";
   src: url("./assets/fonts/twitchy.tv-webfont.woff2") format("woff2"),
@@ -57,7 +60,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ffffff;
+  /* color: #ffffff; */
   margin: 0;
 }
 
@@ -97,6 +100,43 @@ export default {
 }
 
 .unicon {
-    font-family: "twitchy.tvregular"
+  font-family: "twitchy.tvregular";
+}
+
+.custom-loader {
+  animation: loader 1s infinite;
+  display: flex;
+}
+@-moz-keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 </style>
