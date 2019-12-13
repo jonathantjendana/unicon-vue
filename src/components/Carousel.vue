@@ -27,7 +27,7 @@
 <script>
 import { OrbitSpinner } from "epic-spinners";
 export default {
-  name: "Home",
+  name: "carousel",
   components: {
     OrbitSpinner
   },

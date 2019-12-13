@@ -3,7 +3,7 @@
         <div class="text-center">
             <h2 class="display-1 mb-8 mt-6 dark blue--text"><b>UNICON Speakers</b></h2>
         </div>
-        <v-tabs background-color="transparent" color="blue" centered>
+        <v-tabs class="mb-10" background-color="transparent" color="blue" centered>
             <v-tab>
                 <h2 class="headline text--primary"><b>2019</b></h2>
             </v-tab>
@@ -13,41 +13,41 @@
             <v-tab-item eager>
                 <v-container>
                     <v-row class="fill-height" align="center" justify="center">
-                        <v-col class="px-7 ml-n2 mr-n4" cols="6" sm="3">
+                        <v-col class="px-7 ml-n2 mr-n4" cols="6" sm="3" xl="2">
                             <v-hover v-slot:default="{ hover }">
                                 <v-card class="mx-auto">
                                     <v-img class="white--text align-end text-wrap" :src="require('../assets/speakers2019/Chee_Hong_Tat.png')" eager>
                                         <v-card-text class="layout text-left">
-                                            <div class="mb-n2 ml-n2 headline text-wrap"><b> Chee Hong Tat</b></div>
+                                            <div class="ml-n2 mb-n1 text-wrap font-name--adjust"><b> Chee Hong Tat</b></div>
                                         </v-card-text>
                                     </v-img>
                                     <v-expand-transition>
                                         <div v-if="hover"
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
-                                            <div class="mt-3 ml-2 title">Senior Minister of State</div>
-                                            <div class="ml-2 title">MTI & MOE</div>
+                                            <div class="mt-3 ml-2 font-title-and-depart--adjust">Senior Minister of State</div>
+                                            <div class="ml-2 font-title-and-depart--adjust"><b>MTI & MOE</b></div>
                                         </div>
                                     </v-expand-transition>
                                 </v-card>
                             </v-hover>
                         </v-col>
                         <template v-for="(item, i) in items_2019">
-                            <v-col class="px-7 ml-n2 mr-n4" :key="i" cols="6" sm="3">
+                            <v-col class="px-7 ml-n2 mr-n4" :key="i" cols="6" sm="3" xl="2">
                                 <v-hover v-slot:default="{ hover }">
                                     <v-card class="mx-auto" max-width="100%">
                                         <v-img class="white--text align-end text-wrap" :src="item.img"
                                                height="100%" eager>
                                             <v-card-text class="layout text-left">
-                                                <div class="mb-n2 ml-n2 headline text-wrap"><b>{{ item.name }}</b></div>
+                                                <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>{{ item.name }}</b></div>
                                             </v-card-text>
                                         </v-img>
                                         <v-expand-transition>
                                             <div v-if="hover"
                                                  class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                                  style="height: 100%;">
-                                                <div class="mt-3 ml-2 title"> {{ item.title }}</div>
-                                                <div class="ml-2 title">{{ item.department }}</div>
+                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"> {{ item.title }}</div>
+                                                <div class="ml-2 font-title-and-depart--adjust"><b>{{ item.department }}</b></div>
                                                 <v-btn class="ml-2 mt-2" :href="item.linkedin" target="_blank" dark icon>
                                                     <v-icon size="40px">fab fa-linkedin</v-icon>
                                                 </v-btn>
@@ -57,20 +57,20 @@
                                 </v-hover>
                             </v-col>
                         </template>
-                        <v-col class="px-7 ml-n2 mr-n4" cols="6" sm="3">
+                        <v-col class="px-7 ml-n2 mr-n4" cols="6" sm="3" xl="2">
                             <v-hover v-slot:default="{ hover }">
                                 <v-card class="mx-auto">
                                     <v-img class="white--text align-end text-wrap" :src="require('../assets/speakers2019/zp_lee.png')" eager>
                                         <v-card-text class="layout text-left">
-                                            <div class="mb-n2 ml-n2 headline text-wrap"><b>ZP Lee</b></div>
+                                            <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>ZP Lee</b></div>
                                         </v-card-text>
                                     </v-img>
                                     <v-expand-transition>
                                         <div v-if="hover"
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
-                                            <div class="mt-3 ml-2 title">CEO & Founder</div>
-                                            <div class="ml-2 title">UpCode Academy</div>
+                                            <div class="mt-3 ml-2 font-title-and-depart--adjust">CEO & Founder</div>
+                                            <div class="ml-2 font-title-and-depart--adjust"><b>UpCode Academy</b></div>
                                         </div>
                                     </v-expand-transition>
                                 </v-card>
@@ -82,41 +82,41 @@
             <v-tab-item eager>
                 <v-container>
                     <v-row class="fill-height" align="center" justify="center">
-                        <v-col class="px-7 ml-n2 mr-n4" cols="6" sm="3">
+                        <v-col class="px-7 ml-n2 mr-n4" cols="6" sm="3" xl="2">
                             <v-hover v-slot:default="{ hover }">
                                 <v-card class="mx-auto">
                                     <v-img class="white--text align-end text-wrap" :src="require('../assets/speakers2018/janil.png')" eager>
                                         <v-card-text class="layout text-left">
-                                            <div class="mb-n2 ml-n2 headline text-wrap"><b>Dr Janil Puthucheary</b></div>
+                                            <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>Dr Janil Puthucheary</b></div>
                                         </v-card-text>
                                     </v-img>
                                     <v-expand-transition>
                                         <div v-if="hover"
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
-                                            <div class="mt-3 ml-2 title">Senior Minister of State</div>
-                                            <div class="ml-2 title">MCI & MOE</div>
+                                            <div class="mt-3 ml-2 font-title-and-depart--adjust">Senior Minister of State</div>
+                                            <div class="ml-2 font-title-and-depart--adjust"><b>MCI & MOE</b></div>
                                         </div>
                                     </v-expand-transition>
                                 </v-card>
                             </v-hover>
                         </v-col>
                         <template v-for="(item, i) in items_2018">
-                            <v-col class="px-7 ml-n2 mr-n4" :key="i" cols="6" sm="3">
+                            <v-col class="px-7 ml-n2 mr-n4" :key="i" cols="6" sm="3" xl="2">
                                 <v-hover v-slot:default="{ hover }">
                                     <v-card class="mx-auto" max-width="100%">
                                         <v-img class="white--text align-end text-wrap" :src="item.img"
                                                height="100%" eager>
                                             <v-card-text class="layout text-left">
-                                                <div class="mb-n2 ml-n2 headline text-wrap"><b>{{ item.name }}</b></div>
+                                                <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>{{ item.name }}</b></div>
                                             </v-card-text>
                                         </v-img>
                                         <v-expand-transition>
                                             <div v-if="hover"
                                                  class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                                  style="height: 100%;">
-                                                <div class="mt-3 ml-2 title"> {{ item.title }}</div>
-                                                <div class="ml-2 title">{{ item.department }}</div>
+                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"> {{ item.title }} </div>
+                                                <div class="ml-2 font-title-and-depart--adjust"><b>{{ item.department }}</b></div>
                                                 <v-btn class="ml-2 mt-2" :href="item.linkedin" target="_blank" dark icon>
                                                     <v-icon size="40px">fab fa-linkedin</v-icon>
                                                 </v-btn>
@@ -405,6 +405,29 @@
 </script>
 
 <style scoped>
+    @media only screen and (min-width: 240px) {
+        .font-name--adjust {
+            font-size: 18px;
+        }
+
+        .font-title-and-depart--adjust {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 5px;
+        }
+    }
+
+    @media only screen and (min-width: 960px) {
+        .font-name--adjust {
+            font-size: 23px;
+        }
+
+        .font-title-and-depart--adjust {
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+    }
+
     .v-card--reveal {
         align-items: center;
         bottom: 0;

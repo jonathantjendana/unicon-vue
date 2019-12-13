@@ -2,7 +2,7 @@
   <v-app id="app">
     <div v-if="this.$route.path !== '/landingpage'">
       <app-navigation v-show="this.$route.path !== '/landingpage'"></app-navigation>
-      <Home></Home>
+      <Carousel></Carousel>
       <v-content id="scroll-with-options">
         <transition name="router-animate">
           <router-view></router-view>
@@ -25,17 +25,17 @@
 
 <script>
 import AppNavigation from "@/components/AppNavigation";
-import Home from "@/components/Home";
 import Footer from "@/components/Footer";
 
 import LandingPageHero from "@/components/LandingPageHero";
 import LandingPageDetails from "@/components/LandingPageDetails";
+import Carousel from "./components/Carousel";
 
 export default {
   name: "App",
   components: {
     AppNavigation,
-    Home,
+    Carousel,
     Footer,
     LandingPageHero,
     LandingPageDetails
@@ -64,8 +64,13 @@ html {
   margin: 0;
 }
 
-.white--text {
-  color: #ffffff;
+#app {
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin: 0;
 }
 
 .router-animate-enter-active {
@@ -80,22 +85,12 @@ html {
 
 @keyframes going {
   from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-}
-
-@keyframes coming {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
+    /*transform: translateX(0);*/
     opacity: 1;
+  }
+  to {
+    /*transform: translateX(-50px);*/
+    opacity: 0;
   }
 }
 
@@ -137,6 +132,16 @@ html {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes coming {
+  from {
+    /*transform: translateX(50px);*/
+    opacity: 0;
+  }
+  to {
+    /*transform: translateX(0px);*/
+    opacity: 1;
   }
 }
 </style>

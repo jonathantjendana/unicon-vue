@@ -24,6 +24,13 @@
           <v-list-item-title class="title">
             <v-btn text to="/contact-us" @click="$vuetify.goTo(target, options)">Contact</v-btn>
           </v-list-item-title>
+          <v-btn text to="/pricing" @click="$vuetify.goTo(target, options)">Pricing</v-btn>
+        </v-list-item-content>
+      </v-list-item>
+      <v-divider></v-divider>
+      <v-list-item>
+        <v-list-item-content>
+          <v-btn text to="/partners" @click="$vuetify.goTo(target, options)">Partners</v-btn>
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
@@ -50,6 +57,18 @@
         <v-btn
           text
           class="hidden-sm-and-down"
+          to="/pricing"
+          @click="$vuetify.goTo(target, options)"
+        >Pricing</v-btn>
+        <v-btn
+          text
+          class="hidden-sm-and-down"
+          to="/partners"
+          @click="$vuetify.goTo(target, options)"
+        >Partners</v-btn>
+        <v-btn
+          text
+          class="hidden-sm-and-down"
           to="/contact-us"
           @click="$vuetify.goTo(target, options)"
         >Contact</v-btn>
@@ -62,25 +81,19 @@
 import * as easings from "vuetify/lib/services/goto/easing-patterns";
 
 export default {
-  name: "AppNavigation",
-  data() {
-    return {
-      show: true,
-      drawer: false,
-      type: "selector",
-      selector: "#scroll-with-options",
-      duration: 1500,
-      delayTime: 1000,
-      offset: 50,
-      easing: "easeInOutCubic",
-      easings: Object.keys(easings)
-    };
-  },
-  computed: {
-    target() {
-      const value = this[this.type];
-      if (!isNaN(value)) return Number(value);
-      else return value;
+    name: "AppNavigation",
+    data() {
+        return {
+            show: true,
+            drawer: false,
+            type: 'selector',
+            selector: '#scroll-with-options',
+            duration: 1000,
+            delayTime: 1000,
+            offset: 50,
+            easing: 'easeInOutCubic',
+            easings: Object.keys(easings),
+        };
     },
     options() {
       return {
@@ -89,7 +102,6 @@ export default {
         easing: this.easing
       };
     }
-  }
 };
 </script>
 
