@@ -79,6 +79,7 @@
     @keyframes going {
         from {
             /*transform: translateX(0);*/
+            opacity: 1;
         }
         to {
             /*transform: translateX(-50px);*/

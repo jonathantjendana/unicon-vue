@@ -25,7 +25,7 @@
                                         <div v-if="hover"
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
-                                            <div class="mt-3 ml-2 font-title-and-depart--adjust"><b>Senior Minister of State</b></div>
+                                            <div class="mt-3 ml-2 font-title-and-depart--adjust">Senior Minister of State</div>
                                             <div class="ml-2 font-title-and-depart--adjust"><b>MTI & MOE</b></div>
                                         </div>
                                     </v-expand-transition>
@@ -46,7 +46,7 @@
                                             <div v-if="hover"
                                                  class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                                  style="height: 100%;">
-                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"><b> {{ item.title }}</b></div>
+                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"> {{ item.title }}</div>
                                                 <div class="ml-2 font-title-and-depart--adjust"><b>{{ item.department }}</b></div>
                                                 <v-btn class="ml-2 mt-2" :href="item.linkedin" target="_blank" dark icon>
                                                     <v-icon size="40px">fab fa-linkedin</v-icon>
@@ -69,7 +69,7 @@
                                         <div v-if="hover"
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
-                                            <div class="mt-3 ml-2 font-title-and-depart--adjust"><b>CEO & Founder</b></div>
+                                            <div class="mt-3 ml-2 font-title-and-depart--adjust">CEO & Founder</div>
                                             <div class="ml-2 font-title-and-depart--adjust"><b>UpCode Academy</b></div>
                                         </div>
                                     </v-expand-transition>
@@ -87,14 +87,14 @@
                                 <v-card class="mx-auto">
                                     <v-img class="white--text align-end text-wrap" :src="require('../assets/speakers2018/janil.png')" eager>
                                         <v-card-text class="layout text-left">
-                                            <div class="mb-n1 ml-n2 headline text-wrap"><b>Dr Janil Puthucheary</b></div>
+                                            <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>Dr Janil Puthucheary</b></div>
                                         </v-card-text>
                                     </v-img>
                                     <v-expand-transition>
                                         <div v-if="hover"
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
-                                            <div class="mt-3 ml-2 font-title-and-depart--adjust"><b>Senior Minister of State</b></div>
+                                            <div class="mt-3 ml-2 font-title-and-depart--adjust">Senior Minister of State</div>
                                             <div class="ml-2 font-title-and-depart--adjust"><b>MCI & MOE</b></div>
                                         </div>
                                     </v-expand-transition>
@@ -108,14 +108,14 @@
                                         <v-img class="white--text align-end text-wrap" :src="item.img"
                                                height="100%" eager>
                                             <v-card-text class="layout text-left">
-                                                <div class="mb-n1 ml-n2 headline text-wrap"><b>{{ item.name }}</b></div>
+                                                <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>{{ item.name }}</b></div>
                                             </v-card-text>
                                         </v-img>
                                         <v-expand-transition>
                                             <div v-if="hover"
                                                  class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                                  style="height: 100%;">
-                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"><b> {{ item.title }} </b></div>
+                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"> {{ item.title }} </div>
                                                 <div class="ml-2 font-title-and-depart--adjust"><b>{{ item.department }}</b></div>
                                                 <v-btn class="ml-2 mt-2" :href="item.linkedin" target="_blank" dark icon>
                                                     <v-icon size="40px">fab fa-linkedin</v-icon>
@@ -412,6 +412,8 @@
 
         .font-title-and-depart--adjust {
             font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 5px;
         }
     }
 
@@ -422,6 +424,7 @@
 
         .font-title-and-depart--adjust {
             font-size: 20px;
+            margin-bottom: 0px;
         }
     }
 
