@@ -154,6 +154,10 @@
                     link: 'https://startupjobs.asia/'
                 },
                 {
+                    img: require('../assets/Communities/geek.png'),
+                    link: 'https://geekhunter.co/'
+                },
+                {
                     img: require('../assets/Communities/ace.png'),
                     link: 'https://ace.org.sg/'
                 },
@@ -176,10 +180,6 @@
                 {
                     img: require('../assets/Communities/reactor.png'),
                     link: 'https://www.reactor.school/'
-                },
-                {
-                    img: require('../assets/Communities/trive.png'),
-                    link: 'https://www.trive.vc/'
                 },
                 {
                     img: require('../assets/Communities/trive.png'),
