@@ -1,49 +1,78 @@
 <template>
-    <v-parallax src="../assets/background.png" v-resize="onResize" :height=windowSize.y>
-        <v-layout column align-center justify-center class="white--text" style="position:relative">
-            <orbit-spinner :animation-duration="1200" :size="500" color="#152238" class="unicon-spinner"/>
-            <div class="unicon-logo">
-                <img src="../assets/big_logo.svg" alt="Vuetify.js"/>
-                <div class="subtitle-1 text-center mt-5"><h2>Creating the unicorns of tomorrow</h2></div>
-            </div>
-        </v-layout>
-    </v-parallax>
+  <v-parallax src="../assets/background.png" v-resize="onResize" :height="windowSize.y">
+    <v-container fluid>
+      <v-row align="center" justify="center" style="height:63vh">
+        <orbit-spinner
+          :animation-duration="1200"
+          :size="350"
+          color="#303F9F"
+          class="unicon-spinner"
+        />
+        <v-col class="text-center" cols="12">
+          <v-img src="../assets/big_logo.svg" height="125" alt="UNICON" contain />
+          <div class="tagline-1 font-weight-bold text-center mt-3">Creating the unicorns of tomorrow</div>
+          <v-spacer />
+        </v-col>
+      </v-row>
+
+      <v-row align="end" justify="center">
+        <div
+          class="font-weight-bold tagline-2"
+        >Southeast Asia's Largest &amp; Craziest Student Led Conference</div>
+      </v-row>
+    </v-container>
+  </v-parallax>
 </template>
 
 <script>
-    import {OrbitSpinner} from "epic-spinners";
-    export default {
-        name: "carousel",
-        components: {
-            OrbitSpinner
-        },
-        data: () => ({
-            windowSize: {
-                x : 0,
-                y : 0
-            }
-        }),
-        mounted () {
-            this.onResize()
-        },
-        methods: {
-            onResize () {
-                this.windowSize = {
-                    x: window.innerWidth,
-                    y: window.innerHeight
-                }
-            }
-        }
-    };
+import { OrbitSpinner } from "epic-spinners";
+export default {
+  name: "carousel",
+  components: {
+    OrbitSpinner
+  },
+  data: () => ({
+    windowSize: {
+      x: 0,
+      y: 0
+    }
+  }),
+  mounted() {
+    this.onResize();
+  },
+  methods: {
+    onResize() {
+      this.windowSize = {
+        x: window.innerWidth,
+        y: window.innerHeight
+      };
+    }
+  }
+};
 </script>
 
 <style scoped>
-    .unicon-logo {
-        z-index: 1;
-        position: absolute;
-        top: 43%;
-    }
-    .unicon-spinner {
-        position: absolute;
-    }
+.details {
+  z-index: 1;
+}
+.unicon-spinner {
+  position: absolute;
+  z-index: -100;
+}
+
+.tagline-1 {
+  font-size: 1.3rem !important;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: normal !important;
+  font-family: "twitchy.tvregular";
+}
+
+.tagline-2 {
+  font-size: 1.8rem !important;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.0073529412em !important;
+  font-family: "twitchy.tvregular";
+}
 </style>
