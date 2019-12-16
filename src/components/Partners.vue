@@ -1,7 +1,7 @@
 <template>
     <v-layout column wrap class="my-12" align-center>
         <div class="text-center">
-            <h2 class="display-1 mb-8 mt-6 dark blue--text"><b>UNICON Partners</b></h2>
+            <h2 class="display-1 mb-8 mt-6 dark indigo--text"><b>UNICON Partners</b></h2>
         </div>
         <v-tabs class="mb-10" background-color="transparent" color="blue" centered>
             <v-tab>
@@ -205,7 +205,7 @@
 <style scoped>
     @media only screen and (min-width: 240px) {
         h2 {
-            font-size: 18px;
+            font-size: 14px;
             color: black;
         }
     }

@@ -68,7 +68,7 @@
         </v-row>
       </v-col>
       <v-col cols="12" md="5">
-        <div class="subtitle-1 text-justify text-left">
+        <div class="subtitle-1 text-justify text-left mx-5">
           In 2013, the first global entrepreneurship conference was launched in
           <br />National University of Singapore (NUS) with the goal of connecting student entrepreneurs all over the world to create a global network of innovators.
           <br />
@@ -96,7 +96,7 @@
     </v-row>
     <hr class="mt-9" />
 
-    <v-row align="center" justify="center" class="stats">
+    <v-row class="mt-12" align="center" justify="center">
       <v-spacer />
       <v-col cols="12" md="3">
         <div>
@@ -128,11 +128,9 @@
         x-large
         outlined
         color="indigo"
-        to="/speakers"
-        @click="$vuetify.goTo(target, options)"
-      >Check out our past speakers!</v-btn>
+        href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
+      >Get your UNICON 2020 tickets now!</v-btn>
     </v-row>
-
     <!-- end of unicon 2019 stats  -->
   </v-container>
 </template>
@@ -178,10 +176,6 @@ export default {
   font-size: 3rem;
   margin-top: 3%;
   color: #303F9F;
-}
-
-.stats {
-  height: 50vh;
 }
 
 .stats-title {

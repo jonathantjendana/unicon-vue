@@ -73,6 +73,6 @@ export default {
   font-weight: 400;
   line-height: 2.5rem;
   letter-spacing: 0.0073529412em !important;
-  font-family: "twitchy.tvregular";
+  /*font-family: "twitchy.tvregular";*/
 }
 </style>

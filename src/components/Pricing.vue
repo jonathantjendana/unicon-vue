@@ -1,7 +1,7 @@
 <template>
     <v-layout column wrap class="my-12" align-center>
         <div class="text-center">
-            <h2 class="display-1 mt-6 dark blue--text"><b>Ticket Pricing</b></h2>
+            <h2 class="display-1 mt-6 dark indigo--text"><b>Ticket Pricing</b></h2>
         </div>
         <v-row class="fill-height mb-10" align="center" justify="center">
             <v-col>

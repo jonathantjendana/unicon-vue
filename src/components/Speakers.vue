@@ -1,7 +1,7 @@
 <template>
     <v-layout column wrap class="my-12" align-center>
         <div class="text-center">
-            <h2 class="display-1 mb-8 mt-6 dark blue--text"><b>UNICON Speakers</b></h2>
+            <h2 class="display-1 mb-8 mt-6 dark indigo--text"><b>UNICON Speakers</b></h2>
         </div>
         <v-tabs class="mb-10" background-color="transparent" color="blue" centered>
             <v-tab>
@@ -412,8 +412,7 @@
 
         .font-title-and-depart--adjust {
             font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 5px;
+            line-height: 1;
         }
     }
 
@@ -423,6 +422,7 @@
         }
 
         .font-title-and-depart--adjust {
+            line-height: 1.5;
             font-size: 20px;
             margin-bottom: 0px;
         }
