@@ -78,7 +78,8 @@
       </v-col>
       <v-spacer />
     </v-row>
-    <!-- start of unicon 2020 -->
+    <br>
+    <br>
     <v-row align="center" justify="center">
       <v-col class="image-box">
         <span class="venue-details">
@@ -191,7 +192,6 @@ export default {
 }
 
 .venue {
-  height: 85vh;
   width: 100vw;
   position: relative;
   overflow: auto;
