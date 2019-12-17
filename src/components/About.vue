@@ -263,7 +263,7 @@ hr {
 
 @media only screen and (min-width: 240px) {
   .image-box {
-    margin-top: 10%;
+    margin-top: 20%;
   }
 }
 
