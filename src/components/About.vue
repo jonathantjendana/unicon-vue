@@ -260,6 +260,19 @@ hr {
   /* Add a transition, just for fun */
   /* transition: box-shadow 0.3s ease-out; */
 }
+
+@media only screen and (min-width: 240px) {
+  .image-box {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .image-box {
+    margin-top: 0;
+  }
+}
+
 /* .image-box:hover {
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.2);
 } */
