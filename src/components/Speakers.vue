@@ -5,11 +5,45 @@
         </div>
         <v-tabs class="mb-10" background-color="transparent" color="blue" centered>
             <v-tab>
-                <h2 class="headline text--primary"><b>2019</b></h2>
+                <h2 class="headline text--blue"><b>2020</b></h2>
             </v-tab>
             <v-tab>
-                <h2 class="headline text--primary"><b>2018</b></h2>
+                <h2 class="headline text--black"><b>2019</b></h2>
             </v-tab>
+            <v-tab>
+                <h2 class="headline text--black"><b>2018</b></h2>
+            </v-tab>
+            <v-tab-item eager>
+                <v-container>
+                    <v-row class="fill-height" align="center" justify="center">
+                        <template v-for="(item, i) in items_2020">
+                            <v-col class="px-7 ml-n2 mr-n4" :key="i" cols="6" sm="3" xl="2">
+                                <v-hover v-slot:default="{ hover }">
+                                    <v-card class="mx-auto" max-width="100%">
+                                        <v-img class="white--text align-end text-wrap" :src="item.img"
+                                               height="100%" eager>
+                                            <v-card-text class="layout text-left">
+                                                <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>{{ item.name }}</b></div>
+                                            </v-card-text>
+                                        </v-img>
+                                        <v-expand-transition>
+                                            <div v-if="hover"
+                                                 class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
+                                                 style="height: 100%;">
+                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"> {{ item.title }}</div>
+                                                <div class="ml-2 font-title-and-depart--adjust"><b>{{ item.department }}</b></div>
+                                                <v-btn class="ml-2 mt-2" :href="item.linkedin" target="_blank" dark icon>
+                                                    <v-icon size="40px">fab fa-linkedin</v-icon>
+                                                </v-btn>
+                                            </div>
+                                        </v-expand-transition>
+                                    </v-card>
+                                </v-hover>
+                            </v-col>
+                        </template>
+                    </v-row>
+                </v-container>
+            </v-tab-item>
             <v-tab-item eager>
                 <v-container>
                     <v-row class="fill-height" align="center" justify="center">
@@ -137,6 +171,65 @@
     export default {
         name: "Speakers",
         data: () => ({
+            items_2020: [
+                {
+                    img:require('../assets/speakers2020/arne.png'),
+                    name: 'Dr. Arne Jeroschewski',
+                    title: 'Founder & CEO',
+                    department: 'Parcel Perform',
+                    linkedin: 'https://www.linkedin.com/in/arnejero/'
+                },
+                {
+                    img:require('../assets/speakers2020/billy.png'),
+                    name: 'Billy Naveed',
+                    title: 'Head of Strategy',
+                    department: 'Zilingo',
+                    linkedin: 'https://www.linkedin.com/in/billynaveed/'
+                },
+                {
+                    img:require('../assets/speakers2020/julian.png'),
+                    name: 'Julian Koo',
+                    title: 'Co-Founder & CEO',
+                    department: 'Jaga Me',
+                    linkedin: 'https://www.linkedin.com/in/juliankoo/'
+                },
+                {
+                    img:require('../assets/speakers2020/khorqianyi.jpg'),
+                    name: 'Khor Qianyi',
+                    title: 'CEO',
+                    department: 'Enactus SG',
+                    linkedin: 'https://www.linkedin.com/in/khorqianyi/'
+                },
+                {
+                    img:require('../assets/speakers2020/michele.jpg'),
+                    name: 'Michele Ferrario',
+                    title: 'Co-Founder & CEO',
+                    department: 'StashAway',
+                    linkedin: 'https://www.linkedin.com/in/michele-ferrario-a464211/'
+                },
+                {
+                    img:require('../assets/speakers2020/rayner.jpg'),
+                    name: 'Rayner Loi',
+                    title: 'Co-Founder & CEO',
+                    department: 'Good For Food',
+                    linkedin: 'https://www.linkedin.com/in/raynerloi/'
+                },
+                {
+                    img:require('../assets/speakers2020/sun.png'),
+                    name: 'Pocket Sun',
+                    title: 'Co-Founder & Managing Partner',
+                    department: 'SoGal Ventures',
+                    linkedin: 'https://www.linkedin.com/in/pocketsun/'
+                },
+                {
+                    img:require('../assets/speakers2020/vishal.jpeg'),
+                    name: 'Vishal Harnal',
+                    title: 'General Partner',
+                    department: '500 Startups',
+                    linkedin: 'https://www.linkedin.com/in/vishalharnal/'
+                },
+            ],
+
             items_2019: [
                 {
                     img: require('../assets/speakers2019/Ajey_Gore.png'),

@@ -13,7 +13,7 @@ const routes = [
     { path: '/landingpage', component: landingpagehero },
     { path: '/contact-us', component: contactus },
     { path: '/pricing', component: pricing},
-    { path: '/partners', component: partner}
+    { path: '/partners', component: partner},
 ];
 
 export default routes;

@@ -31,6 +31,12 @@
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
+      <v-list-item>
+        <v-list-item-content>
+          <v-btn text to="/contact-us" @click="$vuetify.goTo(target, options)">Map</v-btn>
+        </v-list-item-content>
+      </v-list-item>
+      <v-divider></v-divider>
     </v-navigation-drawer>
     <v-app-bar color="indigo" dark fixed>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
@@ -63,6 +69,12 @@
                 to="/partners"
                 @click="$vuetify.goTo(target, options)"
         >Partners</v-btn>
+        <v-btn
+                text
+                class="hidden-sm-and-down"
+                to="/contact-us"
+                @click="$vuetify.goTo(target, options)"
+        >MAP</v-btn>
       </v-toolbar-items>
     </v-app-bar>
   </span>
