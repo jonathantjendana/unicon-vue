@@ -215,6 +215,13 @@
                     linkedin: 'https://www.linkedin.com/in/raynerloi/'
                 },
                 {
+                    img:require('../assets/speakers2020/roshni.png'),
+                    name: 'Roshni Mahtani',
+                    title: 'Founder & Group CEO ',
+                    department: 'theAsianparent',
+                    linkedin: 'https://www.linkedin.com/in/roshnimahtani/'
+                },
+                {
                     img:require('../assets/speakers2020/sun.png'),
                     name: 'Pocket Sun',
                     title: 'Co-Founder & Managing Partner',
@@ -228,6 +235,13 @@
                     department: '500 Startups',
                     linkedin: 'https://www.linkedin.com/in/vishalharnal/'
                 },
+                {
+                    img:require('../assets/speakers2020/yang.png'),
+                    name: 'Virginia Yang',
+                    title: 'Director of Developer Partnerships & Programs',
+                    department: 'APAC, Facebook',
+                    linkedin: 'https://www.linkedin.com/in/virginia-yang-05096a/'
+                }
             ],
 
             items_2019: [
