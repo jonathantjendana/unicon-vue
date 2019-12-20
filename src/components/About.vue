@@ -3,8 +3,8 @@
     <v-row align="center" justify="center" class="unicon-what mt-n3 py-9">
       <!-- <v-spacer></v-spacer> -->
       <v-col cols="12" md="6">
-        <div class="display-2 font-weight-bold">
-          About
+        <div>
+          <span class="about font-weight-bold">About &nbsp;</span>
           <span class="unicon-headline">Unicon</span>
         </div>
 
@@ -86,7 +86,12 @@
     <!-- start of unicon 2019 stats  -->
     <v-row align="center" justify="center" class="stats-header">
       <!--<span class="unicon-headline indigo&#45;&#45;text text&#45;&#45;darken-2 underline&#45;&#45;magical">unicon <span class="text&#45;&#45;primary" style="font-family: Graphik-Bold; font-size: 64px">2019</span></span>-->
-      <v-img class="mt-12" src="../assets/unicon2019_logo.svg" contain :aspect-ratio="getAspectRatio" />
+      <v-img
+        class="mt-12"
+        src="../assets/unicon2019_logo.svg"
+        contain
+        :aspect-ratio="getAspectRatio"
+      />
     </v-row>
 
     <v-row class="mt-12 stats" align="center" justify="center">
@@ -127,7 +132,7 @@
         max-width="80%"
       >
         <div class="getTixBtn" style="white-space: normal; font-family: Graphik-Bold;">
-          <span>Get your UNICON 2020 </span>
+          <span>Get your UNICON 2020</span>
           <span>tickets now!</span>
         </div>
       </v-btn>
@@ -135,7 +140,6 @@
     </v-row>
     <!-- end of unicon 2019 stats  -->
     <v-row align="center" class="my-12" justify="center">
-    <v-col cols="12">
       <div class="text-center">
         <h2 class="mb-8 mt-6 dark indigo--text" style="font-family: Graphik-Bold; font-size: 34px">
           <b>Our Partners</b>
@@ -210,9 +214,8 @@
           </v-container>
         </v-tab-item>
       </v-tabs>
-    </v-col>
     </v-row>
-  </v-container>    
+  </v-container>
 </template>
 
 <script>
@@ -353,13 +356,13 @@ export default {
     }
   },
   computed: {
-      getAspectRatio : function() {
-          if (this.$vuetify.breakpoint.name != 'xs') {
-              return 10;
-          } else {
-              return 5;
-          }
+    getAspectRatio: function() {
+      if (this.$vuetify.breakpoint.name != "xs") {
+        return 10;
+      } else {
+        return 5;
       }
+    }
   }
 };
 </script>
@@ -376,6 +379,14 @@ export default {
   font-size: 3rem;
   margin-top: 3%;
   color: #303f9f;
+}
+
+.about {
+  font-size: calc(45px + (26-14) * ((100vw - 300px) / (1600 -300)));
+  line-height: calc(1em + (1.5-1.2) * ((100vw - 300px) / (1600 -300)));
+  font-weight: 400;
+  letter-spacing: -0.02625em  !important;
+  font-family: "Graphik-Regular";
 }
 
 .statsNo {
@@ -467,7 +478,7 @@ hr {
 }
 
 .stats {
-    margin-bottom: 1%;
+  margin-bottom: 1%;
 }
 
 @media only screen and (min-width: 240px) {
