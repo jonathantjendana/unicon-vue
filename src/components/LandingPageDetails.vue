@@ -14,7 +14,7 @@
         <v-row justify="center">
           <v-col cols="12" sm="12" lg="3">
             <div
-              class="topic startup font-weight-bold title"
+              class="topic startup font-weight-bold title white--text"
               rounded
               color="primary"
               height="100%"
@@ -24,7 +24,7 @@
           </v-col>
           <v-col cols="12" sm="12" lg="3">
             <div
-              class="topic growth font-weight-bold title"
+              class="topic growth font-weight-bold title white--text"
               rounded
               color="primary"
               height="100%"
@@ -33,7 +33,7 @@
           </v-col>
           <v-col cols="12" sm="12" lg="3">
             <div
-              class="topic tech font-weight-bold title"
+              class="topic tech font-weight-bold title white--text"
               rounded
               color="primary"
               height="100%"
@@ -42,7 +42,7 @@
           </v-col>
           <v-col cols="12" sm="12" lg="3">
             <div
-              class="topic diversity font-weight-bold title"
+              class="topic diversity font-weight-bold title white--text"
               rounded
               color="primary"
               height="100%"

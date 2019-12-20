@@ -73,7 +73,7 @@
 
                 </v-form>
 
-                <div class="disc-text font-weight-bold">
+                <div class="disc-text font-weight-bold white--text">
                     EARLY BIRD 20% DISCOUNT UNTIL 30
                     <br/>
                     NOVEMBER 2019. GRAB YOUR TICKETS TODAY!
