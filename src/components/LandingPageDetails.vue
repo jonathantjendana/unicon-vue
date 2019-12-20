@@ -12,7 +12,7 @@
       </v-row>
       <v-col class="sections">
         <v-row justify="center">
-          <v-col cols="12" sm="12" lg="3">
+          <v-col cols="10" lg="3">
             <div
               class="topic startup font-weight-bold title white--text"
               rounded
@@ -22,7 +22,7 @@
               dark
             >STARTUPS</div>
           </v-col>
-          <v-col cols="12" sm="12" lg="3">
+          <v-col cols="10" lg="3">
             <div
               class="topic growth font-weight-bold title white--text"
               rounded
@@ -31,7 +31,7 @@
               dark
             >GROWTH</div>
           </v-col>
-          <v-col cols="12" sm="12" lg="3">
+          <v-col cols="10" lg="3">
             <div
               class="topic tech font-weight-bold title white--text"
               rounded
@@ -40,7 +40,7 @@
               dark
             >TECH</div>
           </v-col>
-          <v-col cols="12" sm="12" lg="3">
+          <v-col cols="10" lg="3">
             <div
               class="topic diversity font-weight-bold title white--text"
               rounded
@@ -58,7 +58,7 @@
             <v-card class="d-inline-block profile" :class="{profile2: index == 1}">
               <v-container>
                 <v-row>
-                  <v-col cols="4">
+                  <v-col cols="5">
                     <v-img height="200" width="300" src="../assets/foto-sushi-1.png"></v-img>
                   </v-col>
 
@@ -83,7 +83,7 @@
 
       <v-row>
         <template v-for="(person, index) in persons">
-          <v-col :key="index" sm="12" md="6" lg="3">
+          <v-col :key="index" cols="6" md="6" lg="3">
             <v-flex>
               <v-card
                 class="profile mx-auto"
@@ -113,7 +113,7 @@
         class="display-1 font-weight-black black--text text-xs-center pricing font-weight-bold"
       >2 DAYS OF JAM-PACKED INSIGHTS</v-row>
       <v-row justify="center">
-        <v-col :key="index" sm="12" md="6" lg="3">
+        <v-col :key="index" cols="10" md="6" lg="3">
           <v-flex>
             <v-card class="pricing1 mx-auto">
               <div class="pricing-detail">
@@ -137,7 +137,7 @@
           </v-flex>
         </v-col>
         <v-responsive v-if="index === 4" :key="`width-${index}`" width="100%"></v-responsive>
-        <v-col :key="index" sm="12" md="6" lg="3">
+        <v-col :key="index" cols="10" md="6" lg="3">
           <v-flex>
             <v-card class="pricing2 mx-auto">
               <div class="pricing-detail">
@@ -212,7 +212,7 @@
 
       <v-row justify="center">
         <v-btn
-          class="font-weight-bold"
+          class="font-weight-bold registerNowBtn"
           rounded
           color="#303f9f"
           dark
@@ -369,6 +369,26 @@ export default {
 
 .footer {
     margin-top: 14%;
+}
+
+@media only screen and (max-width: 600px) {
+  .network {
+    margin-top: 20%;
+    margin-bottom: 15%;
+  }
+
+  .register {
+    margin-top: 30%;
+    margin-bottom: 5%;
+  }
+
+  .registerNowBtn {
+    width: 80%;
+  }
+
+  .pricing {
+    margin-top: 20%;
+  }
 }
 
 </style>
