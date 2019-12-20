@@ -9,7 +9,7 @@
           class="unicon-spinner"
         />
         <v-col class="text-center" cols="12">
-          <v-img src="../assets/big_logo.svg" height="125" alt="UNICON" contain />
+          <v-img src="../assets/big_logo.svg" alt="UNICON" contain height="125"/>
           <div class="tagline-1 font-weight-bold text-center mt-3">Creating the unicorns of tomorrow</div>
           <v-spacer />
         </v-col>
@@ -17,7 +17,7 @@
 
       <v-row align="end" justify="center">
         <div
-          class="font-weight-bold tagline-2" style="font-family: Graphik-Bold"
+          class="font-weight-bold tagline-2"
         >Southeast Asia's Largest &amp; Craziest Student Led Conference</div>
       </v-row>
     </v-container>
@@ -69,10 +69,11 @@ export default {
 }
 
 .tagline-2 {
-  font-size: 1.8rem !important;
+  font-size: calc(20px + (26-14) * ((100vw - 300px) / (1600 -300)));
+  line-height: calc(1.3em + (1.5-1.2) * ((100vw - 300px) / (1600 -300)));
   font-weight: 400;
-  line-height: 2.5rem;
+
   letter-spacing: 0.0073529412em !important;
-  /*font-family: "twitchy.tvregular";*/
+  font-family: "Graphik-Bold";
 }
 </style>
