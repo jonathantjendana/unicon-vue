@@ -54,15 +54,15 @@
 
       <v-row>
         <template v-for="(person, index) in personsPromo">
-          <v-col :key="index">
+          <v-col :key="index" cols="12" md="6">
             <v-card class="d-inline-block profile" :class="{profile2: index == 1}">
               <v-container>
                 <v-row>
-                  <v-col cols="5">
-                    <v-img height="200" width="300" src="../assets/foto-sushi-1.png"></v-img>
+                  <v-col cols="12" md="5">
+                    <v-img src="../assets/foto-sushi-1.png" aspect-ratio="1"></v-img>
                   </v-col>
 
-                  <v-col cols="6" class="text-left">
+                  <v-col cols="12" md="5" class="text-left">
                     <v-row class="fill-height" justify="start">
                       <v-col class="white--text font-weight-bold title" col="10">
                         {{ person.name}}
@@ -181,7 +181,7 @@
 
       <v-row justify="space-around">
         <template v-for="(company, index) in companies">
-          <v-col :key="index" sm="12" md="6" lg="2">
+          <v-col :key="index" cols="4" md="6" lg="2">
             <v-flex>
               <v-card
                 class="company d-flex align-center"
@@ -388,6 +388,16 @@ export default {
 
   .pricing {
     margin-top: 20%;
+  }
+
+  .profile3 {
+    padding-bottom: 5%;
+    background: #303f9f !important;
+  }
+
+  .profile4 {
+    padding-bottom: 5%;
+    background: #26c1bf !important;
   }
 }
 </style>

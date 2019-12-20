@@ -1,15 +1,16 @@
 <template>
   <v-container fluid>
     <v-row align="center" justify="center" class="unicon-what mt-n3 py-9">
-      <v-spacer></v-spacer>
-      <v-col cols="12" md="5">
+      <!-- <v-spacer></v-spacer> -->
+      <v-col cols="12" md="6">
         <div class="display-2 font-weight-bold">
-          What is
-          <span class="unicon-headline">Unicon</span>?
+          About 
+          <span class="unicon-headline">Unicon</span>
         </div>
 
         <v-row align="center" justify="center">
-          <v-col cols="12" md="6">
+
+          <v-col cols="10" md="5">
             <div class="text-center">
               <v-hover v-slot:default="{ hover }" :value="value">
                 <v-btn
@@ -29,7 +30,8 @@
               </v-hover>
             </div>
           </v-col>
-          <v-col cols="12" md="6">
+
+          <v-col cols="10" md="5">
             <div class="text-center">
               <v-hover v-slot:default="{ hover }" :value="value">
                 <v-btn
@@ -49,6 +51,7 @@
               </v-hover>
             </div>
           </v-col>
+
         </v-row>
       </v-col>
       <v-col cols="12" md="5">
@@ -111,6 +114,7 @@
     </v-row>
 
     <v-row align="center" justify="center" class="speakers">
+      <!-- <v-col cols="10"> -->
       <v-btn
         class="ma-2"
         x-large
@@ -118,9 +122,13 @@
         color="indigo"
         href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
         target="_blank"
+        max-width="80%"
       >
-        <span style="font-family: Graphik-Bold">Get your UNICON 2020 tickets now!</span>
+        <span style="font-family: Graphik-Bold">
+            Get your UNICON 2020 tickets now!
+            </span>
       </v-btn>
+      <!-- </v-col> -->
     </v-row>
     <!-- end of unicon 2019 stats  -->
     <v-layout column wrap class="my-12" align-center>
@@ -458,5 +466,12 @@ hr {
     font-size: 23px;
     color: black;
   }
+}
+
+@media only screen and (max-width: 600px) {
+    .unicon-what {
+        height: auto;
+        margin-bottom: -10%;
+    }
 }
 </style>
