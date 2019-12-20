@@ -99,6 +99,8 @@
                     {{person.name}}
                     <br />
                     {{person.Designation}}
+                    <br />
+                    {{person.Company}}
                   </v-card-title>
                 </v-img>
               </v-card>
@@ -128,7 +130,7 @@
                     dark
                     min-width="40%"
                     height="40px"
-                    href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" 
+                    href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
                     target="_blank"
                   >REGISTER NOW</v-btn>
                 </v-card-text>
@@ -152,7 +154,7 @@
                     dark
                     min-width="40%"
                     height="40px"
-                    href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" 
+                    href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
                     target="_blank"
                   >REGISTER NOW</v-btn>
                 </v-card-text>
@@ -174,7 +176,7 @@
 
       <v-row
         justify="center"
-        class="title black--text text-xs-center mt-5  mb-12"
+        class="title black--text text-xs-center mt-5 mb-12"
       >Hear from these inspiring speakers. Check back as we continue to add more</v-row>
 
       <v-row justify="space-around">
@@ -218,18 +220,16 @@
           dark
           min-width="20%"
           height="60px"
+          href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
+          target="_blank"
         >REGISTER NOW</v-btn>
       </v-row>
-        <v-row align="end"  class="footer black--text">
-
-        </v-row>
-
+      <v-row align="end" class="footer black--text"></v-row>
     </v-container>
   </v-container>
 </template>
 
 <script>
-
 export default {
   name: "LandingPageDetails",
   data() {
@@ -249,14 +249,14 @@ export default {
         }
       ],
       persons: [
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" }
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" }
       ],
       companies: [
         { name: "Amazon", img: "Amazon.png" },
@@ -317,7 +317,7 @@ export default {
 .profile {
   width: 100%;
   padding-bottom: 5%;
-  background: #303f9f !important; 
+  background: #303f9f !important;
 }
 
 .profile2 {
@@ -368,7 +368,7 @@ export default {
 }
 
 .footer {
-    margin-top: 14%;
+  margin-top: 14%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -390,5 +390,4 @@ export default {
     margin-top: 20%;
   }
 }
-
 </style>
