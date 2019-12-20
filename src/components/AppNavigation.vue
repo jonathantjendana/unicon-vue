@@ -27,12 +27,6 @@
       <v-divider></v-divider>
       <v-list-item>
         <v-list-item-content>
-          <v-btn text to="/partners" @click="$vuetify.goTo(target, options)">Partners</v-btn>
-        </v-list-item-content>
-      </v-list-item>
-      <v-divider></v-divider>
-      <v-list-item>
-        <v-list-item-content>
           <v-btn text to="/contact-us" @click="$vuetify.goTo(target, options)">Map</v-btn>
         </v-list-item-content>
       </v-list-item>
@@ -63,12 +57,6 @@
                 to="/pricing"
                 @click="$vuetify.goTo(target, options)"
         >Pricing</v-btn>
-        <v-btn
-                text
-                class="hidden-sm-and-down"
-                to="/partners"
-                @click="$vuetify.goTo(target, options)"
-        >Partners</v-btn>
         <v-btn
                 text
                 class="hidden-sm-and-down"
