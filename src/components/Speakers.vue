@@ -121,7 +121,7 @@
                                 <v-card class="mx-auto">
                                     <v-img class="white--text align-end text-wrap" :src="require('../assets/speakers2018/janil.png')" eager>
                                         <v-card-text class="layout text-left">
-                                            <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>Dr Janil Puthucheary</b></div>
+                                            <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>Dr. Janil Puthucheary</b></div>
                                         </v-card-text>
                                     </v-img>
                                     <v-expand-transition>
