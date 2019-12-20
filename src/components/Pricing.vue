@@ -12,7 +12,7 @@
                         S$31.20
                     </v-card-text>
                     <v-card-text class="black--text title" style="position: relative">
-                        <v-btn absolute color="dark blue" class="white--text" fab large right top href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac">
+                        <v-btn absolute color="dark blue" class="white--text" fab large right top href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" target="_blank">
                             <v-icon>mdi-cart</v-icon>
                         </v-btn>
                         <div class="font-weight-light black--text title mb-2">Students</div>
@@ -28,7 +28,7 @@
                         S$49.00
                     </v-card-text>
                     <v-card-text class="black--text title" style="position: relative">
-                        <v-btn absolute color="dark blue" class="white--text" fab large left top href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac">
+                        <v-btn absolute color="dark blue" class="white--text" fab large left top href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" target="_blank">
                             <v-icon>mdi-cart</v-icon>
                         </v-btn>
                         <div class="font-weight-light black--text title mb-2">Public</div>

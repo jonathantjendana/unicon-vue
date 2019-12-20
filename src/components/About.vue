@@ -27,6 +27,7 @@
                   color="#2D3C80"
                   @click="loader = 'loading18'"
                   href="https://drive.google.com/file/d/1mEfEjaRQDdPGyIjUHsT7ky7E6sDOX9-6/view?usp=sharing"
+                  target="_blank"
                 >
                   <span class="mt-n3">
                     <b>
@@ -55,6 +56,7 @@
                   color="#283593"
                   @click="loader = 'loading19'"
                   href="https://drive.google.com/file/d/1bpPwWax9BIdUUHRr59aqiF59y3M0C1gy/view?usp=sharing"
+                  target="_blank"
                 >
                   <span class="mt-n3">
                     <b>
@@ -130,6 +132,7 @@
         outlined
         color="indigo"
         href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
+        target="_blank"
       ><span style="font-family: Graphik-Bold">Get your UNICON 2020 tickets now!</span></v-btn>
     </v-row>
     <!-- end of unicon 2019 stats  -->

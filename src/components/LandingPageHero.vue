@@ -35,7 +35,7 @@
           22-23 February 2020
           <br />UTOWN, NUS
           <div class="fom-button">
-            <v-btn rounded color="#303f9f" dark min-width="40%" height="40px">FIND OUT MORE</v-btn>
+            <v-btn rounded color="#303f9f" dark min-width="40%" height="40px" href="/">FIND OUT MORE</v-btn>
           </div>
         </span>
             </v-col>

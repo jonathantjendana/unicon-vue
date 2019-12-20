@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="lighten-4">
+  <v-container fluid>
     <v-container grid-list-lg>
       <v-row
         justify="center"
@@ -128,6 +128,8 @@
                     dark
                     min-width="40%"
                     height="40px"
+                    href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" 
+                    target="_blank"
                   >REGISTER NOW</v-btn>
                 </v-card-text>
               </div>
@@ -150,6 +152,8 @@
                     dark
                     min-width="40%"
                     height="40px"
+                    href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" 
+                    target="_blank"
                   >REGISTER NOW</v-btn>
                 </v-card-text>
               </div>
@@ -313,24 +317,22 @@ export default {
 .profile {
   width: 100%;
   padding-bottom: 5%;
-  background: #303f9f;
+  background: #303f9f !important; 
 }
 
 .profile2 {
   padding-bottom: 5%;
-
-  background: #26c1bf;
+  background: #26c1bf !important;
 }
 
 .profile3 {
   padding-bottom: 5%;
-
-  background: orange;
+  background: orange !important;
 }
 
 .profile4 {
   padding-bottom: 5%;
-  background: #3f51b5;
+  background: #3f51b5 !important;
 }
 
 .pricing {
