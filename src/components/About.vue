@@ -93,9 +93,9 @@
 
     <!-- start of unicon 2019 stats  -->
     <v-row align="center" justify="center" class="stats-header">
-      <span class="unicon-headline indigo--text text--darken-2 underline--magical">unicon <span class="text--primary" style="font-family: Graphik-Bold; font-size: 64px">2019</span></span>
+      <!--<span class="unicon-headline indigo&#45;&#45;text text&#45;&#45;darken-2 underline&#45;&#45;magical">unicon <span class="text&#45;&#45;primary" style="font-family: Graphik-Bold; font-size: 64px">2019</span></span>-->
+      <img class="mt-12" src="../assets/unicon2019_logo.svg">
     </v-row>
-    <hr class="mt-9" />
 
     <v-row class="mt-12" align="center" justify="center">
       <v-spacer />
