@@ -1,7 +1,7 @@
 <template>
     <v-layout column wrap class="my-12" align-center>
         <div class="text-center">
-            <h2 class="display-1 mb-8 mt-6 dark indigo--text"><b>UNICON Partners</b></h2>
+            <h2 class="mb-8 mt-6 dark indigo--text" style="font-family: Graphik-Bold; font-size: 34px"><b>UNICON Partners</b></h2>
         </div>
         <v-tabs class="mb-10" background-color="transparent" color="blue" centered>
             <v-tab>
@@ -28,16 +28,10 @@
                             </v-img>
                         </v-col>
                         <v-col class="px-7 ml-n2 mr-n4" :key="i" cols="6" sm="3" xl="2">
-                            <a href="https://www.upcodeacademy.com/" target="_blank">
-                                <v-img class="white--text align-end text-wrap mx-7" src="../assets/Sponsors/ua.png"
-                                       height="100%" eager>
+                            <a href="https://ace.org.sg/" target="_blank">
+                                <v-img class="mx-7" src="../assets/Communities/ace.png" eager>
                                 </v-img>
                             </a>
-                        </v-col>
-                        <v-col class="px-7 ml-n2 mr-n4" :key="i" cols="6" sm="3" xl="2">
-                            <v-img class="white--text align-end text-wrap mx-7" src="../assets/Sponsors/xmd.jpg"
-                                   height="100%" eager>
-                            </v-img>
                         </v-col>
                     </v-row>
                 </v-container>
@@ -156,10 +150,6 @@
                 {
                     img: require('../assets/Communities/geek.png'),
                     link: 'https://geekhunter.co/'
-                },
-                {
-                    img: require('../assets/Communities/ace.png'),
-                    link: 'https://ace.org.sg/'
                 },
                 {
                     img: require('../assets/Communities/lvl3.png'),

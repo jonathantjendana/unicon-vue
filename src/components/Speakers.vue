@@ -1,7 +1,7 @@
 <template>
     <v-layout column wrap class="my-12" align-center>
         <div class="text-center">
-            <h2 class="display-1 mb-8 mt-6 dark indigo--text"><b>UNICON Speakers</b></h2>
+            <h2 class="mb-8 mt-6 dark indigo--text" style="font-family: Graphik-Bold; font-size: 34px"><b>UNICON Speakers</b></h2>
         </div>
         <v-tabs class="mb-10" background-color="transparent" color="blue" centered>
             <v-tab>

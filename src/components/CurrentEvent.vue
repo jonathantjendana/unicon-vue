@@ -1,16 +1,16 @@
 <template>
-    <v-bottom-sheet v-model="sheet" inset eager>
-        <template v-slot:activator="{ on }">
+    <!--<v-bottom-sheet v-model="sheet" inset eager>-->
+        <!--<template v-slot:activator="{ on }">-->
             <v-layout column wrap class="my-12" align-center>
                 <div class="text-center">
-                    <h2 class="display-1 mb-8 mt-6 dark indigo--text"><b>Agenda</b></h2>
+                    <h2 class="mb-8 mt-6 dark indigo--text" style="font-family: Graphik-Bold; font-size: 34px"><b>Agenda</b></h2>
                 </div>
                 <v-tabs class="mb-10" background-color="transparent" color="blue" centered>
                     <v-tab>
-                        <h2 class="headline text--blue"><b>Day 1</b></h2>
+                        <h2 class="text--blue" style="font-family: Graphik-Bold; font-size: 24px"><b>Day 1</b></h2>
                     </v-tab>
                     <v-tab>
-                        <h2 class="headline text--blue"><b>Day 2</b></h2>
+                        <h2 class="text--blue" style="font-family: Graphik-Bold; font-size: 24px"><b>Day 2</b></h2>
                     </v-tab>
                     <v-tab-item>
                         <v-container>
@@ -26,7 +26,7 @@
                                         <span :class="`headline font-weight-bold ${item.color}--text`" v-text="item.time"></span>
                                     </template>
                                     <v-card :color="item.color" dark>
-                                        <v-card-title class="title"><span class="hidden-sm-and-up">{{item.time}}: &nbsp</span>Lorem Ipsum Dolor</v-card-title>
+                                        <v-card-title class="title"><span class="hidden-sm-and-up">{{item.time}}: &nbsp; </span>Lorem Ipsum Dolor</v-card-title>
                                         <v-card-text class="white text--primary">
                                             <p>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet
                                                 nec
@@ -73,17 +73,17 @@
                     <h2 class="display-1 mb-8 dark indigo--text"><b>End</b></h2>
                 </div>
             </v-layout>
-        </template>
-        <v-sheet class="text-center" height="200px">
-            <v-btn
-                    class="mt-6"
-                    text
-                    color="error"
-                    @click="sheet = !sheet"
-            >close</v-btn>
-            <div class="my-3">This is a bottom sheet using the inset prop</div>
-        </v-sheet>
-    </v-bottom-sheet>
+        <!--</template>-->
+        <!--<v-sheet class="text-center" height="200px">-->
+            <!--<v-btn-->
+                    <!--class="mt-6"-->
+                    <!--text-->
+                    <!--color="error"-->
+                    <!--@click="sheet = !sheet"-->
+            <!--&gt;close</v-btn>-->
+            <!--<div class="my-3">This is a bottom sheet using the inset prop</div>-->
+        <!--</v-sheet>-->
+    <!--</v-bottom-sheet>-->
 </template>
 
 <script>

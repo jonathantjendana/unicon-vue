@@ -8,7 +8,7 @@
       <v-col cols="3" class="white--text">Copyright © 2020 - Unicon</v-col>
       <v-spacer/>
       <v-col cols="3">
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4" :href=icon.link dark icon>
+        <v-btn v-for="icon in icons" :key="icon" class="margin-adjust" :href=icon.link dark icon>
           <v-icon size="24px">{{ icon.icon }}</v-icon>
         </v-btn>
       </v-col>
@@ -37,3 +37,20 @@ export default {
   })
 };
 </script>
+
+<style scoped>
+  @media only screen and (min-width: 480px) {
+    .margin-adjust {
+      margin-right: 20%;
+      margin-left: 20%;
+    }
+  }
+
+
+  @media only screen and (min-width: 960px) {
+    .margin-adjust {
+      margin-right: 8%;
+      margin-left: 8%;
+    }
+  }
+</style>

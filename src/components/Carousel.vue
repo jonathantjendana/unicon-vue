@@ -17,7 +17,7 @@
 
       <v-row align="end" justify="center">
         <div
-          class="font-weight-bold tagline-2"
+          class="font-weight-bold tagline-2" style="font-family: Graphik-Bold"
         >Southeast Asia's Largest &amp; Craziest Student Led Conference</div>
       </v-row>
     </v-container>

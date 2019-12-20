@@ -54,6 +54,15 @@ html {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Graphik-Bold';
+  src: url('./assets/fonts/graphik-bold.woff2') format('woff2'),
+  url('./assets/fonts/graphik-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #app {
   width: auto;
   font-family: Arial, Helvetica, sans-serif;

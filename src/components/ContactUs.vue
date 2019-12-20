@@ -1,7 +1,7 @@
 <template>
     <v-layout column wrap class="my-12  " align-center>
         <div class="text-center mb-8 mt-6">
-            <h2 class="display-1 dark indigo--text"><b>Location</b></h2>
+            <h2 class="dark indigo--text" style="font-family: Graphik-Bold; font-size: 34px"><b>Location</b></h2>
         </div>
         <div class="mb-10 map-container">
             <gmap-map
@@ -21,7 +21,7 @@
             </gmap-map>
         </div>
         <div class="text-center">
-            <h2 class="headline font-weight-bold mb-8 mt-6 dark text--black">Have some additional questions? Contact us at <a href="mailto: unicon@nes.org.sg">unicon@nes.org.sg</a>
+            <h2 class="font-weight-bold mb-8 mt-6 dark text--black" style="font-family: Graphik-Bold; font-size: 24px">Have some additional questions? Contact us at <a href="mailto: unicon@nes.org.sg">unicon@nes.org.sg</a>
             </h2>
         </div>
     </v-layout>

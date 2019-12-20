@@ -68,7 +68,7 @@
         </v-row>
       </v-col>
       <v-col cols="12" md="5">
-        <div class="subtitle-1 text-justify text-left mx-5">
+        <div class="subtitle-1 text-justify text-left mx-5 ">
           In 2013, the first global entrepreneurship conference was launched in
           <br />National University of Singapore (NUS) with the goal of connecting student entrepreneurs all over the world to create a global network of innovators.
           <br />
@@ -84,7 +84,7 @@
       <v-col class="image-box">
         <span class="venue-details">
           <v-img contain src="../assets/logo2.svg" height="175" />will be happening on
-          <br />22 - 23 February 2020
+          <br /><u>22 - 23 February 2020</u>
           <br />@NUS University Town, Singapore
         </span>
       </v-col>
@@ -93,7 +93,7 @@
 
     <!-- start of unicon 2019 stats  -->
     <v-row align="center" justify="center" class="stats-header">
-      <span class="unicon-headline indigo--text text--darken-2 underline--magical">unicon 2019</span>
+      <span class="unicon-headline indigo--text text--darken-2 underline--magical">unicon <span class="text--primary" style="font-family: Graphik-Bold; font-size: 64px">2019</span></span>
     </v-row>
     <hr class="mt-9" />
 
@@ -130,7 +130,7 @@
         outlined
         color="indigo"
         href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
-      >Get your UNICON 2020 tickets now!</v-btn>
+      ><span style="font-family: Graphik-Bold">Get your UNICON 2020 tickets now!</span></v-btn>
     </v-row>
     <!-- end of unicon 2019 stats  -->
   </v-container>
@@ -221,7 +221,7 @@ export default {
   font-weight: bolder;
   line-height: 5rem;
   letter-spacing: normal !important;
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Graphik-Bold";
 }
 
 hr {
@@ -276,4 +276,7 @@ hr {
 /* .image-box:hover {
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.2);
 } */
+  .test{
+    font-family: 'Times New Roman';
+  }
 </style>
