@@ -68,7 +68,7 @@
         </v-row>
       </v-col>
       <v-col cols="12" md="5">
-        <div class="subtitle-1 text-justify text-left mx-5 ">
+        <div class="subtitle-1 text-justify text-left mx-5 " style="font-family: Graphik-Regular">
           In 2013, the first global entrepreneurship conference was launched in
           <br />National University of Singapore (NUS) with the goal of connecting student entrepreneurs all over the world to create a global network of innovators.
           <br />

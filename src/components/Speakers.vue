@@ -31,7 +31,7 @@
                                                  class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                                  style="height: 100%;">
                                                 <div class="mt-3 ml-2 font-title-and-depart--adjust"> {{ item.title }}</div>
-                                                <div class="ml-2 font-title-and-depart--adjust"><b>{{ item.department }}</b></div>
+                                                <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>{{ item.department }}</b></div>
                                                 <v-btn class="ml-2 mt-2" :href="item.linkedin" target="_blank" dark icon>
                                                     <v-icon size="40px">fab fa-linkedin</v-icon>
                                                 </v-btn>
@@ -60,7 +60,7 @@
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
                                             <div class="mt-3 ml-2 font-title-and-depart--adjust">Senior Minister of State</div>
-                                            <div class="ml-2 font-title-and-depart--adjust"><b>MTI & MOE</b></div>
+                                            <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>MTI & MOE</b></div>
                                         </div>
                                     </v-expand-transition>
                                 </v-card>
@@ -81,7 +81,7 @@
                                                  class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                                  style="height: 100%;">
                                                 <div class="mt-3 ml-2 font-title-and-depart--adjust"> {{ item.title }}</div>
-                                                <div class="ml-2 font-title-and-depart--adjust"><b>{{ item.department }}</b></div>
+                                                <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>{{ item.department }}</b></div>
                                                 <v-btn class="ml-2 mt-2" :href="item.linkedin" target="_blank" dark icon>
                                                     <v-icon size="40px">fab fa-linkedin</v-icon>
                                                 </v-btn>
@@ -104,7 +104,7 @@
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
                                             <div class="mt-3 ml-2 font-title-and-depart--adjust">CEO & Founder</div>
-                                            <div class="ml-2 font-title-and-depart--adjust"><b>UpCode Academy</b></div>
+                                            <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>UpCode Academy</b></div>
                                         </div>
                                     </v-expand-transition>
                                 </v-card>
@@ -129,7 +129,7 @@
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
                                             <div class="mt-3 ml-2 font-title-and-depart--adjust">Senior Minister of State</div>
-                                            <div class="ml-2 font-title-and-depart--adjust"><b>MCI & MOE</b></div>
+                                            <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>MCI & MOE</b></div>
                                         </div>
                                     </v-expand-transition>
                                 </v-card>
@@ -150,7 +150,7 @@
                                                  class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                                  style="height: 100%;">
                                                 <div class="mt-3 ml-2 font-title-and-depart--adjust"> {{ item.title }} </div>
-                                                <div class="ml-2 font-title-and-depart--adjust"><b>{{ item.department }}</b></div>
+                                                <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>{{ item.department }}</b></div>
                                                 <v-btn class="ml-2 mt-2" :href="item.linkedin" target="_blank" dark icon>
                                                     <v-icon size="40px">fab fa-linkedin</v-icon>
                                                 </v-btn>
@@ -187,6 +187,13 @@
                     linkedin: 'https://www.linkedin.com/in/billynaveed/'
                 },
                 {
+                    img:require('../assets/speakers2020/joel.png'),
+                    name: 'Joel Bar-El',
+                    title: 'Co-founder & CEO',
+                    department: 'Trax',
+                    linkedin: 'https://www.linkedin.com/in/joelbarel/'
+                },
+                {
                     img:require('../assets/speakers2020/julian.png'),
                     name: 'Julian Koo',
                     title: 'Co-Founder & CEO',
@@ -201,11 +208,25 @@
                     linkedin: 'https://www.linkedin.com/in/khorqianyi/'
                 },
                 {
+                    img:require('../assets/speakers2020/lcl.jpg'),
+                    name: 'Choong Luen Lien',
+                    title: 'Singapore General Manager',
+                    department: 'GOJEK',
+                    linkedin: 'https://www.linkedin.com/in/choong-luen-lien-0322923/?originalSubdomain=sg'
+                },
+                {
                     img:require('../assets/speakers2020/michele.jpg'),
                     name: 'Michele Ferrario',
                     title: 'Co-Founder & CEO',
                     department: 'StashAway',
                     linkedin: 'https://www.linkedin.com/in/michele-ferrario-a464211/'
+                },
+                {
+                    img:require('../assets/speakers2020/rasysid.jpg'),
+                    name: 'Muhamad Fajrin Rasyid',
+                    title: 'Co-founder & President',
+                    department: 'Bukalapak',
+                    linkedin: 'https://www.linkedin.com/in/fajrinrasyid/'
                 },
                 {
                     img:require('../assets/speakers2020/rayner.jpg'),
@@ -331,7 +352,7 @@
                 },
                 {
                     img: require('../assets/speakers2019/David_Fowler.png'),
-                    name: 'Yan Phun',
+                    name: 'David Fowler',
                     title: 'Director',
                     department: 'PwC Singapore\'s Venture Hub',
                     linkedin: 'https://www.linkedin.com/in/david-fowler-b8b32268/'
@@ -521,6 +542,10 @@
             font-size: 16px;
             line-height: 1;
         }
+
+        .margin-department-adjust {
+            margin-top: 4%;
+        }
     }
 
     @media only screen and (min-width: 960px) {
@@ -532,6 +557,10 @@
             line-height: 1.5;
             font-size: 20px;
             margin-bottom: 0px;
+        }
+
+        .margin-department-adjust {
+            margin-top: 0;
         }
     }
 

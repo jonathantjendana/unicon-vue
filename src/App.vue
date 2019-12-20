@@ -63,6 +63,14 @@ html {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Graphik-Regular';
+  src: url('./assets/fonts/Graphik-Regular.woff2') format('woff2'),
+  url('./assets/fonts/Graphik-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #app {
   width: auto;
   font-family: Arial, Helvetica, sans-serif;

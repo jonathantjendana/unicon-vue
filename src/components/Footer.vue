@@ -5,7 +5,7 @@
         <v-img contain height="45" src="../assets/nes_logo.png" />
       </v-col>
       <v-spacer/>
-      <v-col cols="3" class="white--text">Copyright © 2020 - Unicon</v-col>
+      <v-col cols="3" class="white--text"><span style="font-family: Graphik-Regular">Copyright © 2020 - Unicon</span></v-col>
       <v-spacer/>
       <v-col cols="3">
         <v-btn v-for="icon in icons" :key="icon" class="margin-adjust" :href=icon.link dark icon>
