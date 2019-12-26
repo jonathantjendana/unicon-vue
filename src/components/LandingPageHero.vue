@@ -96,8 +96,7 @@
         </v-form>
 
         <div class="disc-text font-weight-bold white--text">
-          EARLY BIRD 20% DISCOUNT UNTIL 30
-          <br />NOVEMBER 2019. GRAB YOUR TICKETS TODAY!
+          EARLY BIRD 20% DISCOUNT UNTIL 30 NOVEMBER 2019. GRAB YOUR TICKETS TODAY!
         </div>
       </v-col>
         <v-col cols=0 md="2"></v-col>
@@ -169,36 +168,6 @@ export default {
   /* height: 100vh; */
 }
 
-@media only screen and (min-width: 960px) {
-  .home-hero {
-    height: 100vh;
-  }
-
-  .right-details {
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-
-    .left-details {
-        margin-top: 5%;
-    }
-
-    .right-details {
-        margin-top: 5%;
-    }
-    .submit {
-        margin-bottom: 10%;
-        width: 100%;
-    }
-
-    .findOut {
-        margin-top: 5%;
-        width: 100%;
-    }
-}
-
 .year-logo {
   height: 18px;
   padding-right: 5%;
@@ -250,5 +219,41 @@ export default {
 
 .textfield {
   width: 100%;
+}
+
+@media only screen and (min-width: 960px) {
+  .home-hero {
+    height: 100vh;
+  }
+
+  .right-details {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .left-details {
+        margin-top: 5%;
+    }
+
+    .right-details {
+        margin-top: 5%;
+    }
+    .submit {
+        margin-bottom: 10%;
+        width: 100%;
+    }
+
+    .findOut {
+        margin-top: 5%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+    .home-hero {
+        height: auto;
+    }
 }
 </style>

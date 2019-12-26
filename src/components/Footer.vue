@@ -2,16 +2,17 @@
   <v-footer class="indigo">
     <v-row align="center" justify="center">
       <v-col cols="3">
-        <v-img contain height="45" src="../assets/nes_logo.png" />
+        <v-img contain :aspect-ratio="getAspectRatio" src="../assets/nes_logo.png" />
       </v-col>
       <v-spacer/>
-      <v-col cols="3" class="white--text"><span style="font-family: Graphik-Regular">Copyright © 2020 - Unicon</span></v-col>
+      <v-col cols="3" md="3" class="d-none d-sm-block white--text"><span style="font-family: Graphik-Regular">Copyright © 2020 - Unicon</span></v-col>
       <v-spacer/>
-      <v-col cols="3">
+      <v-col cols="5" md="3">
         <v-btn v-for="icon in icons" :key="icon" class="margin-adjust" :href=icon.link dark icon>
           <v-icon size="24px">{{ icon.icon }}</v-icon>
         </v-btn>
       </v-col>
+      <v-col cols ="12" class="d-md-none white--text"><span style="font-family: Graphik-Regular">Copyright © 2020 - Unicon</span></v-col>
 
     </v-row>
   </v-footer>
@@ -34,7 +35,16 @@ export default {
             link: 'https://www.instagram.com/unicon.2020/?hl=en'
         },
     ]
-  })
+  }),
+  computed: {
+      getAspectRatio : function() {
+          if (this.$vuetify.breakpoint.name != 'xs') {
+              return 10;
+          } else {
+              return 3;
+          }
+      }
+  }
 };
 </script>
 

@@ -54,15 +54,15 @@
 
       <v-row>
         <template v-for="(person, index) in personsPromo">
-          <v-col :key="index">
+          <v-col :key="index" cols="12" md="6">
             <v-card class="d-inline-block profile" :class="{profile2: index == 1}">
               <v-container>
                 <v-row>
-                  <v-col cols="5">
-                    <v-img height="200" width="300" src="../assets/foto-sushi-1.png"></v-img>
+                  <v-col cols="12" md="5">
+                    <v-img src="../assets/foto-sushi-1.png" aspect-ratio="1"></v-img>
                   </v-col>
 
-                  <v-col cols="6" class="text-left">
+                  <v-col cols="12" md="5" class="text-left">
                     <v-row class="fill-height" justify="start">
                       <v-col class="white--text font-weight-bold title" col="10">
                         {{ person.name}}
@@ -99,6 +99,8 @@
                     {{person.name}}
                     <br />
                     {{person.Designation}}
+                    <br />
+                    {{person.Company}}
                   </v-card-title>
                 </v-img>
               </v-card>
@@ -128,7 +130,7 @@
                     dark
                     min-width="40%"
                     height="40px"
-                    href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" 
+                    href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
                     target="_blank"
                   >REGISTER NOW</v-btn>
                 </v-card-text>
@@ -152,7 +154,7 @@
                     dark
                     min-width="40%"
                     height="40px"
-                    href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" 
+                    href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
                     target="_blank"
                   >REGISTER NOW</v-btn>
                 </v-card-text>
@@ -174,12 +176,12 @@
 
       <v-row
         justify="center"
-        class="title black--text text-xs-center mt-5  mb-12"
+        class="title black--text text-xs-center mt-5 mb-12"
       >Hear from these inspiring speakers. Check back as we continue to add more</v-row>
 
       <v-row justify="space-around">
         <template v-for="(company, index) in companies">
-          <v-col :key="index" sm="12" md="6" lg="2">
+          <v-col :key="index" cols="4" md="6" lg="2">
             <v-flex>
               <v-card
                 class="company d-flex align-center"
@@ -218,18 +220,16 @@
           dark
           min-width="20%"
           height="60px"
+          href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
+          target="_blank"
         >REGISTER NOW</v-btn>
       </v-row>
-        <v-row align="end"  class="footer black--text">
-
-        </v-row>
-
+      <v-row align="end" class="footer black--text"></v-row>
     </v-container>
   </v-container>
 </template>
 
 <script>
-
 export default {
   name: "LandingPageDetails",
   data() {
@@ -249,14 +249,14 @@ export default {
         }
       ],
       persons: [
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" },
-        { name: "John Doe", Designation: "CEO, Facebook" }
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" },
+        { name: "John Doe", Designation: "CEO", Company: "Facebook" }
       ],
       companies: [
         { name: "Amazon", img: "Amazon.png" },
@@ -317,7 +317,7 @@ export default {
 .profile {
   width: 100%;
   padding-bottom: 5%;
-  background: #303f9f !important; 
+  background: #303f9f !important;
 }
 
 .profile2 {
@@ -368,7 +368,7 @@ export default {
 }
 
 .footer {
-    margin-top: 14%;
+  margin-top: 14%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -389,6 +389,15 @@ export default {
   .pricing {
     margin-top: 20%;
   }
-}
 
+  .profile3 {
+    padding-bottom: 5%;
+    background: #303f9f !important;
+  }
+
+  .profile4 {
+    padding-bottom: 5%;
+    background: #26c1bf !important;
+  }
+}
 </style>

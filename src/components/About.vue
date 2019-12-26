@@ -1,15 +1,15 @@
 <template>
   <v-container fluid>
     <v-row align="center" justify="center" class="unicon-what mt-n3 py-9">
-      <v-spacer></v-spacer>
-      <v-col cols="12" md="5">
-        <div class="display-2 font-weight-bold">
-          What is
-          <span class="unicon-headline">Unicon</span>?
+      <!-- <v-spacer></v-spacer> -->
+      <v-col cols="12" md="6">
+        <div>
+          <span class="about font-weight-bold">About &nbsp;</span>
+          <span class="unicon-headline">Unicon</span>
         </div>
 
         <v-row align="center" justify="center">
-          <v-col cols="12" md="6">
+          <v-col cols="10" md="5">
             <div class="text-center">
               <v-hover v-slot:default="{ hover }" :value="value">
                 <v-btn
@@ -29,8 +29,9 @@
               </v-hover>
             </div>
           </v-col>
-          <v-col cols="12" md="6">
-            <div class="text-center">
+
+          <v-col cols="10" md="5">
+            <div class="text-center recap2019Btn">
               <v-hover v-slot:default="{ hover }" :value="value">
                 <v-btn
                   x-large
@@ -68,12 +69,16 @@
     <br />
     <v-row align="center" justify="center">
       <v-col class="image-box">
-        <span class="venue-details">
-          <v-img contain src="../assets/logo2.svg" height="175" />will be happening on
+        <div class="venue-details">
+          <v-img contain src="../assets/logo2.svg" aspect-ratio="4.5" />
           <br />
-          <u>22 - 23 February 2020</u>
-          <br />@NUS University Town, Singapore
-        </span>
+          <v-icon color="white" x-large>mdi-calendar</v-icon>&nbsp;
+          22 - 23 February 2020
+          <br />
+          <span class="mt-5">
+            <v-icon color="white" x-large>mdi-periscope</v-icon>&nbsp;NUS University Town, Singapore
+          </span>
+        </div>
       </v-col>
     </v-row>
     <!-- end of unicon 2020 -->
@@ -81,28 +86,33 @@
     <!-- start of unicon 2019 stats  -->
     <v-row align="center" justify="center" class="stats-header">
       <!--<span class="unicon-headline indigo&#45;&#45;text text&#45;&#45;darken-2 underline&#45;&#45;magical">unicon <span class="text&#45;&#45;primary" style="font-family: Graphik-Bold; font-size: 64px">2019</span></span>-->
-      <img class="mt-12" src="../assets/unicon2019_logo.svg" />
+      <v-img
+        class="mt-12"
+        src="../assets/unicon2019_logo.svg"
+        contain
+        :aspect-ratio="getAspectRatio"
+      />
     </v-row>
 
-    <v-row class="mt-12" align="center" justify="center">
+    <v-row class="mt-12 stats" align="center" justify="center">
       <v-spacer />
       <v-col cols="12" md="3">
         <div>
-          <span class="display-4 font-weight-bold">20</span>
+          <span class="statsNo font-weight-bold">20</span>
           <br />
           <span class="stats-title">Speakers</span>
         </div>
       </v-col>
       <v-col cols="12" md="3">
         <div>
-          <span class="display-4 font-weight-bold">500+</span>
+          <span class="statsNo font-weight-bold">500+</span>
           <br />
           <span class="stats-title mt-2">Tickets Sold</span>
         </div>
       </v-col>
       <v-col cols="12" md="3">
         <div>
-          <span class="display-4 font-weight-bold">19+</span>
+          <span class="statsNo font-weight-bold">19+</span>
           <br />
           <span class="stats-title">Partner Universities</span>
         </div>
@@ -111,25 +121,31 @@
     </v-row>
 
     <v-row align="center" justify="center" class="speakers">
+      <!-- <v-col cols="10"> -->
       <v-btn
-        class="ma-2"
+        class="ma-2 no-text-transform"
         x-large
         outlined
         color="indigo"
         href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
         target="_blank"
+        max-width="80%"
       >
-        <span style="font-family: Graphik-Bold">Get your UNICON 2020 tickets now!</span>
+        <div class="getTixBtn" style="white-space: normal; font-family: Graphik-Bold;">
+          <span>Get your UNICON 2020</span>
+          <span>tickets now!</span>
+        </div>
       </v-btn>
+      <!-- </v-col> -->
     </v-row>
     <!-- end of unicon 2019 stats  -->
-    <v-layout column wrap class="my-12" align-center>
+    <v-row align="center" class="my-12" justify="center">
       <div class="text-center">
         <h2 class="mb-8 mt-6 dark indigo--text" style="font-family: Graphik-Bold; font-size: 34px">
-          <b>UNICON Partners</b>
+          <b>Our Partners</b>
         </h2>
       </div>
-      <v-tabs class="mb-10" background-color="transparent" color="blue" centered>
+      <v-tabs class="mb-10" background-color="transparent" color="blue" centered fixed-tabs>
         <v-tab>
           <h2 class="partner-h2">Sponsors</h2>
         </v-tab>
@@ -198,7 +214,7 @@
           </v-container>
         </v-tab-item>
       </v-tabs>
-    </v-layout>
+    </v-row>
   </v-container>
 </template>
 
@@ -338,6 +354,15 @@ export default {
 
       this.loader = null;
     }
+  },
+  computed: {
+    getAspectRatio: function() {
+      if (this.$vuetify.breakpoint.name != "xs") {
+        return 10;
+      } else {
+        return 5;
+      }
+    }
   }
 };
 </script>
@@ -356,10 +381,26 @@ export default {
   color: #303f9f;
 }
 
-.stats-title {
-  font-size: 1.5rem !important;
+.about {
+  font-size: calc(45px + (26-14) * ((100vw - 300px) / (1600 -300)));
+  line-height: calc(1em + (1.5-1.2) * ((100vw - 300px) / (1600 -300)));
   font-weight: 400;
-  line-height: 5rem;
+  letter-spacing: -0.02625em  !important;
+  font-family: "Graphik-Regular";
+}
+
+.statsNo {
+  font-size: calc(60px + (26-14) * ((100vw - 300px) / (1600 -300)));
+  line-height: calc(1.2em + (1.5-1.2) * ((100vw - 300px) / (1600 -300)));
+  font-weight: 300;
+  letter-spacing: -0.015625em !important;
+  font-family: "Graphik-Regular";
+}
+
+.stats-title {
+  font-size: calc(16px + (26-14) * ((100vw - 300px) / (1600 -300)));
+  line-height: calc(2em + (1.5-1.2) * ((100vw - 300px) / (1600 -300)));
+  font-weight: 400;
   letter-spacing: normal !important;
   font-family: "Roboto", sans-serif !important;
 }
@@ -394,9 +435,10 @@ export default {
 }
 
 .venue-details {
-  font-size: 3rem !important;
+  /* font-size: 3rem !important; */
+  font-size: calc(20px + (26-14) * ((100vw - 300px) / (1600 -300)));
+  line-height: calc(1.3em + (1.5-1.2) * ((100vw - 300px) / (1600 -300)));
   font-weight: bolder;
-  line-height: 5rem;
   letter-spacing: normal !important;
   font-family: "Graphik-Bold";
 }
@@ -428,14 +470,15 @@ hr {
 
   /* Here's the same styles we applied to our content-div earlier */
   color: white;
-  min-height: 100vh;
+  min-height: 95vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  /* Add a transition, just for fun */
-  /* transition: box-shadow 0.3s ease-out; */
+.stats {
+  margin-bottom: 1%;
 }
 
 @media only screen and (min-width: 240px) {
@@ -457,6 +500,21 @@ hr {
   .partner-h2 {
     font-size: 23px;
     color: black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .unicon-what {
+    height: auto;
+    margin-bottom: -10%;
+  }
+
+  .getTixBtn span:last-of-type {
+    display: block;
+  }
+
+  .recap2019Btn {
+    margin-top: -8%;
   }
 }
 </style>

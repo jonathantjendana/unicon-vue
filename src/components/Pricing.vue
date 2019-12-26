@@ -4,8 +4,8 @@
             <h2 class="mt-6 dark indigo--text" style="font-family: Graphik-Bold; font-size: 34px"><b>Ticket Pricing</b></h2>
         </div>
         <v-row class="fill-height mb-10" align="center" justify="center">
-            <v-col>
-                <v-card class="mx-auto mt-10" color="grey lighten-4" height="400" width="400">
+            <v-col cols="10" md="6">
+                <v-card class="mx-auto mt-10" color="grey lighten-4" height="350" width="400">
                     <v-card-text
                             class="d-flex v-card--price font-weight-bold display-3 text-center blue darken-2 white--text"
                             style="opacity: .7">
@@ -20,15 +20,15 @@
                     </v-card-text>
                 </v-card>
             </v-col>
-            <v-col>
-                <v-card class="mx-auto mt-10" color="grey lighten-4" height="400" width="400">
+            <v-col cols="10" md="6">
+                <v-card class="mx-auto mt-10" color="grey lighten-4" height="350" width="400">
                     <v-card-text
                             class="d-flex v-card--price font-weight-bold display-3 text-center blue darken-2 white--text"
                             style="opacity: .7">
                         S$49.00
                     </v-card-text>
                     <v-card-text class="black--text title" style="position: relative">
-                        <v-btn absolute color="dark blue" class="white--text" fab large left top href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" target="_blank">
+                        <v-btn absolute color="dark blue" class="white--text" fab large right top href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" target="_blank">
                             <v-icon>mdi-cart</v-icon>
                         </v-btn>
                         <div class="font-weight-light black--text title mb-2">Public</div>
