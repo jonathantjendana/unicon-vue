@@ -23,7 +23,10 @@
                                         <v-img class="white--text align-end text-wrap" :src="item.img"
                                                height="100%" eager>
                                             <v-card-text class="layout text-left">
-                                                <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>{{ item.name }}</b></div>
+                                                <div class="mb-n7 ml-n2 font-name--adjust text-wrap"><b>{{ item.name }}</b></div>
+                                            </v-card-text>
+                                            <v-card-text class="layout text-left">
+                                                <div class="mb-n1 ml-n2 font-company--adjust text-wrap"><b>{{ item.department }}</b></div>
                                             </v-card-text>
                                         </v-img>
                                         <v-expand-transition>
@@ -538,6 +541,11 @@
             font-size: 18px;
         }
 
+        .font-company--adjust {
+            font-size: 15px;
+            color: #dddddd;
+        }
+
         .font-title-and-depart--adjust {
             font-size: 16px;
             line-height: 1;
@@ -551,6 +559,12 @@
     @media only screen and (min-width: 960px) {
         .font-name--adjust {
             font-size: 23px;
+        }
+
+        .font-company--adjust {
+            font-size: 20px;
+            color: #dddddd;
+            margin-top: 0;
         }
 
         .font-title-and-depart--adjust {
