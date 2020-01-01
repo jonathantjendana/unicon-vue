@@ -15,8 +15,8 @@
                         <v-btn absolute color="dark blue" class="white--text" fab large right top href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" target="_blank">
                             <v-icon>mdi-cart</v-icon>
                         </v-btn>
-                        <div class="font-weight-light black--text title mb-2">Students</div>
-                        <div class="font-weight-bold black--text headlines mb-2">Early Bird 20% Off</div>
+                        <div class="font-weight-light black--text mb-2" style="font-family: Graphik-Regular">Students</div>
+                        <div class="font-weight-bold black--text mb-2" style="font-family: Graphik-Bold">Early Bird 20% Off</div>
                     </v-card-text>
                 </v-card>
             </v-col>
@@ -31,8 +31,8 @@
                         <v-btn absolute color="dark blue" class="white--text" fab large right top href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" target="_blank">
                             <v-icon>mdi-cart</v-icon>
                         </v-btn>
-                        <div class="font-weight-light black--text title mb-2">Public</div>
-                        <div class="font-weight-bold black--text headlines mb-2">Open to all working adults</div>
+                        <div class="font-weight-light black--text mb-2" style="font-family: Graphik-Regular">Public</div>
+                        <div class="font-weight-bold black--text mb-2" style="font-family: Graphik-Bold">Open to all working adults</div>
                     </v-card-text>
                 </v-card>
             </v-col>

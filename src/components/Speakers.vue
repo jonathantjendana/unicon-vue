@@ -5,13 +5,13 @@
         </div>
         <v-tabs class="mb-10" background-color="transparent" color="blue" centered>
             <v-tab>
-                <h2 class="headline text--blue"><b>2020</b></h2>
+                <h2 class="text--blue" style="font-family: Graphik-Bold; font-size: 28px;"><b>2020</b></h2>
             </v-tab>
             <v-tab>
-                <h2 class="headline text--black"><b>2019</b></h2>
+                <h2 class="text--black" style="font-family: Graphik-Bold; font-size: 28px;"><b>2019</b></h2>
             </v-tab>
             <v-tab>
-                <h2 class="headline text--black"><b>2018</b></h2>
+                <h2 class="text--black" style="font-family: Graphik-Bold; font-size: 28px;"><b>2018</b></h2>
             </v-tab>
             <v-tab-item eager>
                 <v-container>
@@ -23,18 +23,16 @@
                                         <v-img class="white--text align-end text-wrap" :src="item.img"
                                                height="100%" eager>
                                             <v-card-text class="layout text-left">
-                                                <div class="mb-n7 ml-n2 font-name--adjust text-wrap"><b>{{ item.name }}</b></div>
-                                            </v-card-text>
-                                            <v-card-text class="layout text-left">
-                                                <div class="mb-n1 ml-n2 font-company--adjust text-wrap"><b>{{ item.department }}</b></div>
+                                                <div class="ml-n2 mb-n2 font-name--adjust text-wrap">{{ item.name }}
+                                                    <br><span class="font-company--adjust">{{ item.department }}</span></div>
                                             </v-card-text>
                                         </v-img>
                                         <v-expand-transition>
                                             <div v-if="hover"
                                                  class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                                  style="height: 100%;">
-                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"> {{ item.title }}</div>
-                                                <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>{{ item.department }}</b></div>
+                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"><span style="font-family: Graphik-Regular;">{{ item.title }}</span></div>
+                                                <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><span style="font-family: Graphik-Bold;">{{ item.department }}</span></div>
                                                 <v-btn class="ml-2 mt-2" :href="item.linkedin" target="_blank" dark icon>
                                                     <v-icon size="40px">fab fa-linkedin</v-icon>
                                                 </v-btn>
@@ -55,15 +53,16 @@
                                 <v-card class="mx-auto">
                                     <v-img class="white--text align-end text-wrap" :src="require('../assets/speakers2019/Chee_Hong_Tat.png')" eager>
                                         <v-card-text class="layout text-left">
-                                            <div class="ml-n2 mb-n1 text-wrap font-name--adjust"><b> Chee Hong Tat</b></div>
+                                            <div class="ml-n2 mb-n2 font-name--adjust text-wrap">Chee Hong Tat
+                                                <br><span class="font-company--adjust">MTI & MOE</span></div>
                                         </v-card-text>
                                     </v-img>
                                     <v-expand-transition>
                                         <div v-if="hover"
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
-                                            <div class="mt-3 ml-2 font-title-and-depart--adjust">Senior Minister of State</div>
-                                            <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>MTI & MOE</b></div>
+                                            <div class="mt-3 ml-2 font-title-and-depart--adjust"><span style="font-family: Graphik-Regular;">Senior Minister of State</span></div>
+                                            <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><span style="font-family: Graphik-Bold;">MTI & MOE</span></div>
                                         </div>
                                     </v-expand-transition>
                                 </v-card>
@@ -76,15 +75,16 @@
                                         <v-img class="white--text align-end text-wrap" :src="item.img"
                                                height="100%" eager>
                                             <v-card-text class="layout text-left">
-                                                <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>{{ item.name }}</b></div>
+                                                <div class="ml-n2 mb-n2 font-name--adjust text-wrap">{{ item.name }}
+                                                    <br><span class="font-company--adjust">{{ item.department }}</span></div>
                                             </v-card-text>
                                         </v-img>
                                         <v-expand-transition>
                                             <div v-if="hover"
                                                  class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                                  style="height: 100%;">
-                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"> {{ item.title }}</div>
-                                                <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>{{ item.department }}</b></div>
+                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"><span style="font-family: Graphik-Regular;">{{ item.title }}</span></div>
+                                                <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><span style="font-family: Graphik-Bold;">{{ item.department }}</span></div>
                                                 <v-btn class="ml-2 mt-2" :href="item.linkedin" target="_blank" dark icon>
                                                     <v-icon size="40px">fab fa-linkedin</v-icon>
                                                 </v-btn>
@@ -99,15 +99,16 @@
                                 <v-card class="mx-auto">
                                     <v-img class="white--text align-end text-wrap" :src="require('../assets/speakers2019/zp_lee.png')" eager>
                                         <v-card-text class="layout text-left">
-                                            <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>ZP Lee</b></div>
+                                            <div class="ml-n2 mb-n2 font-name--adjust text-wrap">ZP Lee
+                                                <br><span class="font-company--adjust">UpCode Academy</span></div>
                                         </v-card-text>
                                     </v-img>
                                     <v-expand-transition>
                                         <div v-if="hover"
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
-                                            <div class="mt-3 ml-2 font-title-and-depart--adjust">CEO & Founder</div>
-                                            <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>UpCode Academy</b></div>
+                                            <div class="mt-3 ml-2 font-title-and-depart--adjust"><span style="font-family: Graphik-Regular;">CEO & Founder</span></div>
+                                            <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><span style="font-family: Graphik-Bold;">UpCode Academy</span></div>
                                         </div>
                                     </v-expand-transition>
                                 </v-card>
@@ -124,15 +125,16 @@
                                 <v-card class="mx-auto">
                                     <v-img class="white--text align-end text-wrap" :src="require('../assets/speakers2018/janil.png')" eager>
                                         <v-card-text class="layout text-left">
-                                            <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>Dr. Janil Puthucheary</b></div>
+                                            <div class="ml-n2 mb-n2 font-name--adjust text-wrap">Dr. Janil Puthucheary
+                                                <br><span class="font-company--adjust">MCI & MOE</span></div>
                                         </v-card-text>
                                     </v-img>
                                     <v-expand-transition>
                                         <div v-if="hover"
                                              class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                              style="height: 100%;">
-                                            <div class="mt-3 ml-2 font-title-and-depart--adjust">Senior Minister of State</div>
-                                            <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>MCI & MOE</b></div>
+                                            <div class="mt-3 ml-2 font-title-and-depart--adjust"><span style="font-family: Graphik-Regular;">Senior Minister of State</span></div>
+                                            <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><span style="font-family: Graphik-Bold;">MCI & MOE</span></div>
                                         </div>
                                     </v-expand-transition>
                                 </v-card>
@@ -145,15 +147,16 @@
                                         <v-img class="white--text align-end text-wrap" :src="item.img"
                                                height="100%" eager>
                                             <v-card-text class="layout text-left">
-                                                <div class="mb-n1 ml-n2 font-name--adjust text-wrap"><b>{{ item.name }}</b></div>
+                                                <div class="ml-n2 mb-n2 font-name--adjust text-wrap">{{ item.name }}
+                                                    <br><span class="font-company--adjust">{{ item.department }}</span></div>
                                             </v-card-text>
                                         </v-img>
                                         <v-expand-transition>
                                             <div v-if="hover"
                                                  class="transition-fast-in-fast-out grey darken-3 headline v-card--reveal white--text text-left align-end"
                                                  style="height: 100%;">
-                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"> {{ item.title }} </div>
-                                                <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><b>{{ item.department }}</b></div>
+                                                <div class="mt-3 ml-2 font-title-and-depart--adjust"><span style="font-family: Graphik-Regular;">{{ item.title }}</span></div>
+                                                <div class="ml-2 font-title-and-depart--adjust margin-department-adjust"><span style="font-family: Graphik-Bold;">{{ item.department }}</span></div>
                                                 <v-btn class="ml-2 mt-2" :href="item.linkedin" target="_blank" dark icon>
                                                     <v-icon size="40px">fab fa-linkedin</v-icon>
                                                 </v-btn>
@@ -539,10 +542,12 @@
     @media only screen and (min-width: 240px) {
         .font-name--adjust {
             font-size: 18px;
+            font-family: Graphik-Bold;
+            line-height: 1.1;
         }
 
         .font-company--adjust {
-            font-size: 15px;
+            font-size: 13px;
             color: #dddddd;
         }
 
@@ -559,12 +564,13 @@
     @media only screen and (min-width: 960px) {
         .font-name--adjust {
             font-size: 23px;
+            font-family: Graphik-Bold;
+            line-height: 1.1;
         }
 
         .font-company--adjust {
-            font-size: 20px;
+            font-size: 18px;
             color: #dddddd;
-            margin-top: 0;
         }
 
         .font-title-and-depart--adjust {
