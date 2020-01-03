@@ -123,17 +123,15 @@
     <v-row align="center" justify="center" class="speakers">
       <!-- <v-col cols="10"> -->
       <v-btn
-        class="ma-2 no-text-transform"
+        class="ma-2 no-text-transform white--text"
         x-large
-        outlined
-        color="indigo"
+        color="#283593"
         href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
         target="_blank"
         max-width="80%"
       >
         <div class="getTixBtn" style="white-space: normal; font-family: Graphik-Bold;">
-          <span>Get your UNICON 2020</span>
-          <span>tickets now!</span>
+          <span>Get your UNICON 2020 tickets now!</span>
         </div>
       </v-btn>
       <!-- </v-col> -->
