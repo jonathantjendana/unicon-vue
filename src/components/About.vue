@@ -122,21 +122,22 @@
 
     <v-row align="center" justify="center" class="speakers">
       <!-- <v-col cols="10"> -->
-      <v-btn
-        class="ma-2 no-text-transform"
-        x-large
-        outlined
-        color="indigo"
-        href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
-        target="_blank"
-        max-width="80%"
-      >
-        <div class="getTixBtn" style="white-space: normal; font-family: Graphik-Bold;">
-          <span>Get your UNICON 2020</span>
-          <span>&nbsp;tickets now!</span>
-        </div>
-      </v-btn>
-      <!-- </v-col> -->
+      <v-hover v-slot:default="{ hover }" :value="value">
+        <v-btn
+          class="ma-2 no-text-transform white--text"
+          x-large
+          :elevation="hover ? 12 : 2"
+          color="#283593"
+          href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
+          target="_blank"
+          max-width="80%"
+        >
+          <div class="getTixBtn" style="white-space: normal; font-family: Graphik-Bold;">
+            <span>Get your UNICON 2020</span>
+            <span>&nbsp;tickets now!</span>
+          </div>
+        </v-btn>
+      </v-hover>
     </v-row>
     <!-- end of unicon 2019 stats  -->
     <v-row align="center" class="my-12" justify="center">
@@ -385,7 +386,7 @@ export default {
   font-size: calc(45px + (26-14) * ((100vw - 300px) / (1600 -300)));
   line-height: calc(1em + (1.5-1.2) * ((100vw - 300px) / (1600 -300)));
   font-weight: 400;
-  letter-spacing: -0.02625em  !important;
+  letter-spacing: -0.02625em !important;
   font-family: "Graphik-Regular";
 }
 
