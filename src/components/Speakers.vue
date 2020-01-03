@@ -193,6 +193,20 @@
                     linkedin: 'https://www.linkedin.com/in/billynaveed/'
                 },
                 {
+                    img:require('../assets/speakers2020/jeffrey.jpg'),
+                    name: 'Jeffrey Paine',
+                    title: 'Managing Partner',
+                    department: 'Golden Gate Ventures',
+                    linkedin: 'https://www.linkedin.com/in/jeffreypaine/?originalSubdomain=sg'
+                },
+                {
+                    img:require('../assets/speakers2020/jerrytso.png'),
+                    name: 'Jerry Tso',
+                    title: 'Senior Director & Head of Singapore Development Center',
+                    department: 'PayPal',
+                    linkedin: 'https://www.linkedin.com/in/jerry-tso/?originalSubdomain=sg'
+                },
+                {
                     img:require('../assets/speakers2020/joel.png'),
                     name: 'Joel Bar-El',
                     title: 'Co-founder & CEO',
@@ -205,6 +219,13 @@
                     title: 'Co-Founder & CEO',
                     department: 'Jaga Me',
                     linkedin: 'https://www.linkedin.com/in/juliankoo/'
+                },
+                {
+                    img: require('../assets/speakers2019/Kelvin_Teo.png'),
+                    name: 'Kelvin Teo',
+                    title: 'CEO & Co-Founder',
+                    department: 'Funding Societies',
+                    linkedin: 'https://www.linkedin.com/in/tkelvin/?originalSubdomain=sg'
                 },
                 {
                     img:require('../assets/speakers2020/khorqianyi.jpg'),
@@ -228,6 +249,20 @@
                     linkedin: 'https://www.linkedin.com/in/michele-ferrario-a464211/'
                 },
                 {
+                    img:require('../assets/speakers2020/piyush.jpg'),
+                    name: 'Piyush Gupta',
+                    title: 'Managing Director',
+                    department: 'Strategic Development at Sequoia Capital',
+                    linkedin: 'https://www.linkedin.com/in/piyush-gupta-2a8aa922/'
+                },
+                {
+                    img:require('../assets/speakers2020/prajit_nanu.png'),
+                    name: 'Prajit Nanu',
+                    title: 'Co-Founder & CEO',
+                    department: 'NIUM',
+                    linkedin: 'https://www.linkedin.com/in/prajitnanu/?originalSubdomain=sg'
+                },
+                {
                     img:require('../assets/speakers2020/rasysid.jpg'),
                     name: 'Muhamad Fajrin Rasyid',
                     title: 'Co-founder & President',
@@ -244,9 +279,16 @@
                 {
                     img:require('../assets/speakers2020/roshni.png'),
                     name: 'Roshni Mahtani',
-                    title: 'Founder & Group CEO ',
+                    title: 'Founder & Group CEO',
                     department: 'theAsianparent',
                     linkedin: 'https://www.linkedin.com/in/roshnimahtani/'
+                },
+                {
+                    img:require('../assets/speakers2020/samantha.jpg'),
+                    name: 'Samantha Soh',
+                    title: 'Co-Founder & Product Designer',
+                    department: 'ShopBack',
+                    linkedin: 'https://www.linkedin.com/in/samanthasdyl/?originalSubdomain=sg'
                 },
                 {
                     img:require('../assets/speakers2020/sun.png'),

@@ -133,7 +133,7 @@
       >
         <div class="getTixBtn" style="white-space: normal; font-family: Graphik-Bold;">
           <span>Get your UNICON 2020</span>
-          <span>tickets now!</span>
+          <span>&nbsp;tickets now!</span>
         </div>
       </v-btn>
       <!-- </v-col> -->
