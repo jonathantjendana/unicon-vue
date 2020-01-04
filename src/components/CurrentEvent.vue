@@ -26,8 +26,18 @@
                             <template v-slot:opposite>
                                 <span class="event-time indigo--text" v-text="item.time"></span>
                             </template>
-                            <v-card :color="item.color" dark>
-                                <v-card-text class="text-left white--text event-text" style="font-family: Graphik-Regular;"><div class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 18px;">{{item.time}}<br></div><span>{{item.title}}</span></v-card-text>
+                            <v-card :color="item.color" dark style="font-family: Graphik-Regular;">
+                                <v-card-text class="text-left white--text event-title">
+                                    <span class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">
+                                        {{item.time}} :
+                                    </span>
+                                    <span>
+                                        <b>{{item.title}}</b>
+                                    </span>
+                                </v-card-text>
+                                <v-card-text v-if="item.description !== ''" class="white text-left text--primary event-text">
+                                    {{item.description}}
+                                </v-card-text>
                             </v-card>
                         </v-timeline-item>
                     </v-timeline>
@@ -47,8 +57,18 @@
                             <template v-slot:opposite>
                                 <span class="event-time indigo--text" v-text="item.time"></span>
                             </template>
-                            <v-card :color="item.color" dark>
-                                <v-card-text class="text-left white--text event-text" style="font-family: Graphik-Regular;"><div class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 18px;">{{item.time}}<br></div><span>{{item.title}}</span></v-card-text>
+                            <v-card :color="item.color" dark style="font-family: Graphik-Regular;">
+                                <v-card-text class="text-left white--text event-title">
+                                    <span class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">
+                                        {{item.time}} :
+                                    </span>
+                                    <span>
+                                        <b>{{item.title}}</b>
+                                    </span>
+                                </v-card-text>
+                                <v-card-text v-if="item.description !== ''" class="white text-left text--primary event-text">
+                                    {{item.description}}
+                                </v-card-text>
                             </v-card>
                         </v-timeline-item>
                     </v-timeline>
@@ -70,15 +90,32 @@
     }
 
     @media only screen and (min-width: 240px) {
+
+        .event-title {
+            font-size: 19px;
+        }
+
         .event-text {
             font-size: 18px;
+            font-weight: bold;
         }
     }
 
     @media only screen and (min-width: 960px) {
-        .event-text {
+        .event-title {
             font-size: 22px;
         }
+
+        .event-text {
+            font-size: 17px;
+            font-weight: bold;
+        }
+    }
+
+    .item pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-family: inherit;
     }
 
 </style>
@@ -93,79 +130,94 @@
                     color: "indigo",
                     icon: "mdi-laptop",
                     time: "09:00",
-                    title: "Registration"
+                    title: "Registration",
+                    description: ''
                 },
                 {
                     color: "indigo",
                     icon: "mdi-microphone",
                     time: "09:45",
-                    title: "Opening Address"
+                    title: "Opening Address",
+                    description: ''
                 },
                 {
                     color: "indigo",
                     icon: "mdi-microphone",
                     time: "10:00",
-                    title: "Minster Speech"
+                    title: "Minster Speech",
+                    description: ''
+
                 },
                 {
                     color: "indigo",
                     icon: "mdi-microphone",
                     time: "10:30",
-                    title: "Sponsor Opening Speech"
+                    title: "Sponsor Opening Speech",
+                    description: ''
                 },
                 {
                     color: "indigo",
                     icon: "mdi-account-group",
                     time: "11:00",
-                    title: "Panel Discussion 1 : Startup Dream Team"
+                    title: "Panel Discussion 1",
+                    description: 'Startup Dream Team'
                 },
                 {
                     color: "indigo",
                     icon: "mdi-food",
                     time: "11:50",
-                    title: "Lunch"
+                    title: "Lunch",
+                    description: ''
                 },
                 {
                     color: "indigo",
                     icon: "mdi-account-group",
                     time: "13:20",
-                    title: "Panel Discussion 2 : Social Entrepreneurship"
+                    title: "Panel Discussion 2",
+                    description: 'Social Entrepreneurship'
                 },
                 {
                     color: "indigo",
                     icon: "mdi-microphone-variant",
                     time: "14:10",
-                    title: "Speaking slot 2"
+                    title: "Speaking slot 2",
+                    description: ''
+
                 },
                 {
                     color: "indigo",
                     icon: "mdi-account-group",
                     time: "14:40",
-                    title: "Panel Discussion 3 :  VC and Accelerator"
+                    title: "Panel Discussion 3",
+                    description: 'VC and Accelerator'
                 },
                 {
                     color: "indigo",
                     icon: "mdi-coffee",
                     time: "15:30",
-                    title: "Break"
+                    title: "Break",
+                    description: ''
                 },
                 {
                     color: "indigo",
                     icon: "mdi-microphone-variant",
                     time: "15:45",
-                    title: "Speaking slot 3"
+                    title: "Speaking slot 3",
+                    description: ''
                 },
                 {
                     color: "indigo",
                     icon: "mdi-account-group",
                     time: "16:15",
-                    title: "Panel Discussion 4: Redefining fintech revolution"
+                    title: "Panel Discussion 4",
+                    description: 'Redefining fintech revolution'
                 },
                 {
                     color: "indigo",
                     icon: "",
                     time: "17:05",
-                    title: "Day 1 Ends"
+                    title: "Day 1 Ends",
+                    description: ''
                 },
             ],
             items_day2: [
@@ -173,79 +225,85 @@
                     color: "indigo",
                     icon: "mdi-laptop",
                     time: "09:00",
-                    title: "Registration"
+                    title: "Registration",
+                    description: ''
                 },
                 {
                     color: "indigo",
-                    icon: "mdi-microphone",
-                    time: "09:45",
-                    title: "Opening Address"
-                },
-                {
-                    color: "indigo",
-                    icon: "mdi-microphone",
+                    icon: "mdi-microphone-variant",
                     time: "10:00",
-                    title: "Minster Speech"
-                },
-                {
-                    color: "indigo",
-                    icon: "mdi-microphone",
-                    time: "10:30",
-                    title: "Sponsor Opening Speech"
+                    title: "Speaking Slot 4",
+                    description: ''
                 },
                 {
                     color: "indigo",
                     icon: "mdi-account-group",
-                    time: "11:00",
-                    title: "Panel Discussion 1 : Startup Dream Team"
+                    time: "10:30",
+                    title: "Panel Discussion 5",
+                    description: 'Women In Entrepreneurship'
+                },
+                {
+                    color: "indigo",
+                    icon: "mdi-account-group",
+                    time: "11:20",
+                    title: "Panel Discussion 6",
+                    description: 'Future of eCommerce & Globalisation'
                 },
                 {
                     color: "indigo",
                     icon: "mdi-food",
-                    time: "11:50",
-                    title: "Lunch"
+                    time: "12:10",
+                    title: "Lunch",
+                    description: ''
                 },
                 {
                     color: "indigo",
                     icon: "mdi-account-group",
-                    time: "13:20",
-                    title: "Panel Discussion 2 : Social Entrepreneurship"
+                    time: "13:25",
+                    title: "Panel Discussion 7",
+                    description: 'Growth for B2C, B2B, C2C'
                 },
                 {
                     color: "indigo",
                     icon: "mdi-microphone-variant",
-                    time: "14:10",
-                    title: "Speaking slot 2"
+                    time: "14:15",
+                    title: "Speaking slot 5",
+                    description: ''
                 },
                 {
                     color: "indigo",
                     icon: "mdi-account-group",
-                    time: "14:40",
-                    title: "Panel Discussion 3 :  VC and Accelerator"
+                    time: "14:50",
+                    title: "Panel Discussion 8",
+                    description: 'Student Entrepreneurs, youth & change'
                 },
                 {
                     color: "indigo",
                     icon: "mdi-coffee",
-                    time: "15:30",
-                    title: "Break"
+                    time: "15:20",
+                    title: "Break",
+                    description: ''
                 },
                 {
                     color: "indigo",
-                    icon: "mdi-microphone-variant",
-                    time: "15:45",
-                    title: "Speaking slot 3"
+                    icon: "mdi-stadium-variant",
+                    time: "15:40",
+                    title: "UNICON Arena",
+                    description: ''
                 },
                 {
                     color: "indigo",
-                    icon: "mdi-account-group",
-                    time: "16:15",
-                    title: "Panel Discussion 4: Redefining fintech revolution"
+                    icon: "mdi-seal-variant",
+                    time: "17:00",
+                    title: "Prize Awards",
+                    description: ''
                 },
                 {
                     color: "indigo",
                     icon: "",
-                    time: "17:05",
-                    title: "Day 1 Ends"
+                    time: "17:15",
+                    title: "Ends of UNICON2020",
+                    description: ''
                 },
             ]
         })
