@@ -27,7 +27,7 @@
                                 <span class="event-time indigo--text" v-text="item.time"></span>
                             </template>
                             <v-card :color="item.color" dark>
-                                <v-card-text class="text-left white--text" style="font-family: Graphik-Regular; font-size: 20px;"><div class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 20px;">{{item.time}}<br></div><span>{{item.title}}</span></v-card-text>
+                                <v-card-text class="text-left white--text event-text" style="font-family: Graphik-Regular;"><div class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 18px;">{{item.time}}<br></div><span>{{item.title}}</span></v-card-text>
                             </v-card>
                         </v-timeline-item>
                     </v-timeline>
@@ -48,7 +48,7 @@
                                 <span class="event-time indigo--text" v-text="item.time"></span>
                             </template>
                             <v-card :color="item.color" dark>
-                                <v-card-text class="text-left white--text" style="font-family: Graphik-Regular; font-size: 20px;"><div class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 20px;">{{item.time}}<br></div><span>{{item.title}}</span></v-card-text>
+                                <v-card-text class="text-left white--text event-text" style="font-family: Graphik-Regular;"><div class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 18px;">{{item.time}}<br></div><span>{{item.title}}</span></v-card-text>
                             </v-card>
                         </v-timeline-item>
                     </v-timeline>
@@ -67,6 +67,18 @@
     .event-time {
         font-family: Graphik-Bold;
         font-size: 24px;
+    }
+
+    @media only screen and (min-width: 240px) {
+        .event-text {
+            font-size: 18px;
+        }
+    }
+
+    @media only screen and (min-width: 960px) {
+        .event-text {
+            font-size: 22px;
+        }
     }
 
 </style>
