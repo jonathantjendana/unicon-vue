@@ -122,21 +122,6 @@
 
     <v-row align="center" justify="center" class="speakers">
       <!-- <v-col cols="10"> -->
-<<<<<<< HEAD
-      <v-btn
-        class="ma-2 no-text-transform white--text"
-        x-large
-        color="#283593"
-        href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
-        target="_blank"
-        max-width="80%"
-      >
-        <div class="getTixBtn" style="white-space: normal; font-family: Graphik-Bold;">
-          <span>Get your UNICON 2020 tickets now!</span>
-        </div>
-      </v-btn>
-      <!-- </v-col> -->
-=======
       <v-hover v-slot:default="{ hover }" :value="value">
         <v-btn
           class="ma-2 no-text-transform white--text"
@@ -153,7 +138,6 @@
           </div>
         </v-btn>
       </v-hover>
->>>>>>> 4a97567f19d25a5d1ae74ba14828f0b428517d39
     </v-row>
     <!-- end of unicon 2019 stats  -->
     <v-row align="center" class="my-12" justify="center">
