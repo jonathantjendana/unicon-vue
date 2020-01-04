@@ -16,7 +16,7 @@
                 <v-container>
                     <v-timeline :dense="$vuetify.breakpoint.smAndDown">
                         <v-timeline-item
-                                v-for="(item, i) in items_day2"
+                                v-for="(item, i) in items_day1"
                                 :key="i"
                                 :color="item.color"
                                 :icon="item.icon"
@@ -37,7 +37,7 @@
                 <v-container>
                     <v-timeline :dense="$vuetify.breakpoint.smAndDown">
                         <v-timeline-item
-                                v-for="(item, i) in items_day1"
+                                v-for="(item, i) in items_day2"
                                 :key="i"
                                 :color="item.color"
                                 :icon="item.icon"
