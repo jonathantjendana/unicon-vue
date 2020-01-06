@@ -1,3 +1,82 @@
+<!--<template>-->
+    <!--&lt;!&ndash;<v-bottom-sheet v-model="sheet" inset eager>&ndash;&gt;-->
+    <!--&lt;!&ndash;<template v-slot:activator="{ on }">&ndash;&gt;-->
+    <!--<v-layout column wrap class="my-12" align-center>-->
+        <!--<div class="text-center">-->
+            <!--<h2 class="mb-8 mt-6 dark indigo&#45;&#45;text" style="font-family: Graphik-Bold; font-size: 34px"><b>Agenda</b></h2>-->
+        <!--</div>-->
+        <!--<v-tabs class="mb-10" background-color="transparent" color="blue" centered>-->
+            <!--<v-tab>-->
+                <!--<h2 class="text&#45;&#45;blue"><b>Day 1</b></h2>-->
+            <!--</v-tab>-->
+            <!--<v-tab>-->
+                <!--<h2 class="text&#45;&#45;blue"><b>Day 2</b></h2>-->
+            <!--</v-tab>-->
+            <!--<v-tab-item>-->
+                <!--<v-container>-->
+                    <!--<v-timeline :dense="$vuetify.breakpoint.smAndDown">-->
+                        <!--<v-timeline-item-->
+                                <!--v-for="(item, i) in items_day1"-->
+                                <!--:key="i"-->
+                                <!--:color="item.color"-->
+                                <!--:icon="item.icon"-->
+                                <!--fill-dot-->
+                                <!--class="mt-12"-->
+                        <!--&gt;-->
+                            <!--<template v-slot:opposite>-->
+                                <!--<span class="event-time indigo&#45;&#45;text" v-text="item.time"></span>-->
+                            <!--</template>-->
+                            <!--<v-card :color="item.color" dark style="font-family: Graphik-Regular;">-->
+                                <!--<v-card-text class="text-left white&#45;&#45;text event-title">-->
+                                    <!--<span class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">-->
+                                        <!--{{item.time}} :-->
+                                    <!--</span>-->
+                                    <!--<span>-->
+                                        <!--<b>{{item.title}}</b>-->
+                                    <!--</span>-->
+                                <!--</v-card-text>-->
+                                <!--<v-card-text v-if="item.description !== ''" class="white text-left text&#45;&#45;primary event-text">-->
+                                    <!--{{item.description}}-->
+                                <!--</v-card-text>-->
+                            <!--</v-card>-->
+                        <!--</v-timeline-item>-->
+                    <!--</v-timeline>-->
+                <!--</v-container>-->
+            <!--</v-tab-item>-->
+            <!--<v-tab-item>-->
+                <!--<v-container>-->
+                    <!--<v-timeline :dense="$vuetify.breakpoint.smAndDown">-->
+                        <!--<v-timeline-item-->
+                                <!--v-for="(item, i) in items_day2"-->
+                                <!--:key="i"-->
+                                <!--:color="item.color"-->
+                                <!--:icon="item.icon"-->
+                                <!--fill-dot-->
+                                <!--class="mt-12"-->
+                        <!--&gt;-->
+                            <!--<template v-slot:opposite>-->
+                                <!--<span class="event-time indigo&#45;&#45;text" v-text="item.time"></span>-->
+                            <!--</template>-->
+                            <!--<v-card :color="item.color" dark style="font-family: Graphik-Regular;">-->
+                                <!--<v-card-text class="text-left white&#45;&#45;text event-title">-->
+                                    <!--<span class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">-->
+                                        <!--{{item.time}} :-->
+                                    <!--</span>-->
+                                    <!--<span>-->
+                                        <!--<b>{{item.title}}</b>-->
+                                    <!--</span>-->
+                                <!--</v-card-text>-->
+                                <!--<v-card-text v-if="item.description !== ''" class="white text-left text&#45;&#45;primary event-text">-->
+                                    <!--{{item.description}}-->
+                                <!--</v-card-text>-->
+                            <!--</v-card>-->
+                        <!--</v-timeline-item>-->
+                    <!--</v-timeline>-->
+                <!--</v-container>-->
+            <!--</v-tab-item>-->
+        <!--</v-tabs>-->
+    <!--</v-layout>-->
+<!--</template>-->
 <template>
     <!--<v-bottom-sheet v-model="sheet" inset eager>-->
     <!--<template v-slot:activator="{ on }">-->
@@ -5,76 +84,9 @@
         <div class="text-center">
             <h2 class="mb-8 mt-6 dark indigo--text" style="font-family: Graphik-Bold; font-size: 34px"><b>Agenda</b></h2>
         </div>
-        <v-tabs class="mb-10" background-color="transparent" color="blue" centered>
-            <v-tab>
-                <h2 class="text--blue"><b>Day 1</b></h2>
-            </v-tab>
-            <v-tab>
-                <h2 class="text--blue"><b>Day 2</b></h2>
-            </v-tab>
-            <v-tab-item>
-                <v-container>
-                    <v-timeline :dense="$vuetify.breakpoint.smAndDown">
-                        <v-timeline-item
-                                v-for="(item, i) in items_day1"
-                                :key="i"
-                                :color="item.color"
-                                :icon="item.icon"
-                                fill-dot
-                                class="mt-12"
-                        >
-                            <template v-slot:opposite>
-                                <span class="event-time indigo--text" v-text="item.time"></span>
-                            </template>
-                            <v-card :color="item.color" dark style="font-family: Graphik-Regular;">
-                                <v-card-text class="text-left white--text event-title">
-                                    <span class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">
-                                        {{item.time}} :
-                                    </span>
-                                    <span>
-                                        <b>{{item.title}}</b>
-                                    </span>
-                                </v-card-text>
-                                <v-card-text v-if="item.description !== ''" class="white text-left text--primary event-text">
-                                    {{item.description}}
-                                </v-card-text>
-                            </v-card>
-                        </v-timeline-item>
-                    </v-timeline>
-                </v-container>
-            </v-tab-item>
-            <v-tab-item>
-                <v-container>
-                    <v-timeline :dense="$vuetify.breakpoint.smAndDown">
-                        <v-timeline-item
-                                v-for="(item, i) in items_day2"
-                                :key="i"
-                                :color="item.color"
-                                :icon="item.icon"
-                                fill-dot
-                                class="mt-12"
-                        >
-                            <template v-slot:opposite>
-                                <span class="event-time indigo--text" v-text="item.time"></span>
-                            </template>
-                            <v-card :color="item.color" dark style="font-family: Graphik-Regular;">
-                                <v-card-text class="text-left white--text event-title">
-                                    <span class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">
-                                        {{item.time}} :
-                                    </span>
-                                    <span>
-                                        <b>{{item.title}}</b>
-                                    </span>
-                                </v-card-text>
-                                <v-card-text v-if="item.description !== ''" class="white text-left text--primary event-text">
-                                    {{item.description}}
-                                </v-card-text>
-                            </v-card>
-                        </v-timeline-item>
-                    </v-timeline>
-                </v-container>
-            </v-tab-item>
-        </v-tabs>
+        <div class="text-center" justify="center" style="top: 50%">
+            <h2 class="dark black--text" style="font-family: Graphik-Bold; font-size: 48px"><b>Coming Soon!</b></h2>
+        </div>
     </v-layout>
 </template>
 
