@@ -210,7 +210,7 @@
                     icon: "mdi-account-group",
                     time: "16:15",
                     title: "Panel Discussion 4",
-                    description: 'Redefining fintech revolution'
+                    description: 'Redefining Fintech Revolution'
                 },
                 {
                     color: "indigo",
@@ -275,7 +275,7 @@
                     icon: "mdi-account-group",
                     time: "14:50",
                     title: "Panel Discussion 8",
-                    description: 'Student Entrepreneurs, youth & change'
+                    description: 'Student Entrepreneurs, Youth & Change'
                 },
                 {
                     color: "indigo",
@@ -302,7 +302,7 @@
                     color: "indigo",
                     icon: "",
                     time: "17:15",
-                    title: "Ends of UNICON2020",
+                    title: "End of UNICON2020",
                     description: ''
                 },
             ]

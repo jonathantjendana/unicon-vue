@@ -27,7 +27,7 @@
       <v-divider></v-divider>
       <v-list-item>
         <v-list-item-content>
-          <v-btn text to="/contact-us" @click="$vuetify.goTo(target, options)">Map</v-btn>
+          <v-btn text to="/contact-us" @click="$vuetify.goTo(target, options)">Contact Us</v-btn>
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
@@ -62,7 +62,7 @@
                 class="hidden-sm-and-down"
                 to="/contact-us"
                 @click="$vuetify.goTo(target, options)"
-        >MAP</v-btn>
+        >Contact us</v-btn>
       </v-toolbar-items>
     </v-app-bar>
   </span>
