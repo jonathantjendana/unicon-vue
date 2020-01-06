@@ -9,14 +9,14 @@
                     <v-card-text
                             class="d-flex v-card--price font-weight-bold display-3 text-center blue darken-2 white--text"
                             style="opacity: .7">
-                        S$31.20
+                        S$39.00
                     </v-card-text>
                     <v-card-text class="black--text title" style="position: relative">
                         <v-btn absolute color="dark blue" class="white--text" fab large right top href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" target="_blank">
                             <v-icon>mdi-cart</v-icon>
                         </v-btn>
-                        <div class="font-weight-light black--text mb-2" style="font-family: Graphik-Regular">Students</div>
-                        <div class="font-weight-bold black--text mb-2" style="font-family: Graphik-Bold">Early Bird 20% Off</div>
+                        <div class="font-weight-bold black--text mb-2" style="font-family: Graphik-Bold">Students</div>
+                        <div class="font-weight-light black--text mb-2" style="font-family: Graphik-Regular">Open to all universities</div>
                     </v-card-text>
                 </v-card>
             </v-col>
@@ -31,8 +31,8 @@
                         <v-btn absolute color="dark blue" class="white--text" fab large right top href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac" target="_blank">
                             <v-icon>mdi-cart</v-icon>
                         </v-btn>
-                        <div class="font-weight-light black--text mb-2" style="font-family: Graphik-Regular">Public</div>
-                        <div class="font-weight-bold black--text mb-2" style="font-family: Graphik-Bold">Open to all working adults</div>
+                        <div class="font-weight-bold black--text mb-2" style="font-family: Graphik-Bold">Public</div>
+                        <div class="font-weight-light black--text mb-2" style="font-family: Graphik-Regular">Open to all working adults</div>
                     </v-card-text>
                 </v-card>
             </v-col>

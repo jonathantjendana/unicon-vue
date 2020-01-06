@@ -293,7 +293,7 @@
                 },
                 {
                     color: "indigo",
-                    icon: "mdi-seal-variant",
+                    icon: "mdi-trophy",
                     time: "17:00",
                     title: "Prize Awards",
                     description: ''

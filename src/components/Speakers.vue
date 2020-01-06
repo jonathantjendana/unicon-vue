@@ -179,32 +179,11 @@
         data: () => ({
             items_2020: [
                 {
-                    img:require('../assets/speakers2020/arne.png'),
-                    name: 'Dr. Arne Jeroschewski',
-                    title: 'Founder & CEO',
-                    department: 'Parcel Perform',
-                    linkedin: 'https://www.linkedin.com/in/arnejero/'
-                },
-                {
-                    img:require('../assets/speakers2020/billy.png'),
-                    name: 'Billy Naveed',
-                    title: 'Head of Strategy',
-                    department: 'Zilingo',
-                    linkedin: 'https://www.linkedin.com/in/billynaveed/'
-                },
-                {
-                    img:require('../assets/speakers2020/jeffrey.jpg'),
-                    name: 'Jeffrey Paine',
-                    title: 'Managing Partner',
-                    department: 'Golden Gate Ventures',
-                    linkedin: 'https://www.linkedin.com/in/jeffreypaine/?originalSubdomain=sg'
-                },
-                {
-                    img:require('../assets/speakers2020/jerrytso.png'),
-                    name: 'Jerry Tso',
-                    title: 'Senior Director & Head of Singapore Development Center',
-                    department: 'PayPal',
-                    linkedin: 'https://www.linkedin.com/in/jerry-tso/?originalSubdomain=sg'
+                    img:require('../assets/speakers2020/rasysid.jpg'),
+                    name: 'Muhamad Fajrin Rasyid',
+                    title: 'Co-founder & President',
+                    department: 'Bukalapak',
+                    linkedin: 'https://www.linkedin.com/in/fajrinrasyid/'
                 },
                 {
                     img:require('../assets/speakers2020/joel.png'),
@@ -214,25 +193,18 @@
                     linkedin: 'https://www.linkedin.com/in/joelbarel/'
                 },
                 {
-                    img:require('../assets/speakers2020/julian.png'),
-                    name: 'Julian Koo',
-                    title: 'Co-Founder & CEO',
-                    department: 'Jaga Me',
-                    linkedin: 'https://www.linkedin.com/in/juliankoo/'
+                    img:require('../assets/speakers2020/yang.png'),
+                    name: 'Virginia Yang',
+                    title: 'Director of Developer Partnerships & Programs',
+                    department: 'APAC, Facebook',
+                    linkedin: 'https://www.linkedin.com/in/virginia-yang-05096a/'
                 },
                 {
-                    img: require('../assets/speakers2019/Kelvin_Teo.png'),
-                    name: 'Kelvin Teo',
-                    title: 'CEO & Co-Founder',
-                    department: 'Funding Societies',
-                    linkedin: 'https://www.linkedin.com/in/tkelvin/?originalSubdomain=sg'
-                },
-                {
-                    img:require('../assets/speakers2020/khorqianyi.jpg'),
-                    name: 'Khor Qianyi',
-                    title: 'CEO',
-                    department: 'Enactus SG',
-                    linkedin: 'https://www.linkedin.com/in/khorqianyi/'
+                    img:require('../assets/speakers2020/jerrytso.png'),
+                    name: 'Jerry Tso',
+                    title: 'Senior Director & Head of Singapore Development Center',
+                    department: 'PayPal',
+                    linkedin: 'https://www.linkedin.com/in/jerry-tso/?originalSubdomain=sg'
                 },
                 {
                     img:require('../assets/speakers2020/lcl.jpg'),
@@ -242,60 +214,11 @@
                     linkedin: 'https://www.linkedin.com/in/choong-luen-lien-0322923/?originalSubdomain=sg'
                 },
                 {
-                    img:require('../assets/speakers2020/michele.jpg'),
-                    name: 'Michele Ferrario',
-                    title: 'Co-Founder & CEO',
-                    department: 'StashAway',
-                    linkedin: 'https://www.linkedin.com/in/michele-ferrario-a464211/'
-                },
-                {
                     img:require('../assets/speakers2020/piyush.jpg'),
                     name: 'Piyush Gupta',
                     title: 'Managing Director',
                     department: 'Strategic Development at Sequoia Capital',
                     linkedin: 'https://www.linkedin.com/in/piyush-gupta-2a8aa922/'
-                },
-                {
-                    img:require('../assets/speakers2020/prajit_nanu.png'),
-                    name: 'Prajit Nanu',
-                    title: 'Co-Founder & CEO',
-                    department: 'NIUM',
-                    linkedin: 'https://www.linkedin.com/in/prajitnanu/?originalSubdomain=sg'
-                },
-                {
-                    img:require('../assets/speakers2020/rasysid.jpg'),
-                    name: 'Muhamad Fajrin Rasyid',
-                    title: 'Co-founder & President',
-                    department: 'Bukalapak',
-                    linkedin: 'https://www.linkedin.com/in/fajrinrasyid/'
-                },
-                {
-                    img:require('../assets/speakers2020/rayner.jpg'),
-                    name: 'Rayner Loi',
-                    title: 'Co-Founder & CEO',
-                    department: 'Good For Food',
-                    linkedin: 'https://www.linkedin.com/in/raynerloi/'
-                },
-                {
-                    img:require('../assets/speakers2020/roshni.png'),
-                    name: 'Roshni Mahtani',
-                    title: 'Founder & Group CEO',
-                    department: 'theAsianparent',
-                    linkedin: 'https://www.linkedin.com/in/roshnimahtani/'
-                },
-                {
-                    img:require('../assets/speakers2020/samantha.jpg'),
-                    name: 'Samantha Soh',
-                    title: 'Co-Founder & Product Designer',
-                    department: 'ShopBack',
-                    linkedin: 'https://www.linkedin.com/in/samanthasdyl/?originalSubdomain=sg'
-                },
-                {
-                    img:require('../assets/speakers2020/sun.png'),
-                    name: 'Pocket Sun',
-                    title: 'Co-Founder & Managing Partner',
-                    department: 'SoGal Ventures',
-                    linkedin: 'https://www.linkedin.com/in/pocketsun/'
                 },
                 {
                     img:require('../assets/speakers2020/vishal.jpeg'),
@@ -305,12 +228,117 @@
                     linkedin: 'https://www.linkedin.com/in/vishalharnal/'
                 },
                 {
-                    img:require('../assets/speakers2020/yang.png'),
-                    name: 'Virginia Yang',
-                    title: 'Director of Developer Partnerships & Programs',
-                    department: 'APAC, Facebook',
-                    linkedin: 'https://www.linkedin.com/in/virginia-yang-05096a/'
-                }
+                    img:require('../assets/speakers2020/jeffrey.jpg'),
+                    name: 'Jeffrey Paine',
+                    title: 'Managing Partner',
+                    department: 'Golden Gate Ventures',
+                    linkedin: 'https://www.linkedin.com/in/jeffreypaine/?originalSubdomain=sg'
+                },
+                {
+                    img:require('../assets/speakers2020/sun.png'),
+                    name: 'Pocket Sun',
+                    title: 'Co-Founder & Managing Partner',
+                    department: 'SoGal Ventures',
+                    linkedin: 'https://www.linkedin.com/in/pocketsun/'
+                },
+                {
+                    img:require('../assets/speakers2020/billy.png'),
+                    name: 'Billy Naveed',
+                    title: 'Head of Strategy',
+                    department: 'Zilingo',
+                    linkedin: 'https://www.linkedin.com/in/billynaveed/'
+                },
+                {
+                    img:require('../assets/speakers2020/sam_too.jpg'),
+                    name: 'Sam Too',
+                    title: 'Managing Director Singapore',
+                    department: 'Qoo10',
+                    linkedin: 'https://www.linkedin.com/in/sam-too-10248366/?originalSubdomain=sg'
+                },
+                {
+                    img:require('../assets/speakers2020/samantha.jpg'),
+                    name: 'Samantha Soh',
+                    title: 'Co-Founder & Product Designer',
+                    department: 'ShopBack',
+                    linkedin: 'https://www.linkedin.com/in/samanthasdyl/?originalSubdomain=sg'
+                },
+                {
+                    img:require('../assets/speakers2020/prajit_nanu.png'),
+                    name: 'Prajit Nanu',
+                    title: 'Co-Founder & CEO',
+                    department: 'NIUM',
+                    linkedin: 'https://www.linkedin.com/in/prajitnanu/?originalSubdomain=sg'
+                },
+                {
+                    img: require('../assets/speakers2020/oliver.png'),
+                    name: 'Oliver Tan',
+                    title: 'Co-Founder, CEO',
+                    department: 'Visenze',
+                    linkedin: 'https://www.linkedin.com/in/oliver-tan-277b0127/'
+                },
+                {
+                    img: require('../assets/speakers2019/Kelvin_Teo.png'),
+                    name: 'Kelvin Teo',
+                    title: 'CEO & Co-Founder',
+                    department: 'Funding Societies',
+                    linkedin: 'https://www.linkedin.com/in/tkelvin/?originalSubdomain=sg'
+                },
+                {
+                    img: require('../assets/speakers2020/kelvin_lam.jpg'),
+                    name: 'Kelvin Lam',
+                    title: 'Managing Director Singapore',
+                    department: 'YouTrip',
+                    linkedin: 'https://www.linkedin.com/in/kelvinlamlkh/?originalSubdomain=sg'
+                },
+                {
+                    img:require('../assets/speakers2020/michele.jpg'),
+                    name: 'Michele Ferrario',
+                    title: 'Co-Founder & CEO',
+                    department: 'StashAway',
+                    linkedin: 'https://www.linkedin.com/in/michele-ferrario-a464211/'
+                },
+                {
+                    img:require('../assets/speakers2020/arne.png'),
+                    name: 'Dr. Arne Jeroschewski',
+                    title: 'Founder & CEO',
+                    department: 'Parcel Perform',
+                    linkedin: 'https://www.linkedin.com/in/arnejero/'
+                },
+                {
+                    img:require('../assets/speakers2020/roshni.png'),
+                    name: 'Roshni Mahtani',
+                    title: 'Founder & Group CEO',
+                    department: 'theAsianparent',
+                    linkedin: 'https://www.linkedin.com/in/roshnimahtani/'
+                },
+                {
+                    img:require('../assets/speakers2020/rayner.jpg'),
+                    name: 'Rayner Loi',
+                    title: 'Co-Founder & CEO',
+                    department: 'Good For Food',
+                    linkedin: 'https://www.linkedin.com/in/raynerloi/'
+                },
+                {
+                    img:require('../assets/speakers2020/julian.png'),
+                    name: 'Julian Koo',
+                    title: 'Co-Founder & CEO',
+                    department: 'Jaga Me',
+                    linkedin: 'https://www.linkedin.com/in/juliankoo/'
+                },
+                {
+                    img:require('../assets/speakers2020/khorqianyi.jpg'),
+                    name: 'Khor Qianyi',
+                    title: 'CEO',
+                    department: 'Enactus SG',
+                    linkedin: 'https://www.linkedin.com/in/khorqianyi/'
+                },
+
+
+
+
+
+
+
             ],
 
             items_2019: [
