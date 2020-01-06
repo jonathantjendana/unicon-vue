@@ -76,7 +76,10 @@
           22 - 23 February 2020
           <br />
           <span class="mt-5">
-            <v-icon color="white" x-large>mdi-periscope</v-icon>&nbsp;NUS University Town, Singapore
+            <v-icon color="white" x-large>mdi-periscope</v-icon>
+            <v-chip outlined label link text large class="white--text venue-details" @click="$vuetify.goTo(target, options); moveToMap();">
+              NUS University Town, Singapore
+            </v-chip>
           </span>
         </div>
       </v-col>
@@ -220,6 +223,8 @@
 </template>
 
 <script>
+    import * as easings from "vuetify/lib/services/goto/easing-patterns";
+
 export default {
   name: "About",
   date: () => ({
@@ -228,6 +233,13 @@ export default {
     closeDelay: "0",
     value: false
   }),
+
+    methods: {
+      moveToMap: function () {
+          this.$router.push({path: 'contact-us'})
+      }
+    },
+
   data: () => ({
     university_img: [
       {
@@ -344,7 +356,14 @@ export default {
         img: require("../assets/Communities/tie.png"),
         link: "https://singapore.tie.org/"
       }
-    ]
+    ],
+      type: 'selector',
+      selector: '#scroll-with-options',
+      duration: 1000,
+      delayTime: 1000,
+      offset: 50,
+      easing: 'easeInOutCubic',
+      easings: Object.keys(easings),
   }),
   watch: {
     loader() {
@@ -363,8 +382,21 @@ export default {
       } else {
         return 5;
       }
-    }
-  }
+    },
+      target() {
+          const value = this[this.type]
+          if (!isNaN(value)) return Number(value)
+          else return value
+      },
+      options() {
+          return {
+              duration: this.duration,
+              offset: this.offset,
+              easing: this.easing
+          };
+      },
+  },
+
 };
 </script>
 
@@ -442,6 +474,7 @@ export default {
   font-weight: bolder;
   letter-spacing: normal !important;
   font-family: "Graphik-Bold";
+  border: transparent;
 }
 
 hr {
@@ -490,6 +523,7 @@ hr {
   .partner-h2 {
     font-size: 14px;
     color: black;
+    font-family: Graphik-Bold;
   }
 }
 
@@ -501,6 +535,7 @@ hr {
   .partner-h2 {
     font-size: 23px;
     color: black;
+    font-family: Graphik-Bold;
   }
 }
 
