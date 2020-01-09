@@ -301,7 +301,11 @@ export default {
       },
       {
         img: require("../assets/universities/tp.png")
-      }
+      },
+        {
+            img: require("../assets/universities/utm_kl.png")
+        },
+
     ],
     community_img: [
       {
@@ -355,7 +359,8 @@ export default {
       {
         img: require("../assets/Communities/tie.png"),
         link: "https://singapore.tie.org/"
-      }
+      },
+
     ],
       type: 'selector',
       selector: '#scroll-with-options',
