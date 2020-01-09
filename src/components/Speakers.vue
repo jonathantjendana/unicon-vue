@@ -193,6 +193,13 @@
                     linkedin: 'https://www.linkedin.com/in/joelbarel/'
                 },
                 {
+                    img:require('../assets/speakers2020/albert.jpg'),
+                    name: 'Albert Lucius',
+                    title: 'Chief Product Officer',
+                    department: 'OVO',
+                    linkedin: 'https://www.linkedin.com/in/albertlucius/?originalSubdomain=id'
+                },
+                {
                     img:require('../assets/speakers2020/yang.png'),
                     name: 'Virginia Yang',
                     title: 'Director of Developer Partnerships & Programs',
