@@ -176,8 +176,8 @@
                 ></v-img>
               </v-col>
               <v-col class="px-7 ml-n2 mr-n4" :key="i" cols="6" sm="3" xl="2">
-                <a href="https://ace.org.sg/" target="_blank">
-                  <v-img class="mx-7" src="../assets/Communities/ace.png" eager></v-img>
+                <a href="https://www.ovo.id/" target="_blank">
+                  <v-img class="mx-7" src="../assets/Sponsors/ovo.png" eager></v-img>
                 </a>
               </v-col>
             </v-row>
@@ -312,6 +312,10 @@ export default {
         img: require("../assets/Communities/enterprise.png"),
         link: "https://enterprise.nus.edu.sg/"
       },
+        {
+            img: require("../assets/Communities/ace.png"),
+            link: "https://ace.org.sg/"
+        },
       {
         img: require("../assets/Communities/innoway.png"),
         link: "http://en.z-innoway.com/pages/index.html"

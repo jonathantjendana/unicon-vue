@@ -27,7 +27,7 @@
                                 <!--<span class="event-time indigo&#45;&#45;text" v-text="item.time"></span>-->
                             <!--</template>-->
                             <!--<v-card :color="item.color" dark style="font-family: Graphik-Regular;">-->
-                                <!--<v-card-text class="text-left white&#45;&#45;text event-title">-->
+                                <!--<v-card-text class="text-left white&#45;&#45;text event-title mb-n1">-->
                                     <!--<span class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">-->
                                         <!--{{item.time}} :-->
                                     <!--</span>-->
@@ -36,7 +36,20 @@
                                     <!--</span>-->
                                 <!--</v-card-text>-->
                                 <!--<v-card-text v-if="item.description !== ''" class="white text-left text&#45;&#45;primary event-text">-->
-                                    <!--{{item.description}}-->
+                                    <!--<div class="mb-4">{{item.description}}</div>-->
+                                    <!--<template v-for="(speaker, j) in item.speakers">-->
+                                        <!--<div :key="j" class="text-left mb-3">-->
+                                            <!--<v-avatar size="48px">-->
+                                                <!--<img :src="speaker.img">-->
+                                            <!--</v-avatar>-->
+                                            <!--<span class="speaker-name-font-adjust">-->
+                                                <!--<b>&nbsp; {{speaker.name}}&nbsp;</b>-->
+                                            <!--</span>-->
+                                            <!--<v-chip style="font-family: Graphik-Bold;" color="indigo darken-2" class="white&#45;&#45;text">-->
+                                                <!--<span class="speaker-company-adjust">{{speaker.company}}</span>-->
+                                            <!--</v-chip>-->
+                                        <!--</div>-->
+                                    <!--</template>-->
                                 <!--</v-card-text>-->
                             <!--</v-card>-->
                         <!--</v-timeline-item>-->
@@ -58,7 +71,7 @@
                                 <!--<span class="event-time indigo&#45;&#45;text" v-text="item.time"></span>-->
                             <!--</template>-->
                             <!--<v-card :color="item.color" dark style="font-family: Graphik-Regular;">-->
-                                <!--<v-card-text class="text-left white&#45;&#45;text event-title">-->
+                                <!--<v-card-text class="text-left white&#45;&#45;text event-title mb-n1">-->
                                     <!--<span class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">-->
                                         <!--{{item.time}} :-->
                                     <!--</span>-->
@@ -67,7 +80,20 @@
                                     <!--</span>-->
                                 <!--</v-card-text>-->
                                 <!--<v-card-text v-if="item.description !== ''" class="white text-left text&#45;&#45;primary event-text">-->
-                                    <!--{{item.description}}-->
+                                    <!--<div class="mb-4">{{item.description}}</div>-->
+                                    <!--<template v-for="(speaker, j) in item.speakers">-->
+                                        <!--<div :key="j" class="text-left mb-3">-->
+                                            <!--<v-avatar size="48px">-->
+                                                <!--<img :src="speaker.img">-->
+                                            <!--</v-avatar>-->
+                                            <!--<span class="speaker-name-font-adjust">-->
+                                                <!--<b>&nbsp; {{speaker.name}} </b>-->
+                                            <!--</span>-->
+                                            <!--<v-chip style="font-family: Graphik-Bold;" color="indigo darken-2" class="white&#45;&#45;text">-->
+                                                <!--<span class="speaker-company-adjust">{{speaker.company}}</span>-->
+                                            <!--</v-chip>-->
+                                        <!--</div>-->
+                                    <!--</template>-->
                                 <!--</v-card-text>-->
                             <!--</v-card>-->
                         <!--</v-timeline-item>-->
@@ -111,6 +137,14 @@
             font-size: 18px;
             font-weight: bold;
         }
+
+        .speaker-name-font-adjust {
+            font-size: 13px;
+        }
+
+        .speaker-company-adjust {
+            font-size: 10px;
+        }
     }
 
     @media only screen and (min-width: 960px) {
@@ -119,8 +153,16 @@
         }
 
         .event-text {
-            font-size: 17px;
+            font-size: 20px;
             font-weight: bold;
+        }
+
+        .speaker-name-font-adjust {
+            font-size: 18px;
+        }
+
+        .speaker-company-adjust {
+            font-size: 14px;
         }
     }
 
@@ -128,6 +170,11 @@
         white-space: pre-wrap;
         word-wrap: break-word;
         font-family: inherit;
+    }
+
+    .border-adjust {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
     }
 
 </style>
@@ -172,7 +219,20 @@
                     icon: "mdi-account-group",
                     time: "11:00",
                     title: "Panel Discussion 1",
-                    description: 'Startup Dream Team'
+                    description: 'Startup Dream Team',
+                    speakers: [
+                        {
+                            img:require('../assets/speakers2020/samantha.jpg'),
+                            name: 'Samantha Soh',
+                            company: 'ShopBack'
+                        },
+                        {
+                            img:require('../assets/speakers2020/oliver.png'),
+                            name: 'Oliver Tan',
+                            company: 'Visenze'
+                        }
+
+                    ]
                 },
                 {
                     color: "indigo",
@@ -186,7 +246,25 @@
                     icon: "mdi-account-group",
                     time: "13:20",
                     title: "Panel Discussion 2",
-                    description: 'Social Entrepreneurship'
+                    description: 'Social Entrepreneurship',
+                    speakers: [
+                        {
+                            img:require('../assets/speakers2020/rayner.jpg'),
+                            name: 'Rayner Loi',
+                            company: 'Good for Food'
+                        },
+                        {
+                            img:require('../assets/speakers2020/julian.png'),
+                            name: 'Julian Koo',
+                            company: 'Jaga Me'
+                        },
+                        {
+                            img:require('../assets/speakers2020/khorqianyi.jpg'),
+                            name: 'Khor Qianyi',
+                            company: 'Enactus SG'
+                        }
+
+                    ]
                 },
                 {
                     color: "indigo",
@@ -201,7 +279,15 @@
                     icon: "mdi-account-group",
                     time: "14:40",
                     title: "Panel Discussion 3",
-                    description: 'VC and Accelerator'
+                    description: 'VC and Accelerator',
+                    speakers: [
+                        {
+                            img:require('../assets/speakers2020/khorqianyi.jpg')
+                        },
+                        {
+                            img:require('../assets/speakers2020/khorqianyi.jpg')
+                        }
+                    ]
                 },
                 {
                     color: "indigo",
@@ -222,7 +308,30 @@
                     icon: "mdi-account-group",
                     time: "16:15",
                     title: "Panel Discussion 4",
-                    description: 'Redefining Fintech Revolution'
+                    description: 'Redefining Fintech Revolution',
+                    speakers: [
+                        {
+                            img:require('../assets/speakers2020/prajit_nanu.png'),
+                            name: 'Prajit Nanu',
+                            company: 'NIUM'
+
+                        },
+                        {
+                            img:require('../assets/speakers2019/Kelvin_Teo.png'),
+                            name: 'Kelvin Teo',
+                            company: 'Funding Societies'
+                        },
+                        {
+                            img:require('../assets/speakers2020/kelvin_lam.jpg'),
+                            name: 'Kelvin Lam',
+                            company: 'YouTrip'
+                        },
+                        {
+                            img:require('../assets/speakers2020/michele.jpg'),
+                            name: 'Michele Ferrario',
+                            company: 'StashAway'
+                        }
+                    ]
                 },
                 {
                     color: "indigo",
@@ -252,14 +361,50 @@
                     icon: "mdi-account-group",
                     time: "10:30",
                     title: "Panel Discussion 5",
-                    description: 'Women In Entrepreneurship'
+                    description: 'Women In Entrepreneurship',
+                    speakers: [
+                        {
+                            img:require('../assets/speakers2020/yang.png'),
+                            name: 'Virginia Yang',
+                            company: 'Facebook'
+
+                        },
+                        {
+                            img:require('../assets/speakers2020/sun.png'),
+                            name: 'Pocket Sun',
+                            company: 'SoGal Ventures'
+                        },
+                        {
+                            img:require('../assets/speakers2020/roshni.png'),
+                            name: 'Roshni Mahtani',
+                            company: 'theAsianparent'
+                        }
+                    ]
                 },
                 {
                     color: "indigo",
                     icon: "mdi-account-group",
                     time: "11:20",
                     title: "Panel Discussion 6",
-                    description: 'Future of eCommerce & Globalisation'
+                    description: 'Future of eCommerce & Globalisation',
+                    speakers: [
+                        {
+                            img:require('../assets/speakers2020/billy.png'),
+                            name: 'Billy Naveed',
+                            company: 'Zilingo'
+                        },
+                        {
+                            img:require('../assets/speakers2020/sam_too.jpg'),
+                            name: 'Sam Too',
+                            company: 'Qoo10'
+                        },
+                        {
+                            img:require('../assets/speakers2020/arne.png'),
+                            name: 'Dr. Arne Jeroschewski',
+                            company: 'Parcel Perform'
+
+                        }
+                    ]
                 },
                 {
                     color: "indigo",
