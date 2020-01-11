@@ -4,6 +4,7 @@ import speakers from './components/Speakers';
 import landingpagehero from './components/LandingPageHero';
 import contactus from './components/ContactUs';
 import pricing from './components/Pricing';
+import gallery from './components/Gallery';
 
 const routes = [
     { path: '/', component: about },
@@ -12,6 +13,7 @@ const routes = [
     { path: '/landingpage', component: landingpagehero },
     { path: '/contact-us', component: contactus },
     { path: '/pricing', component: pricing},
+    { path: '/gallery', component: gallery}
 ];
 
 export default routes;
