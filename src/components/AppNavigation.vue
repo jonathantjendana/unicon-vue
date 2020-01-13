@@ -33,6 +33,12 @@
       <v-divider></v-divider>
       <v-list-item>
         <v-list-item-content>
+          <v-btn text to="/arena" @click="$vuetify.goTo(target, options)">Arena</v-btn>
+        </v-list-item-content>
+      </v-list-item>
+      <v-divider></v-divider>
+      <v-list-item>
+        <v-list-item-content>
           <v-btn text to="/contact-us" @click="$vuetify.goTo(target, options)">Contact Us</v-btn>
         </v-list-item-content>
       </v-list-item>
@@ -69,6 +75,12 @@
                 to="/gallery"
                 @click="$vuetify.goTo(target, options)"
         >Gallery</v-btn>
+        <v-btn
+                text
+                class="hidden-sm-and-down"
+                to="/arena"
+                @click="$vuetify.goTo(target, options)"
+        >Arena</v-btn>
         <v-btn
                 text
                 class="hidden-sm-and-down"

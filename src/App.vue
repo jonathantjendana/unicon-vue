@@ -56,17 +56,17 @@ html {
 }
 
 @font-face {
-  font-family: 'Graphik-Bold';
-  src: url('./assets/fonts/graphik-bold.woff2') format('woff2'),
-  url('./assets/fonts/graphik-Bold.woff') format('woff');
+  font-family: "Graphik-Bold";
+  src: url("./assets/fonts/graphik-bold.woff2") format("woff2"),
+    url("./assets/fonts/graphik-Bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graphik-Regular';
-  src: url('./assets/fonts/Graphik-Regular.woff2') format('woff2'),
-  url('./assets/fonts/Graphik-Regular.woff') format('woff');
+  font-family: "Graphik-Regular";
+  src: url("./assets/fonts/Graphik-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Graphik-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -112,6 +112,14 @@ html {
 
 .unicon {
   font-family: "twitchy.tvregular";
+}
+
+.graphik-reg {
+  font-family: "Graphik-Regular";
+}
+
+.graphik-bold {
+  font-family: "Graphik-Bold";
 }
 
 .custom-loader {
