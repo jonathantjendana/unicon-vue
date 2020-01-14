@@ -62,7 +62,7 @@
         </div>
       </v-row>
       <v-row justify="space-around" align="start">
-        <v-col cols="auto" class="d-md-none">
+        <v-col cols="auto" class="d-sm-none">
           <v-img contain src="../assets/first.svg" aspect-ratio="1" />
           <div class="graphik-reg">
             1<sup>st</sup> Prize
@@ -125,9 +125,9 @@ export default {
 </script>
 
 <style scoped>
-.arena-register {
+/* .arena-register {
   height: 80vh;
-}
+} */
 
 .arena-register-details {
   margin-left: 1.5%;
