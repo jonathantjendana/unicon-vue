@@ -132,7 +132,7 @@
                         x-large
                         :elevation="hover ? 12 : 2"
                         color="#283593"
-                        href="https://www.eventbrite.sg/e/unicon2020-tickets-74661820515?aff=ebdssbeac"
+                        href="https://www.eventbrite.sg/e/unicon2020-tickets-89211033603"
                         target="_blank"
                         max-width="80%"
                 >
