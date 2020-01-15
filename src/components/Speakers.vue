@@ -270,6 +270,13 @@
                     linkedin: 'https://www.linkedin.com/in/samanthasdyl/?originalSubdomain=sg'
                 },
                 {
+                    img:require('../assets/speakers2020/Manisha.jpg'),
+                    name: 'Manisha Seewal',
+                    title: 'Group CMO',
+                    department: 'Carro',
+                    linkedin: 'https://www.linkedin.com/in/manisha-seewal-13b09039/'
+                },
+                {
                     img:require('../assets/speakers2020/prajit_nanu.png'),
                     name: 'Prajit Nanu',
                     title: 'Co-Founder & CEO',
@@ -305,11 +312,25 @@
                     linkedin: 'https://www.linkedin.com/in/michele-ferrario-a464211/'
                 },
                 {
+                    img:require('../assets/speakers2020/Wai Teng.jpg'),
+                    name: 'Wai Teng Yong',
+                    title: 'Country Manager',
+                    department: 'Insider',
+                    linkedin: 'https://www.linkedin.com/in/waitengyong/?originalSubdomain=sg'
+                },
+                {
                     img:require('../assets/speakers2020/arne.png'),
                     name: 'Dr. Arne Jeroschewski',
                     title: 'Founder & CEO',
                     department: 'Parcel Perform',
                     linkedin: 'https://www.linkedin.com/in/arnejero/'
+                },
+                {
+                    img:require('../assets/speakers2020/Suen.jpg'),
+                    name: 'Sing-Suen Soon',
+                    title: 'Co-Founder',
+                    department: 'Sonder Social',
+                    linkedin: 'https://www.linkedin.com/in/singsuen-soon/?originalSubdomain=sg'
                 },
                 {
                     img:require('../assets/speakers2020/roshni.png'),
@@ -339,7 +360,13 @@
                     department: 'Enactus SG',
                     linkedin: 'https://www.linkedin.com/in/khorqianyi/'
                 },
-
+                {
+                    img:require('../assets/speakers2020/dawn.png'),
+                    name: 'Dawn Ng',
+                    title: 'Director Ecosystem Development (Incubation)',
+                    department: 'NUS Enterprise',
+                    linkedin: 'https://www.linkedin.com/in/dawn-ng-5a256012b/?originalSubdomain=sg'
+                },
 
 
 

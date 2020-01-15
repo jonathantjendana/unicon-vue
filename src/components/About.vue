@@ -310,6 +310,10 @@
             ],
             community_img: [
                 {
+                    img: require("../assets/Communities/Ambidextr.png"),
+                    link: "http://ambidextr.media/"
+                },
+                {
                     img: require("../assets/Communities/enterprise.png"),
                     link: "https://enterprise.nus.edu.sg/"
                 },
