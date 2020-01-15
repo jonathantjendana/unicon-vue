@@ -5,6 +5,7 @@ import landingpagehero from './components/LandingPageHero';
 import contactus from './components/ContactUs';
 import pricing from './components/Pricing';
 import gallery from './components/Gallery';
+import arena from './components/Arena';
 
 const routes = [
     { path: '/', component: about },
@@ -12,8 +13,9 @@ const routes = [
     { path: '/speakers', component: speakers },
     { path: '/landingpage', component: landingpagehero },
     { path: '/contact-us', component: contactus },
-    { path: '/pricing', component: pricing},
-    { path: '/gallery', component: gallery}
+    { path: '/pricing', component: pricing },
+    { path: '/gallery', component: gallery },
+    { path: '/arena', component: arena }
 ];
 
 export default routes;
