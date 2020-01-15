@@ -6,7 +6,7 @@
       </v-col>
       <v-col md="auto" cols="12">
         <div>
-          <span class="arena unicon-headline unicon">Unicon Arena 2020</span>
+          <span class="arena unicon-headline unicon">Unicon <span class="black--text">Arena 2020</span></span>
           <br />
           <div class="text-center graphik-bold arena-theme">"For Students By Students"</div>
           <div class="arena-register-details">
@@ -44,7 +44,7 @@
               <span class="unicon-headline unicon">Unicon</span> Arena?
             </span>
           </span>-->
-          <span class="arena graphik-reg indigo--text">About ARENA</span>
+          <span class="arena indigo--text "><b>About</b></span><span class="arena graphik-bold black--text"><b> ARENA</b></span>
         </div>
         <div class="graphik-reg arena-details">
           <p>UNICON ARENA is an annual pitching contest run by students.</p>
@@ -58,7 +58,7 @@
     <!-- <v-container style="height:80vh;"> -->
       <v-row justify="center" align="start" class="mb-10 mt-10">
         <div>
-          <span class="arena graphik-reg indigo--text">PRIZES</span>
+          <span class="arena graphik-bold indigo--text"><b>Prizes</b></span>
         </div>
       </v-row>
       <v-row justify="space-around" align="start">
