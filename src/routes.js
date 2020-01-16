@@ -9,7 +9,7 @@ import arena from './components/Arena';
 
 const routes = [
     { path: '/', component: about },
-    { path: '/currentevent', component: currentevent },
+    { path: '/agenda', component: currentevent },
     { path: '/speakers', component: speakers },
     { path: '/landingpage', component: landingpagehero },
     { path: '/contact-us', component: contactus },

@@ -9,7 +9,7 @@
       <v-divider></v-divider>
       <v-list-item>
         <v-list-item-content>
-          <v-btn text to="/currentevent" @click="$vuetify.goTo(target, options)">Agenda</v-btn>
+          <v-btn text to="/agenda" @click="$vuetify.goTo(target, options)">Agenda</v-btn>
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
@@ -54,7 +54,7 @@
         <v-btn
                 text
                 class="hidden-sm-and-down"
-                to="/currentevent"
+                to="/agenda"
                 @click="$vuetify.goTo(target, options)"
         >Agenda</v-btn>
         <v-btn
