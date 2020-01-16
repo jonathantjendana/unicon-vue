@@ -9,7 +9,7 @@
           <span class="arena unicon-headline unicon">Unicon <span class="black--text">Arena 2020</span></span>
           <br />
           <div class="text-center graphik-bold arena-theme">"For Students By Students"</div>
-          <div class="arena-register-details">
+          <div class="arena-register-details graphik-reg">
             <br />1<sup>st</sup> Round: 6th February 2020
             <br />Final Round: 23rd February 2020
             <br/>
@@ -44,7 +44,7 @@
               <span class="unicon-headline unicon">Unicon</span> Arena?
             </span>
           </span>-->
-          <span class="arena indigo--text "><b>About</b></span><span class="arena graphik-bold black--text"><b> ARENA</b></span>
+          <span class="arena indigo--text graphik-bold"><b>About</b></span><span class="arena graphik-bold black--text"><b> ARENA</b></span>
         </div>
         <div class="graphik-reg arena-details">
           <p>UNICON ARENA is an annual pitching contest run by students.</p>
@@ -113,7 +113,7 @@
           </div>
         </v-col>
       </v-row>
-      <v-row align="center" justify="center" class="mt-8 mb-10"><div class="prize-8">^Top 8 teams to walk away with<span> $5,000 Amazon Web Services (AWS) credits.</span></div></v-row>
+      <v-row align="center" justify="center" class="mt-8 mb-10"><div class="prize-8 graphik-reg">^Top 8 teams to walk away with<span> $5,000 Amazon Web Services (AWS) credits.</span></div></v-row>
     <!-- </v-container> -->
   </v-container>
 </template>
