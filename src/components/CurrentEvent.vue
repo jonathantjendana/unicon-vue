@@ -1,108 +1,3 @@
-<!--<template>-->
-    <!--&lt;!&ndash;<v-bottom-sheet v-model="sheet" inset eager>&ndash;&gt;-->
-    <!--&lt;!&ndash;<template v-slot:activator="{ on }">&ndash;&gt;-->
-    <!--<v-layout column wrap class="my-12" align-center>-->
-        <!--<div class="text-center">-->
-            <!--<h2 class="mb-8 mt-6 dark indigo&#45;&#45;text" style="font-family: Graphik-Bold; font-size: 34px"><b>Agenda</b></h2>-->
-        <!--</div>-->
-        <!--<v-tabs class="mb-10" background-color="transparent" color="blue" centered>-->
-            <!--<v-tab>-->
-                <!--<h2 class="text&#45;&#45;blue"><b>Day 1</b></h2>-->
-            <!--</v-tab>-->
-            <!--<v-tab>-->
-                <!--<h2 class="text&#45;&#45;blue"><b>Day 2</b></h2>-->
-            <!--</v-tab>-->
-            <!--<v-tab-item>-->
-                <!--<v-container>-->
-                    <!--<v-timeline :dense="$vuetify.breakpoint.smAndDown">-->
-                        <!--<v-timeline-item-->
-                                <!--v-for="(item, i) in items_day1"-->
-                                <!--:key="i"-->
-                                <!--:color="item.color"-->
-                                <!--:icon="item.icon"-->
-                                <!--fill-dot-->
-                                <!--class="mt-12"-->
-                        <!--&gt;-->
-                            <!--<template v-slot:opposite>-->
-                                <!--<span class="event-time indigo&#45;&#45;text" v-text="item.time"></span>-->
-                            <!--</template>-->
-                            <!--<v-card :color="item.color" dark style="font-family: Graphik-Regular;">-->
-                                <!--<v-card-text class="text-left white&#45;&#45;text event-title mb-n1">-->
-                                    <!--<span class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">-->
-                                        <!--{{item.time}} :-->
-                                    <!--</span>-->
-                                    <!--<span>-->
-                                        <!--<b>{{item.title}}</b>-->
-                                    <!--</span>-->
-                                <!--</v-card-text>-->
-                                <!--<v-card-text v-if="item.description !== ''" class="white text-left text&#45;&#45;primary event-text">-->
-                                    <!--<div class="mb-4">{{item.description}}</div>-->
-                                    <!--<template v-for="(speaker, j) in item.speakers">-->
-                                        <!--<div :key="j" class="text-left mb-3">-->
-                                            <!--<v-avatar size="48px">-->
-                                                <!--<img :src="speaker.img">-->
-                                            <!--</v-avatar>-->
-                                            <!--<span class="speaker-name-font-adjust">-->
-                                                <!--<b>&nbsp; {{speaker.name}}&nbsp;</b>-->
-                                            <!--</span>-->
-                                            <!--<v-chip style="font-family: Graphik-Bold;" color="indigo darken-2" class="white&#45;&#45;text">-->
-                                                <!--<span class="speaker-company-adjust">{{speaker.company}}</span>-->
-                                            <!--</v-chip>-->
-                                        <!--</div>-->
-                                    <!--</template>-->
-                                <!--</v-card-text>-->
-                            <!--</v-card>-->
-                        <!--</v-timeline-item>-->
-                    <!--</v-timeline>-->
-                <!--</v-container>-->
-            <!--</v-tab-item>-->
-            <!--<v-tab-item>-->
-                <!--<v-container>-->
-                    <!--<v-timeline :dense="$vuetify.breakpoint.smAndDown">-->
-                        <!--<v-timeline-item-->
-                                <!--v-for="(item, i) in items_day2"-->
-                                <!--:key="i"-->
-                                <!--:color="item.color"-->
-                                <!--:icon="item.icon"-->
-                                <!--fill-dot-->
-                                <!--class="mt-12"-->
-                        <!--&gt;-->
-                            <!--<template v-slot:opposite>-->
-                                <!--<span class="event-time indigo&#45;&#45;text" v-text="item.time"></span>-->
-                            <!--</template>-->
-                            <!--<v-card :color="item.color" dark style="font-family: Graphik-Regular;">-->
-                                <!--<v-card-text class="text-left white&#45;&#45;text event-title mb-n1">-->
-                                    <!--<span class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">-->
-                                        <!--{{item.time}} :-->
-                                    <!--</span>-->
-                                    <!--<span>-->
-                                        <!--<b>{{item.title}}</b>-->
-                                    <!--</span>-->
-                                <!--</v-card-text>-->
-                                <!--<v-card-text v-if="item.description !== ''" class="white text-left text&#45;&#45;primary event-text">-->
-                                    <!--<div class="mb-4">{{item.description}}</div>-->
-                                    <!--<template v-for="(speaker, j) in item.speakers">-->
-                                        <!--<div :key="j" class="text-left mb-3">-->
-                                            <!--<v-avatar size="48px">-->
-                                                <!--<img :src="speaker.img">-->
-                                            <!--</v-avatar>-->
-                                            <!--<span class="speaker-name-font-adjust">-->
-                                                <!--<b>&nbsp; {{speaker.name}} </b>-->
-                                            <!--</span>-->
-                                            <!--<v-chip style="font-family: Graphik-Bold;" color="indigo darken-2" class="white&#45;&#45;text">-->
-                                                <!--<span class="speaker-company-adjust">{{speaker.company}}</span>-->
-                                            <!--</v-chip>-->
-                                        <!--</div>-->
-                                    <!--</template>-->
-                                <!--</v-card-text>-->
-                            <!--</v-card>-->
-                        <!--</v-timeline-item>-->
-                    <!--</v-timeline>-->
-                <!--</v-container>-->
-            <!--</v-tab-item>-->
-        <!--</v-tabs>-->
-    <!--</v-layout>-->
-<!--</template>-->
 <template>
     <!--<v-bottom-sheet v-model="sheet" inset eager>-->
     <!--<template v-slot:activator="{ on }">-->
@@ -110,11 +5,138 @@
         <div class="text-center">
             <h2 class="mb-8 mt-6 dark indigo--text" style="font-family: Graphik-Bold; font-size: 34px"><b>Agenda</b></h2>
         </div>
-        <div class="text-center" justify="center" style="top: 50%">
-            <h2 class="dark black--text" style="font-family: Graphik-Bold; font-size: 48px"><b>Coming Soon!</b></h2>
-        </div>
+        <v-tabs class="mb-10" background-color="transparent" color="blue" centered>
+            <v-tab>
+                <h2 class="text--blue"><b>Day 1</b></h2>
+            </v-tab>
+            <v-tab>
+                <h2 class="text--blue"><b>Day 2</b></h2>
+            </v-tab>
+            <v-tab-item>
+                <v-container>
+                    <v-timeline :dense="$vuetify.breakpoint.smAndDown">
+                        <v-timeline-item
+                                v-for="(item, i) in items_day1"
+                                :key="i"
+                                :color="item.color"
+                                :icon="item.icon"
+                                fill-dot
+                                class="mt-12"
+                        >
+                            <template v-slot:opposite>
+                                <span :class="`event-time ${item.tcolor}--text`" v-text="item.time"></span>
+                            </template>
+                            <v-card :color="item.color" dark style="font-family: Graphik-Regular;">
+                                <v-card-text class="text-left white--text event-title mb-n1">
+                                    <div class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">
+                                        {{item.time}}
+                                    </div>
+                                    <div>
+                                        <b>{{item.title}}</b>
+                                    </div>
+                                </v-card-text>
+                                <v-card-text v-if="item.type === 'panel'" class="white text-left text--primary event-text">
+                                    <div class="mb-4">{{item.description}}</div>
+                                    <template v-for="(speaker, j) in item.speakers">
+                                        <div :key="j" class="text-left mb-3">
+                                            <v-avatar size="48px">
+                                                <img :src="speaker.img">
+                                            </v-avatar>
+                                            <span class="speaker-name-font-adjust">
+                                                <b>&nbsp; {{speaker.name}}&nbsp;</b>
+                                            </span>
+                                            <v-chip style="font-family: Graphik-Bold;" color="blue darken-3" class="white--text">
+                                                <span class="speaker-company-adjust">{{speaker.company}}</span>
+                                            </v-chip>
+                                        </div>
+                                    </template>
+                                </v-card-text>
+                                <v-card-text v-if="item.type === 'speaker'" class="white text-left text--primary event-text">
+                                    <v-avatar size="100px">
+                                        <img :src="item.img">
+                                    </v-avatar>
+                                    <span class="speaker-only-name-font-adjust">
+                                                <b>&nbsp; {{item.name}}&nbsp;</b>
+                                            </span>
+                                    <v-chip style="font-family: Graphik-Bold;" color="black" class="white--text">
+                                        <span class="speaker-only-company-adjust">{{item.company}}</span>
+                                    </v-chip>
+                                </v-card-text>
+                            </v-card>
+                        </v-timeline-item>
+                    </v-timeline>
+                </v-container>
+            </v-tab-item>
+            <v-tab-item>
+                <v-container>
+                    <v-timeline :dense="$vuetify.breakpoint.smAndDown">
+                        <v-timeline-item
+                                v-for="(item, i) in items_day2"
+                                :key="i"
+                                :color="item.color"
+                                :icon="item.icon"
+                                fill-dot
+                                class="mt-12"
+                        >
+                            <template v-slot:opposite>
+                                <span :class="`event-time ${item.tcolor}--text`" v-text="item.time"></span>
+                            </template>
+                            <v-card :color="item.color" dark style="font-family: Graphik-Regular;">
+                                <v-card-text class="text-left white--text event-title mb-n1">
+                                    <div class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">
+                                        {{item.time}}
+                                    </div>
+                                    <div>
+                                        <b>{{item.title}}</b>
+                                    </div>
+                                </v-card-text>
+                                <v-card-text v-if="item.type === 'panel'" class="white text-left text--primary event-text">
+                                    <div class="mb-4">{{item.description}}</div>
+                                    <template v-for="(speaker, j) in item.speakers">
+                                        <div :key="j" class="text-left mb-3">
+                                            <v-avatar size="48px">
+                                                <img :src="speaker.img">
+                                            </v-avatar>
+                                            <span class="speaker-name-font-adjust">
+                                                <b>&nbsp; {{speaker.name}}&nbsp;</b>
+                                            </span>
+                                            <v-chip style="font-family: Graphik-Bold;" color="blue darken-3" class="white--text">
+                                                <span class="speaker-company-adjust">{{speaker.company}}</span>
+                                            </v-chip>
+                                        </div>
+                                    </template>
+                                </v-card-text>
+                                <v-card-text v-if="item.type === 'speaker'" class="white text-left text--primary event-text">
+                                    <v-avatar size="100px">
+                                        <img :src="item.img">
+                                    </v-avatar>
+                                    <span class="speaker-only-name-font-adjust">
+                                                <b>&nbsp; {{item.name}}&nbsp;</b>
+                                            </span>
+                                    <v-chip style="font-family: Graphik-Bold;" color="black" class="white--text">
+                                        <span class="speaker-only-company-adjust">{{item.company}}</span>
+                                    </v-chip>
+                                </v-card-text>
+                            </v-card>
+                        </v-timeline-item>
+                    </v-timeline>
+                </v-container>
+            </v-tab-item>
+        </v-tabs>
     </v-layout>
 </template>
+<!--<template>-->
+    <!--&lt;!&ndash;<v-bottom-sheet v-model="sheet" inset eager>&ndash;&gt;-->
+    <!--&lt;!&ndash;<template v-slot:activator="{ on }">&ndash;&gt;-->
+    <!--<v-layout column wrap class="my-12" align-center>-->
+        <!--<div class="text-center">-->
+            <!--<h2 class="mb-8 mt-6 dark indigo&#45;&#45;text" style="font-family: Graphik-Bold; font-size: 34px"><b>Agenda</b></h2>-->
+        <!--</div>-->
+        <!--<div class="text-center" justify="center" style="top: 50%">-->
+            <!--<h2 class="dark black&#45;&#45;text" style="font-family: Graphik-Bold; font-size: 48px"><b>Coming Soon!</b></h2>-->
+        <!--</div>-->
+    <!--</v-layout>-->
+<!--</template>-->
 
 <style scoped>
     h2 {
@@ -130,11 +152,11 @@
     @media only screen and (min-width: 240px) {
 
         .event-title {
-            font-size: 19px;
+            font-size: 17px;
         }
 
         .event-text {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
         }
 
@@ -142,14 +164,24 @@
             font-size: 13px;
         }
 
+        .speaker-only-name-font-adjust {
+            font-size: 15px;
+        }
+
         .speaker-company-adjust {
             font-size: 10px;
+        }
+
+        .speaker-only-company-adjust {
+            font-size: 14px;
+            margin-top: 0%;
         }
     }
 
     @media only screen and (min-width: 960px) {
         .event-title {
             font-size: 22px;
+            line-height: 1.2;
         }
 
         .event-text {
@@ -161,8 +193,17 @@
             font-size: 18px;
         }
 
+        .speaker-only-name-font-adjust {
+            font-size: 22px;
+        }
+
         .speaker-company-adjust {
             font-size: 14px;
+        }
+
+        .speaker-only-company-adjust {
+            font-size: 18px;
+            margin-bottom: 1%;
         }
     }
 
@@ -177,6 +218,10 @@
         border-top-left-radius: 0;
     }
 
+    .just-rounding {
+        border-radius: 50%;
+    }
+
 </style>
 
 <script>
@@ -186,21 +231,27 @@
             sheet: false,
             items_day1: [
                 {
+                    type: '',
                     color: "indigo",
+                    tcolor: 'indigo',
                     icon: "mdi-laptop",
                     time: "09:00",
                     title: "Registration",
                     description: ''
                 },
                 {
+                    type: '',
                     color: "indigo",
+                    tcolor: 'indigo',
                     icon: "mdi-microphone",
                     time: "09:45",
                     title: "Opening Address",
                     description: ''
                 },
                 {
+                    type: '',
                     color: "indigo",
+                    tcolor: 'indigo',
                     icon: "mdi-microphone",
                     time: "10:00",
                     title: "Minster Speech",
@@ -208,18 +259,25 @@
 
                 },
                 {
-                    color: "indigo",
-                    icon: "mdi-microphone",
+                    type: 'speaker',
+                    color: "black",
+                    tcolor: 'black',
+                    icon: "mdi-microphone-variant",
                     time: "10:30",
                     title: "Sponsor Opening Speech",
-                    description: ''
+                    description: '',
+                    img:require('../assets/speakers2020/albert.jpg'),
+                    name: 'Albert Lucius',
+                    company: 'OVO'
                 },
                 {
-                    color: "indigo",
+                    type: 'panel',
+                    color: "blue darken-3",
+                    tcolor: 'blue',
                     icon: "mdi-account-group",
                     time: "11:00",
-                    title: "Panel Discussion 1",
-                    description: 'Startup Dream Team',
+                    title: "Building a Startup Dream Team",
+                    description: 'Panel Discussion by',
                     speakers: [
                         {
                             img:require('../assets/speakers2020/samantha.jpg'),
@@ -235,18 +293,22 @@
                     ]
                 },
                 {
+                    type: '',
                     color: "indigo",
+                    tcolor: 'indigo',
                     icon: "mdi-food",
                     time: "11:50",
                     title: "Lunch",
                     description: ''
                 },
                 {
-                    color: "indigo",
+                    type: 'panel',
+                    color: "blue darken-3",
+                    tcolor: 'blue',
                     icon: "mdi-account-group",
                     time: "13:20",
-                    title: "Panel Discussion 2",
-                    description: 'Social Entrepreneurship',
+                    title: "Social Entrepreneurship",
+                    description: 'Panel Discussion by',
                     speakers: [
                         {
                             img:require('../assets/speakers2020/rayner.jpg'),
@@ -254,61 +316,88 @@
                             company: 'Good for Food'
                         },
                         {
+                            img:require('../assets/speakers2020/Suen.jpg'),
+                            name: 'Sing-Suen Soon',
+                            company: 'Sonder Social'
+                        },
+                        {
                             img:require('../assets/speakers2020/julian.png'),
                             name: 'Julian Koo',
                             company: 'Jaga Me'
-                        },
-                        {
-                            img:require('../assets/speakers2020/khorqianyi.jpg'),
-                            name: 'Khor Qianyi',
-                            company: 'Enactus SG'
                         }
-
                     ]
                 },
                 {
-                    color: "indigo",
+                    type: '',
+                    color: "black",
+                    tcolor: 'black',
                     icon: "mdi-microphone-variant",
                     time: "14:10",
-                    title: "Speaking slot 2",
-                    description: ''
-
+                    title: "Speaker Session 2 (TBC)",
+                    description: ' ',
+                    img:require('../assets/speakers2020/rayner.jpg'),
+                    name: 'Rayner Loi',
+                    company: 'Good for Food'
                 },
                 {
-                    color: "indigo",
+                    type: 'panel',
+                    color: "blue darken-3",
+                    tcolor: 'blue',
                     icon: "mdi-account-group",
                     time: "14:40",
-                    title: "Panel Discussion 3",
-                    description: 'VC and Accelerator',
+                    title: "Startup Funding 101",
+                    description: 'Panel Discussion by',
                     speakers: [
                         {
-                            img:require('../assets/speakers2020/khorqianyi.jpg')
+                            img:require('../assets/speakers2020/jerrytso.png'),
+                            name: 'Jerry Tso',
+                            company: 'PayPal'
                         },
                         {
-                            img:require('../assets/speakers2020/khorqianyi.jpg')
+                            img:require('../assets/speakers2020/piyush.jpg'),
+                            name: 'Piyush Gupta',
+                            company: 'Sequoia Capital'
+                        },
+                        {
+                            img:require('../assets/speakers2020/vishal.jpeg'),
+                            name: 'Vishal Harnal',
+                            company: '500 Startups'
+                        },
+                        {
+                            img:require('../assets/speakers2020/jeffrey.jpg'),
+                            name: 'Jeffrey Paine',
+                            company: 'Golden Gate Ventures'
                         }
                     ]
                 },
                 {
                     color: "indigo",
+                    tcolor: 'indigo',
                     icon: "mdi-coffee",
                     time: "15:30",
                     title: "Break",
                     description: ''
                 },
                 {
-                    color: "indigo",
+                    type: 'speaker',
+                    color: "black",
+                    tcolor: 'black',
                     icon: "mdi-microphone-variant",
                     time: "15:45",
-                    title: "Speaking slot 3",
-                    description: ''
+                    title: "Speaker Session 3",
+                    description: '',
+                    img:require('../assets/speakers2020/joel.png'),
+                    name: 'Joel Bar-El',
+                    company: 'Trax'
                 },
                 {
-                    color: "indigo",
+                    type: 'panel',
+                    color: "blue darken-3",
+                    tcolor: 'blue',
                     icon: "mdi-account-group",
                     time: "16:15",
-                    title: "Panel Discussion 4",
-                    description: 'Redefining Fintech Revolution',
+                    title: "Redefining Fintech Revolution",
+                    description: 'Panel Discussion by',
                     speakers: [
                         {
                             img:require('../assets/speakers2020/prajit_nanu.png'),
@@ -334,34 +423,45 @@
                     ]
                 },
                 {
+                    type: '',
                     color: "indigo",
+                    tcolor: 'indigo',
                     icon: "",
                     time: "17:05",
-                    title: "Day 1 Ends",
+                    title: "End of Day 1",
                     description: ''
                 },
             ],
             items_day2: [
                 {
+                    type: '',
                     color: "indigo",
-                    icon: "mdi-laptop",
-                    time: "09:00",
-                    title: "Registration",
+                    tcolor: 'indigo',
+                    icon: "",
+                    time: "09:30",
+                    title: "Start of Day 2",
                     description: ''
                 },
                 {
-                    color: "indigo",
+                    type: 'speaker',
+                    color: "black",
+                    tcolor: 'black',
                     icon: "mdi-microphone-variant",
                     time: "10:00",
-                    title: "Speaking Slot 4",
-                    description: ''
+                    title: "Speaker Session 4",
+                    description: '',
+                    img:require('../assets/speakers2020/lcl.jpg'),
+                    name: 'Choong Luen Lien',
+                    company: 'GOJEK'
                 },
                 {
-                    color: "indigo",
+                    type: 'panel',
+                    color: "blue darken-3",
+                    tcolor: 'blue',
                     icon: "mdi-account-group",
                     time: "10:30",
-                    title: "Panel Discussion 5",
-                    description: 'Women In Entrepreneurship',
+                    title: "Breaking the Stereotype : Women in Entrepreneurship",
+                    description: 'Panel Discussion by',
                     speakers: [
                         {
                             img:require('../assets/speakers2020/yang.png'),
@@ -382,11 +482,13 @@
                     ]
                 },
                 {
-                    color: "indigo",
+                    type: "panel",
+                    color: "blue darken-3",
+                    tcolor: "blue",
                     icon: "mdi-account-group",
                     time: "11:20",
-                    title: "Panel Discussion 6",
-                    description: 'Future of eCommerce & Globalisation',
+                    title: "Future of eCommerce & Globalisation",
+                    description: 'Panel Discussion by',
                     speakers: [
                         {
                             img:require('../assets/speakers2020/billy.png'),
@@ -407,56 +509,92 @@
                     ]
                 },
                 {
+                    type: '',
                     color: "indigo",
+                    tcolor: 'indigo',
                     icon: "mdi-food",
                     time: "12:10",
                     title: "Lunch",
                     description: ''
                 },
                 {
-                    color: "indigo",
+                    type: 'panel',
+                    color: "blue darken-3",
+                    tcolor: 'blue',
                     icon: "mdi-account-group",
                     time: "13:25",
-                    title: "Panel Discussion 7",
-                    description: 'Growth for B2C, B2B, C2C'
+                    title: "Growth Hacking Strategies for Start-ups",
+                    description: 'Panel Discussion by',
+                    speakers: [
+                        {
+                            img:require('../assets/speakers2020/Manisha.jpg'),
+                            name: 'Manisha Seewal',
+                            company: 'Carro'
+                        },
+                        {
+                            img:require('../assets/speakers2020/Wai Teng.jpg'),
+                            name: 'Wai Teng Yong',
+                            company: 'Insider'
+                        }
+
+                    ]
                 },
                 {
-                    color: "indigo",
+                    type: '',
+                    color: "black",
+                    tcolor: 'black',
                     icon: "mdi-microphone-variant",
                     time: "14:15",
-                    title: "Speaking slot 5",
+                    title: "Speaking Session 5 (TBC)",
                     description: ''
                 },
                 {
-                    color: "indigo",
+                    type: '',
+                    color: "blue darken-3",
+                    tcolor: 'blue',
                     icon: "mdi-account-group",
                     time: "14:50",
-                    title: "Panel Discussion 8",
-                    description: 'Student Entrepreneurs, Youth & Change'
+                    title: "Student Entrepreneurs, Youth & Change (TBC)",
+                    description: 'Panel Discussion 8',
+                    speakers: [
+                        {
+                            img: '',
+                            name: '',
+                            company: 'TBC'
+                        }
+                    ]
                 },
                 {
+                    type: '',
                     color: "indigo",
+                    tcolor: 'indigo',
                     icon: "mdi-coffee",
                     time: "15:20",
                     title: "Break",
                     description: ''
                 },
                 {
+                    type: '',
                     color: "indigo",
+                    tcolor: 'indigo',
                     icon: "mdi-stadium-variant",
                     time: "15:40",
                     title: "UNICON Arena",
                     description: ''
                 },
                 {
+                    type: '',
                     color: "indigo",
+                    tcolor: 'indigo',
                     icon: "mdi-trophy",
                     time: "17:00",
                     title: "Prize Awards",
                     description: ''
                 },
                 {
+                    type: '',
                     color: "indigo",
+                    tcolor: 'indigo',
                     icon: "",
                     time: "17:15",
                     title: "End of UNICON2020",
