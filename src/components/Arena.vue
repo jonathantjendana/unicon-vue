@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-row justify="center" align="center" class="arena-register">
       <v-col md="6" cols="12">
-        <v-img src="../assets/arena_hero.jpg" contain eager aspect-ratio="1.6"></v-img>
+        <v-img src="../assets/arena_hero.jpg" contain eager aspect-ratio="1.6" eager></v-img>
       </v-col>
       <v-col md="auto" cols="12">
         <div>
