@@ -52,7 +52,7 @@
                                     </template>
                                 </v-card-text>
                                 <v-card-text v-if="item.type === 'speaker'" class="white text-left text--primary event-text">
-                                    <v-avatar size="100px">
+                                    <v-avatar size="72px">
                                         <img :src="item.img">
                                     </v-avatar>
                                     <span class="speaker-only-name-font-adjust">
@@ -161,7 +161,7 @@
         }
 
         .speaker-name-font-adjust {
-            font-size: 13px;
+            font-size: 10px;
         }
 
         .speaker-only-name-font-adjust {
@@ -169,7 +169,7 @@
         }
 
         .speaker-company-adjust {
-            font-size: 10px;
+            font-size: 8px;
         }
 
         .speaker-only-company-adjust {
