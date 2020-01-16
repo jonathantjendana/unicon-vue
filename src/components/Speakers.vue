@@ -179,13 +179,6 @@
         data: () => ({
             items_2020: [
                 {
-                    img:require('../assets/speakers2020/rasysid.jpg'),
-                    name: 'Muhamad Fajrin Rasyid',
-                    title: 'Co-founder & President',
-                    department: 'Bukalapak',
-                    linkedin: 'https://www.linkedin.com/in/fajrinrasyid/'
-                },
-                {
                     img:require('../assets/speakers2020/joel.png'),
                     name: 'Joel Bar-El',
                     title: 'Co-founder & CEO',
