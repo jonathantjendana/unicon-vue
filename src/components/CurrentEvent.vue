@@ -254,7 +254,7 @@
                     tcolor: 'indigo',
                     icon: "mdi-microphone",
                     time: "10:00",
-                    title: "Minster Speech",
+                    title: "Minister Speech",
                     description: ''
 
                 },
