@@ -1,6 +1,20 @@
 <template>
   <v-app id="app">
-    <div v-if="this.$route.path !== '/landingpage'">
+      <v-content v-if="this.$route.path === '/landingpage'">
+          <landing-page-hero></landing-page-hero>
+          <landing-page-details></landing-page-details>
+          <v-footer padless>
+              <v-col class="text-center" cols="12">
+                  &copy; {{ new Date().getFullYear() }} —
+                  <strong>Brought to you by NUS Entrepreneurship Society</strong>
+              </v-col>
+          </v-footer>
+      </v-content>
+      <div v-if="this.$route.path ==='/goodtoknow'">
+          <agenda></agenda>
+          <Footer></Footer>
+      </div>
+    <div v-else>
       <app-navigation v-show="this.$route.path !== '/landingpage'"></app-navigation>
       <Carousel></Carousel>
       <v-content id="scroll-with-options">
@@ -10,16 +24,7 @@
       </v-content>
       <Footer></Footer>
     </div>
-    <v-content v-else>
-      <landing-page-hero></landing-page-hero>
-      <landing-page-details></landing-page-details>
-      <v-footer padless>
-        <v-col class="text-center" cols="12">
-          &copy; {{ new Date().getFullYear() }} —
-          <strong>Brought to you by NUS Entrepreneurship Society</strong>
-        </v-col>
-      </v-footer>
-    </v-content>
+
   </v-app>
 </template>
 
@@ -29,6 +34,7 @@ import Footer from "@/components/Footer";
 
 import LandingPageHero from "@/components/LandingPageHero";
 import LandingPageDetails from "@/components/LandingPageDetails";
+import Agenda from "./components/CurrentEvent";
 import Carousel from "./components/Carousel";
 
 export default {
@@ -38,7 +44,8 @@ export default {
     Carousel,
     Footer,
     LandingPageHero,
-    LandingPageDetails
+    LandingPageDetails,
+      Agenda
   }
 };
 </script>
