@@ -10,7 +10,7 @@
               </v-col>
           </v-footer>
       </v-content>
-      <div v-if="this.$route.path ==='/goodtoknow'">
+      <div v-if="this.$route.path ==='/audienceGuide'">
           <agenda></agenda>
           <Footer></Footer>
       </div>
