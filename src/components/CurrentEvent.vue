@@ -28,7 +28,7 @@
                             </template>
                             <v-card :color="item.color" dark style="font-family: Graphik-Regular;">
                                 <v-card-text class="text-left white--text event-title mb-n1">
-                                    <div class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">
+                                    <div class="hidden-md-and-up text-right mb-2" style="font-family: Graphik-Bold; font-size: 21px;">
                                         {{item.time}}
                                     </div>
                                     <div>
@@ -38,29 +38,55 @@
                                 <v-card-text v-if="item.type === 'panel'" class="white text-left text--primary event-text">
                                     <div class="mb-4">{{item.description}}</div>
                                     <template v-for="(speaker, j) in item.speakers">
-                                        <div :key="j" class="text-left mb-3">
-                                            <v-avatar size="48px">
-                                                <img :src="speaker.img">
-                                            </v-avatar>
-                                            <span class="speaker-name-font-adjust">
-                                                <b>&nbsp; {{speaker.name}}&nbsp;</b>
-                                            </span>
-                                            <v-chip style="font-family: Graphik-Bold;" color="blue darken-3" class="white--text">
-                                                <span class="speaker-company-adjust">{{speaker.company}}</span>
-                                            </v-chip>
-                                        </div>
+                                        <v-row :key="j" class="text-left" align-content="center">
+                                            <v-col cols="4" lg="2" align-self="center">
+                                                <v-avatar size="64px">
+                                                    <img :src="speaker.img">
+                                                </v-avatar>
+                                            </v-col>
+                                            <v-col cols="8" lg="10" align-self="center">
+                                                <v-row align-content="center" class="mb-n6 mobile-adjust">
+                                                    <v-col align-self="center">
+                                                        <span class="speaker-name-font-adjust">
+                                                            <b>{{speaker.name}}</b>
+                                                        </span>
+                                                    </v-col>
+                                                </v-row>
+                                                <v-row align-content="center" class="mobile-adjust">
+                                                    <v-col>
+                                                        <span style="font-family: Graphik-Bold;" color="blue darken-3" class="speaker-name-font-adjust blue--text">
+                                                            <b>{{speaker.company}}</b>
+                                                        </span>
+                                                    </v-col>
+                                                </v-row>
+                                            </v-col>
+                                        </v-row>
                                     </template>
                                 </v-card-text>
                                 <v-card-text v-if="item.type === 'speaker'" class="white text-left text--primary event-text">
-                                    <v-avatar size="72px">
-                                        <img :src="item.img">
-                                    </v-avatar>
-                                    <span class="speaker-only-name-font-adjust">
-                                                <b>&nbsp; {{item.name}}&nbsp;</b>
-                                            </span>
-                                    <v-chip style="font-family: Graphik-Bold;" color="black" class="white--text">
-                                        <span class="speaker-only-company-adjust">{{item.company}}</span>
-                                    </v-chip>
+                                    <v-row class="text-left" align-content="center">
+                                        <v-col cols="4" lg="2" align-self="center">
+                                            <v-avatar size="76px">
+                                                <img :src="item.img">
+                                            </v-avatar>
+                                        </v-col>
+                                        <v-col cols="8" lg="10" align-self="center">
+                                            <v-row align-content="center" class="mb-n5 mobile-adjust">
+                                                <v-col align-self="center">
+                                                        <span class="speaker-only-name-font-adjust">
+                                                            <b>{{item.name}}</b>
+                                                        </span>
+                                                </v-col>
+                                            </v-row>
+                                            <v-row align-content="center" class="mobile-adjust">
+                                                <v-col>
+                                                    <span style="font-family: Graphik-Bold;" color="blue darken-3" class="speaker-only-name-font-adjust black--text">
+                                                        <b>{{item.company}}</b>
+                                                    </span>
+                                                </v-col>
+                                            </v-row>
+                                        </v-col>
+                                    </v-row>
                                 </v-card-text>
                             </v-card>
                         </v-timeline-item>
@@ -83,7 +109,7 @@
                             </template>
                             <v-card :color="item.color" dark style="font-family: Graphik-Regular;">
                                 <v-card-text class="text-left white--text event-title mb-n1">
-                                    <div class="hidden-sm-and-up text-right" style="font-family: Graphik-Bold; font-size: 21px;">
+                                    <div class="hidden-dm-and-up text-right mb-2" style="font-family: Graphik-Bold; font-size: 21px;">
                                         {{item.time}}
                                     </div>
                                     <div>
@@ -93,29 +119,55 @@
                                 <v-card-text v-if="item.type === 'panel'" class="white text-left text--primary event-text">
                                     <div class="mb-4">{{item.description}}</div>
                                     <template v-for="(speaker, j) in item.speakers">
-                                        <div :key="j" class="text-left mb-3">
-                                            <v-avatar size="48px">
-                                                <img :src="speaker.img">
-                                            </v-avatar>
-                                            <span class="speaker-name-font-adjust">
-                                                <b>&nbsp; {{speaker.name}}&nbsp;</b>
-                                            </span>
-                                            <v-chip style="font-family: Graphik-Bold;" color="blue darken-3" class="white--text">
-                                                <span class="speaker-company-adjust">{{speaker.company}}</span>
-                                            </v-chip>
-                                        </div>
+                                        <v-row :key="j" class="text-left" align-content="center">
+                                            <v-col cols="4" lg="2" align-self="center">
+                                                <v-avatar size="64px">
+                                                    <img :src="speaker.img">
+                                                </v-avatar>
+                                            </v-col>
+                                            <v-col cols="8" lg="10" align-self="center">
+                                                <v-row align-content="center" class="mb-n6 mobile-adjust">
+                                                    <v-col align-self="center">
+                                                        <span class="speaker-name-font-adjust">
+                                                            <b>{{speaker.name}}</b>
+                                                        </span>
+                                                    </v-col>
+                                                </v-row>
+                                                <v-row align-content="center" class="mobile-adjust">
+                                                    <v-col>
+                                                        <span style="font-family: Graphik-Bold;" color="blue darken-3" class="speaker-name-font-adjust blue--text">
+                                                            <b>{{speaker.company}}</b>
+                                                        </span>
+                                                    </v-col>
+                                                </v-row>
+                                            </v-col>
+                                        </v-row>
                                     </template>
                                 </v-card-text>
                                 <v-card-text v-if="item.type === 'speaker'" class="white text-left text--primary event-text">
-                                    <v-avatar size="72px">
-                                        <img :src="item.img">
-                                    </v-avatar>
-                                    <span class="speaker-only-name-font-adjust">
-                                                <b>&nbsp; {{item.name}}&nbsp;</b>
-                                            </span>
-                                    <v-chip style="font-family: Graphik-Bold;" color="black" class="white--text">
-                                        <span class="speaker-only-company-adjust">{{item.company}}</span>
-                                    </v-chip>
+                                    <v-row class="text-left" align-content="center">
+                                    <v-col cols="4" lg="2" align-self="center">
+                                        <v-avatar size="76px">
+                                            <img :src="item.img">
+                                        </v-avatar>
+                                    </v-col>
+                                    <v-col cols="8" lg="10" align-self="center">
+                                        <v-row align-content="center" class="mb-n5 mobile-adjust">
+                                            <v-col align-self="center">
+                                                        <span class="speaker-only-name-font-adjust">
+                                                            <b>{{item.name}}</b>
+                                                        </span>
+                                            </v-col>
+                                        </v-row>
+                                        <v-row align-content="center" class="mobile-adjust">
+                                            <v-col>
+                                                    <span style="font-family: Graphik-Bold;" color="blue darken-3" class="speaker-only-name-font-adjust black--text">
+                                                        <b>{{item.company}}</b>
+                                                    </span>
+                                            </v-col>
+                                        </v-row>
+                                    </v-col>
+                                    </v-row>
                                 </v-card-text>
                             </v-card>
                         </v-timeline-item>
@@ -161,7 +213,7 @@
         }
 
         .speaker-name-font-adjust {
-            font-size: 10px;
+            font-size: 13px;
         }
 
         .speaker-only-name-font-adjust {
@@ -175,6 +227,10 @@
         .speaker-only-company-adjust {
             font-size: 14px;
             margin-top: 0%;
+        }
+
+        .mobile-adjust {
+            margin-left: -10%;
         }
     }
 
@@ -205,21 +261,34 @@
             font-size: 18px;
             margin-bottom: 1%;
         }
+
+        .mobile-adjust {
+            margin-left: -5%;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .mobile-adjust {
+            margin-left: -35%;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        .mobile-adjust {
+            margin-left: -25%;
+        }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        .mobile-adjust {
+            margin-left: -3%;
+        }
     }
 
     .item pre {
         white-space: pre-wrap;
         word-wrap: break-word;
         font-family: inherit;
-    }
-
-    .border-adjust {
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
-    }
-
-    .just-rounding {
-        border-radius: 50%;
     }
 
 </style>
