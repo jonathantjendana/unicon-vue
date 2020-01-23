@@ -213,7 +213,7 @@
         }
 
         .speaker-name-font-adjust {
-            font-size: 13px;
+            font-size: 15px;
         }
 
         .speaker-only-name-font-adjust {
@@ -264,6 +264,12 @@
 
         .mobile-adjust {
             margin-left: -5%;
+        }
+    }
+
+    @media only screen and (min-width: 414px) {
+        .mobile-adjust {
+            margin-left: -15%;
         }
     }
 
