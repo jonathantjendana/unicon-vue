@@ -38,7 +38,7 @@
                                 <v-card-text v-if="item.type === 'panel'" class="white text-left text--primary event-text">
                                     <div class="mb-4">{{item.description}}</div>
                                     <template v-for="(speaker, j) in item.speakers">
-                                        <v-row :key="j" class="text-left" align-content="center">
+                                        <v-row :key="j" class="text-left my-n4" align-content="center">
                                             <v-col cols="4" lg="2" align-self="center">
                                                 <v-avatar size="64px">
                                                     <img :src="speaker.img">
@@ -109,7 +109,7 @@
                             </template>
                             <v-card :color="item.color" dark style="font-family: Graphik-Regular;">
                                 <v-card-text class="text-left white--text event-title mb-n1">
-                                    <div class="hidden-dm-and-up text-right mb-2" style="font-family: Graphik-Bold; font-size: 21px;">
+                                    <div class="hidden-md-and-up text-right mb-2" style="font-family: Graphik-Bold; font-size: 21px;">
                                         {{item.time}}
                                     </div>
                                     <div>
@@ -119,7 +119,7 @@
                                 <v-card-text v-if="item.type === 'panel'" class="white text-left text--primary event-text">
                                     <div class="mb-4">{{item.description}}</div>
                                     <template v-for="(speaker, j) in item.speakers">
-                                        <v-row :key="j" class="text-left" align-content="center">
+                                        <v-row :key="j" class="text-left my-n4" align-content="center">
                                             <v-col cols="4" lg="2" align-self="center">
                                                 <v-avatar size="64px">
                                                     <img :src="speaker.img">
