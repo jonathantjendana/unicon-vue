@@ -319,6 +319,27 @@
                     linkedin: 'https://www.linkedin.com/in/arnejero/'
                 },
                 {
+                    img:require('../assets/speakers2020/kenneth.png'),
+                    name: 'Kenneth Lou',
+                    title: 'Co-founder & CEO',
+                    department: 'Seedly',
+                    linkedin: 'https://www.linkedin.com/in/kenneth-lou/?originalSubdomain=sg'
+                },
+                {
+                    img:require('../assets/speakers2020/arvin.jpg'),
+                    name: 'Arvin Singh',
+                    title: 'Co-founder & COO',
+                    department: 'hoolah',
+                    linkedin: 'https://www.linkedin.com/in/arvinsingh/?originalSubdomain=sg'
+                },
+                {
+                    img:require('../assets/speakers2020/janson.png'),
+                    name: 'Janson Seah',
+                    title: 'Co-founder',
+                    department: 'StaffAny',
+                    linkedin: 'https://www.linkedin.com/in/janson-seah/?originalSubdomain=sg'
+                },
+                {
                     img:require('../assets/speakers2020/Suen.jpg'),
                     name: 'Sing-Suen Soon',
                     title: 'Co-Founder',
@@ -345,6 +366,13 @@
                     title: 'Co-Founder & CEO',
                     department: 'Jaga Me',
                     linkedin: 'https://www.linkedin.com/in/juliankoo/'
+                },
+                {
+                    img:require('../assets/speakers2020/mark.png'),
+                    name: 'Mark Worthington',
+                    title: 'Managing Director',
+                    department: 'Klareco Communications',
+                    linkedin: 'https://www.linkedin.com/in/mark-worthington-klareco/?originalSubdomain=sg'
                 },
                 {
                     img:require('../assets/speakers2020/khorqianyi.jpg'),

@@ -9,7 +9,9 @@
                     <v-card-text
                             class="d-flex v-card--price font-weight-bold display-3 text-center blue darken-2 white--text"
                             style="opacity: .7">
-                        S$39.00
+                        <div class="adjust--top">S$39.00</div><div class="deal--text">Buy 2 at &nbsp;<span class="yellow--text" style="font-size: 30px;">
+                        <b>S$74!</b></span>
+                    </div>
                     </v-card-text>
                     <v-card-text class="black--text title" style="position: relative">
                         <v-btn absolute color="dark blue" class="white--text" fab large right top href="https://www.eventbrite.sg/e/unicon2020-tickets-89211033603" target="_blank">
@@ -25,7 +27,9 @@
                     <v-card-text
                             class="d-flex v-card--price font-weight-bold display-3 text-center blue darken-2 white--text"
                             style="opacity: .7">
-                        S$49.00
+                        <div class="adjust--top">S$49.00</div><div class="deal--text">Buy 2 at &nbsp;<span class="yellow--text" style="font-size: 30px;">
+                        <b>S$93!</b></span>
+                    </div>
                     </v-card-text>
                     <v-card-text class="black--text title" style="position: relative">
                         <v-btn absolute color="dark blue" class="white--text" fab large right top href="https://www.eventbrite.sg/e/unicon2020-tickets-89211033603" target="_blank">
@@ -54,5 +58,16 @@
         opacity: .5;
         width: 100%;
         height: 72%;
+    }
+
+    .adjust--top {
+        position: absolute;
+        top: 25%;
+    }
+
+    .deal--text {
+        position: absolute;
+        font-size: 24px;
+        top: 45%;
     }
 </style>

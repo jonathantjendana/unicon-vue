@@ -291,6 +291,12 @@
         }
     }
 
+    @media only screen and (min-width: 1920px) {
+        .mobile-adjust {
+            margin-left: -8%;
+        }
+    }
+
     .item pre {
         white-space: pre-wrap;
         word-wrap: break-word;
@@ -363,8 +369,12 @@
                             img:require('../assets/speakers2020/oliver.png'),
                             name: 'Oliver Tan',
                             company: 'Visenze'
+                        },
+                        {
+                            img:require('../assets/speakers2020/arvin.jpg'),
+                            name: 'Arvin Singh',
+                            company: 'hoolah'
                         }
-
                     ]
                 },
                 {
@@ -624,18 +634,23 @@
                     description: ''
                 },
                 {
-                    type: '',
+                    type: 'panel',
                     color: "blue darken-3",
                     tcolor: 'blue',
                     icon: "mdi-account-group",
                     time: "14:50",
-                    title: "Student Entrepreneurs, Youth & Change (TBC)",
-                    description: 'Panel Discussion 8',
+                    title: "Student Entrepreneurs, Youth & Change",
+                    description: 'Panel Discussion by',
                     speakers: [
                         {
-                            img: '',
-                            name: '',
-                            company: 'TBC'
+                            img:require('../assets/speakers2020/kenneth.png'),
+                            name: 'Kenneth Lou',
+                            company: 'Seedly'
+                        },
+                        {
+                            img:require('../assets/speakers2020/janson.png'),
+                            name: 'Janson Seah',
+                            company: 'StaffAny'
                         }
                     ]
                 },
