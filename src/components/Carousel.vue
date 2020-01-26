@@ -28,7 +28,7 @@
         <v-dialog class="popup-bg" v-model="dialog" max-width="600px" eager>
             <v-card class="mx-auto" align-content="center">
                 <v-card-text class="red darken-3">
-                    <v-img src="../assets/popup.jpg">
+                    <v-img src="../assets/popup.jpg" eager>
                         <div class="white--text happy-CNY" style=""><b>Happy Lunar New Year!</b></div>
                         <div class="white--text all-ticket-price" style=""><b>Until <span class="yellow--text">2nd of Feb 20</span>, all tickets price</b></div>
                         <div class="yellow--text promotion" style=""><b>20% OFF</b></div>
