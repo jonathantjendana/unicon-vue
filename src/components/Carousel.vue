@@ -26,7 +26,7 @@
         </v-parallax>
         <!--Popup section-->
         <v-dialog class="popup-bg" v-model="dialog" max-width="600px" eager>
-            <v-card class="mx-auto" align-content="center">
+            <v-card class="mx-auto" align-content="center" eager>
                 <v-card-text class="red darken-3">
                     <v-img src="../assets/popup.jpg" eager>
                         <div class="white--text happy-CNY" style=""><b>Happy Lunar New Year!</b></div>
