@@ -86,7 +86,8 @@
                 x: 0,
                 y: 0
             },
-            dialog: true
+            dialog: false,
+            countDown : 1
         }),
         mounted() {
             this.onResize();
@@ -97,7 +98,20 @@
                     x: window.innerWidth,
                     y: window.innerHeight
                 };
+            },
+            countDownTimer() {
+                if(this.countDown > 0) {
+                    setTimeout(() => {
+                        this.countDown -= 1
+                        this.dialog = true;
+                        this.countDownTimer()
+                    }, 1000)
+                }
             }
+        },
+
+        created() {
+            this.countDownTimer()
         }
     };
 </script>
