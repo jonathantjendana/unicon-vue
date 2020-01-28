@@ -408,7 +408,7 @@
                         {
                             img:require('../assets/speakers2020/julian.png'),
                             name: 'Julian Koo',
-                            company: 'Jaga Me'
+                            company: 'Jaga-Me Healthcare'
                         }
                     ]
                 },
@@ -422,7 +422,7 @@
                     description: ' ',
                     img:require('../assets/speakers2020/rayner.jpg'),
                     name: 'Rayner Loi',
-                    company: 'Good for Food'
+                    company: 'Lumitics'
                 },
                 {
                     type: 'panel',
@@ -433,11 +433,6 @@
                     title: "Startup Funding 101",
                     description: 'Panel Discussion by',
                     speakers: [
-                        {
-                            img:require('../assets/speakers2020/jerrytso.png'),
-                            name: 'Jerry Tso',
-                            company: 'PayPal'
-                        },
                         {
                             img:require('../assets/speakers2020/piyush.jpg'),
                             name: 'Piyush Gupta',
@@ -612,6 +607,11 @@
                     description: 'Panel Discussion by',
                     speakers: [
                         {
+                            img:require('../assets/speakers2019/Yan_Phun.png'),
+                            name: 'Yun Phun',
+                            company: '99.co'
+                        },
+                        {
                             img:require('../assets/speakers2020/Manisha.jpg'),
                             name: 'Manisha Seewal',
                             company: 'Carro'
@@ -625,13 +625,16 @@
                     ]
                 },
                 {
-                    type: '',
+                    type: 'speaker',
                     color: "black",
                     tcolor: 'black',
                     icon: "mdi-microphone-variant",
                     time: "14:15",
-                    title: "Speaking Session 5 (TBC)",
-                    description: ''
+                    title: "Speaking Session 5",
+                    description: '',
+                    img:require('../assets/speakers2020/jerrytso.png'),
+                    name: 'Jerry Tso',
+                    company: 'PayPal'
                 },
                 {
                     type: 'panel',
@@ -651,6 +654,11 @@
                             img:require('../assets/speakers2020/janson.png'),
                             name: 'Janson Seah',
                             company: 'StaffAny'
+                        },
+                        {
+                            img:require('../assets/speakers2020/junxian.png'),
+                            name: 'Junxian Lee',
+                            company: 'Moovaz'
                         }
                     ]
                 },

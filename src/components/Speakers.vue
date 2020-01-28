@@ -263,6 +263,13 @@
                     linkedin: 'https://www.linkedin.com/in/samanthasdyl/?originalSubdomain=sg'
                 },
                 {
+                    img: require('../assets/speakers2019/Yan_Phun.png'),
+                    name: 'Yan Phun',
+                    title: 'COO',
+                    department: '99.co',
+                    linkedin: 'https://www.linkedin.com/in/yanphun/'
+                },
+                {
                     img:require('../assets/speakers2020/Manisha.jpg'),
                     name: 'Manisha Seewal',
                     title: 'Group CMO',
@@ -340,6 +347,13 @@
                     linkedin: 'https://www.linkedin.com/in/janson-seah/?originalSubdomain=sg'
                 },
                 {
+                    img:require('../assets/speakers2020/junxian.png'),
+                    name: 'Junxian Lee',
+                    title: 'Co-founder & CEO',
+                    department: 'Moovaz',
+                    linkedin: 'https://www.linkedin.com/in/leejunxian/?originalSubdomain=sg'
+                },
+                {
                     img:require('../assets/speakers2020/Suen.jpg'),
                     name: 'Sing-Suen Soon',
                     title: 'Co-Founder',
@@ -357,14 +371,14 @@
                     img:require('../assets/speakers2020/rayner.jpg'),
                     name: 'Rayner Loi',
                     title: 'Co-Founder & CEO',
-                    department: 'Good For Food',
+                    department: 'Lumitics',
                     linkedin: 'https://www.linkedin.com/in/raynerloi/'
                 },
                 {
                     img:require('../assets/speakers2020/julian.png'),
                     name: 'Julian Koo',
                     title: 'Co-Founder & CEO',
-                    department: 'Jaga Me',
+                    department: 'Jaga-Me Healthcare',
                     linkedin: 'https://www.linkedin.com/in/juliankoo/'
                 },
                 {
@@ -378,7 +392,7 @@
                     img:require('../assets/speakers2020/khorqianyi.jpg'),
                     name: 'Khor Qianyi',
                     title: 'CEO',
-                    department: 'Enactus SG',
+                    department: 'Social Impact Catalyst',
                     linkedin: 'https://www.linkedin.com/in/khorqianyi/'
                 },
                 {
