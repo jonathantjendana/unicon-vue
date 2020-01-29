@@ -10,7 +10,7 @@
                             class="unicon-spinner"
                     />
                     <v-col class="text-center" cols="12">
-                        <v-img src="../assets/big_logo.svg" alt="UNICON" contain height="125"/>
+                        <v-img src="../assets/big_logo.svg" alt="UNICON" contain height="125" eager/>
                         <div class="tagline-1 font-weight-bold text-center mt-3">Creating the unicorns of tomorrow</div>
                         <v-spacer/>
                     </v-col>

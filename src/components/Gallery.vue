@@ -1,7 +1,7 @@
 <template>
     <v-container fluid>
         <v-row align="center" justify="center" class="stats-header">
-            <v-img class="my-5" src="../assets/unicon2019_logo.svg" contain :aspect-ratio="getAspectRatio"/>
+            <v-img class="my-5" src="../assets/unicon2019_logo.svg" contain :aspect-ratio="getAspectRatio" eager/>
         </v-row>
         <v-row class="mb-10">
             <v-col cols="12" sm="10" offset-sm="1">
