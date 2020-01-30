@@ -181,6 +181,11 @@
                                     <v-img class="mx-7" src="../assets/Sponsors/ovo.png" eager></v-img>
                                 </a>
                             </v-col>
+                            <v-col class="px-7 ml-n2 mr-n4" :key="i" cols="6" sm="3" xl="2">
+                                <a href="https://www.sginnovate.com/" target="_blank">
+                                    <v-img class="mx-7" src="../assets/Sponsors/sginnovate.jpeg" eager></v-img>
+                                </a>
+                            </v-col>
                         </v-row>
                     </v-container>
                 </v-tab-item>
@@ -313,6 +318,10 @@
                     img: require("../assets/Communities/Ambidextr.png"),
                     link: "http://ambidextr.media/"
                 },
+                // {
+                //     img: require("../assets/Communities/worksider.png"),
+                //     link: "https://www.worksider.com/"
+                // },
                 {
                     img: require("../assets/Communities/enterprise.png"),
                     link: "https://enterprise.nus.edu.sg/"
@@ -368,7 +377,7 @@
                 {
                     img: require("../assets/Communities/tie.png"),
                     link: "https://singapore.tie.org/"
-                },
+                }
 
             ],
             type: 'selector',
