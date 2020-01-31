@@ -608,7 +608,7 @@
                     speakers: [
                         {
                             img:require('../assets/speakers2019/Yan_Phun.png'),
-                            name: 'Yun Phun',
+                            name: 'Yan Phun',
                             company: '99.co'
                         },
                         {
