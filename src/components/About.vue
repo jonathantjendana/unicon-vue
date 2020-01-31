@@ -318,10 +318,10 @@
                     img: require("../assets/Communities/Ambidextr.png"),
                     link: "http://ambidextr.media/"
                 },
-                // {
-                //     img: require("../assets/Communities/worksider.png"),
-                //     link: "https://www.worksider.com/"
-                // },
+                {
+                    img: require("../assets/Communities/worksider.png"),
+                    link: "https://www.worksider.com/"
+                },
                 {
                     img: require("../assets/Communities/enterprise.png"),
                     link: "https://enterprise.nus.edu.sg/"
