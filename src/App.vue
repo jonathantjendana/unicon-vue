@@ -17,7 +17,6 @@
     <div v-else>
       <app-navigation v-show="this.$route.path !== '/landingpage'"></app-navigation>
       <Carousel></Carousel>
-        <popup></popup>
       <v-content id="scroll-with-options">
         <transition name="router-animate">
           <router-view></router-view>
@@ -37,7 +36,6 @@ import LandingPageHero from "@/components/LandingPageHero";
 import LandingPageDetails from "@/components/LandingPageDetails";
 import Agenda from "./components/CurrentEvent";
 import Carousel from "./components/Carousel";
-import Popup from "./components/Popup";
 
 export default {
   name: "App",
@@ -47,8 +45,7 @@ export default {
     Footer,
     LandingPageHero,
     LandingPageDetails,
-      Agenda,
-      Popup
+      Agenda
   }
 };
 </script>
