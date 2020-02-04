@@ -325,8 +325,8 @@
                     color: "indigo",
                     tcolor: 'indigo',
                     icon: "mdi-microphone",
-                    time: "09:45",
-                    title: "Opening Address",
+                    time: "09:30",
+                    title: "Welcome by NES",
                     description: ''
                 },
                 {
@@ -335,7 +335,7 @@
                     tcolor: 'indigo',
                     icon: "mdi-microphone",
                     time: "10:00",
-                    title: "Minister Speech",
+                    title: "Opening Keynote by Minister",
                     description: ''
 
                 },
@@ -345,7 +345,7 @@
                     tcolor: 'black',
                     icon: "mdi-microphone-variant",
                     time: "10:30",
-                    title: "Sponsor Opening Speech",
+                    title: "Opening Keynote by Sponsor",
                     description: '',
                     img:require('../assets/speakers2020/albert.jpg'),
                     name: 'Albert Lucius',
@@ -382,7 +382,7 @@
                     color: "indigo",
                     tcolor: 'indigo',
                     icon: "mdi-food",
-                    time: "11:50",
+                    time: "12:00",
                     title: "Lunch",
                     description: ''
                 },
@@ -391,7 +391,7 @@
                     color: "blue darken-3",
                     tcolor: 'blue',
                     icon: "mdi-account-group",
-                    time: "13:20",
+                    time: "13:15",
                     title: "Social Entrepreneurship",
                     description: 'Panel Discussion by',
                     speakers: [
@@ -413,23 +413,31 @@
                     ]
                 },
                 {
-                    type: '',
+                    type: 'speaker',
                     color: "black",
                     tcolor: 'black',
                     icon: "mdi-microphone-variant",
                     time: "14:10",
-                    title: "Speaker Session 2 (TBC)",
-                    description: ' ',
-                    img:require('../assets/speakers2020/rayner.jpg'),
-                    name: 'Rayner Loi',
-                    company: 'Lumitics'
+                    title: "Speaker Session 2",
+                    description: '',
+                    img:require('../assets/speakers2020/joel.png'),
+                    name: 'Joel Bar-El',
+                    company: 'Trax'
+                },
+                {
+                    color: "indigo",
+                    tcolor: 'indigo',
+                    icon: "mdi-coffee",
+                    time: "14:40",
+                    title: "Break",
+                    description: ''
                 },
                 {
                     type: 'panel',
                     color: "blue darken-3",
                     tcolor: 'blue',
                     icon: "mdi-account-group",
-                    time: "14:40",
+                    time: "16:10",
                     title: "Startup Funding 101",
                     description: 'Panel Discussion by',
                     speakers: [
@@ -451,31 +459,11 @@
                     ]
                 },
                 {
-                    color: "indigo",
-                    tcolor: 'indigo',
-                    icon: "mdi-coffee",
-                    time: "15:30",
-                    title: "Break",
-                    description: ''
-                },
-                {
-                    type: 'speaker',
-                    color: "black",
-                    tcolor: 'black',
-                    icon: "mdi-microphone-variant",
-                    time: "15:45",
-                    title: "Speaker Session 3",
-                    description: '',
-                    img:require('../assets/speakers2020/joel.png'),
-                    name: 'Joel Bar-El',
-                    company: 'Trax'
-                },
-                {
                     type: 'panel',
                     color: "blue darken-3",
                     tcolor: 'blue',
                     icon: "mdi-account-group",
-                    time: "16:15",
+                    time: "17:05",
                     title: "Redefining Fintech Revolution",
                     description: 'Panel Discussion by',
                     speakers: [
@@ -507,7 +495,7 @@
                     color: "indigo",
                     tcolor: 'indigo',
                     icon: "",
-                    time: "17:05",
+                    time: "18:00",
                     title: "End of Day 1",
                     description: ''
                 },
@@ -566,7 +554,7 @@
                     color: "blue darken-3",
                     tcolor: "blue",
                     icon: "mdi-account-group",
-                    time: "11:20",
+                    time: "11:25",
                     title: "Future of eCommerce & Globalisation",
                     description: 'Panel Discussion by',
                     speakers: [
@@ -593,7 +581,7 @@
                     color: "indigo",
                     tcolor: 'indigo',
                     icon: "mdi-food",
-                    time: "12:10",
+                    time: "12:20",
                     title: "Lunch",
                     description: ''
                 },
@@ -602,7 +590,7 @@
                     color: "blue darken-3",
                     tcolor: 'blue',
                     icon: "mdi-account-group",
-                    time: "13:25",
+                    time: "13:20",
                     title: "Growth Hacking Strategies for Start-ups",
                     description: 'Panel Discussion by',
                     speakers: [
@@ -641,7 +629,7 @@
                     color: "blue darken-3",
                     tcolor: 'blue',
                     icon: "mdi-account-group",
-                    time: "14:50",
+                    time: "14:45",
                     title: "Student Entrepreneurs, Youth & Change",
                     description: 'Panel Discussion by',
                     speakers: [
@@ -667,7 +655,7 @@
                     color: "indigo",
                     tcolor: 'indigo',
                     icon: "mdi-coffee",
-                    time: "15:20",
+                    time: "15:40",
                     title: "Break",
                     description: ''
                 },
@@ -676,7 +664,7 @@
                     color: "indigo",
                     tcolor: 'indigo',
                     icon: "mdi-stadium-variant",
-                    time: "15:40",
+                    time: "16:00",
                     title: "UNICON Arena",
                     description: ''
                 },
@@ -685,7 +673,7 @@
                     color: "indigo",
                     tcolor: 'indigo',
                     icon: "mdi-trophy",
-                    time: "17:00",
+                    time: "17:15",
                     title: "Prize Awards",
                     description: ''
                 },
@@ -694,7 +682,7 @@
                     color: "indigo",
                     tcolor: 'indigo',
                     icon: "",
-                    time: "17:15",
+                    time: "17:30",
                     title: "End of UNICON2020",
                     description: ''
                 },
