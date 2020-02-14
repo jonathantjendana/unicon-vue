@@ -24,52 +24,15 @@
                 </v-row>
             </v-container>
         </v-parallax>
-        <!--Popup section-->
-        <!--<v-dialog class="popup-bg" v-model="dialog" max-width="600px" eager>-->
-            <!--<v-card class="mx-auto" align-content="center" eager>-->
-                <!--<v-card-text class="red darken-3">-->
-                    <!--<v-img src="../assets/popup.jpg" eager>-->
-                        <!--<div class="white&#45;&#45;text happy-CNY" style=""><b>Happy Lunar New Year!</b></div>-->
-                        <!--<div class="white&#45;&#45;text all-ticket-price" style=""><b>Until <span class="yellow&#45;&#45;text">2nd of Feb 20</span>, all tickets price</b></div>-->
-                        <!--<div class="yellow&#45;&#45;text promotion" style=""><b>20% OFF</b></div>-->
-                        <!--<v-hover v-slot:default="{ hover }" :value="value" class="hidden-sm-and-down">-->
-                        <!--<v-btn-->
-                                <!--class="white&#45;&#45;text btn-position"-->
-                                <!--:elevation="hover ? 12 : 2"-->
-                                <!--color="red"-->
-                                <!--href="https://www.eventbrite.sg/e/unicon2020-tickets-89211033603"-->
-                                <!--target="_blank"-->
-                        <!--&gt;-->
-
-                  <!--<span>-->
-                    <!--<b>-->
-                      <!--BUY Now!-->
-                    <!--</b>-->
-                  <!--</span>-->
-                        <!--</v-btn>-->
-                        <!--</v-hover>-->
-                        <!--<v-hover v-slot:default="{ hover }" :value="value" class="hidden-md-and-up">-->
-                            <!--<v-btn-->
-
-                                    <!--x-small-->
-                                    <!--class="white&#45;&#45;text btn-position"-->
-                                    <!--:elevation="hover ? 12 : 2"-->
-                                    <!--color="red"-->
-                                    <!--href="https://www.eventbrite.sg/e/unicon2020-tickets-89211033603"-->
-                                    <!--target="_blank"-->
-                            <!--&gt;-->
-
-                  <!--<span>-->
-                    <!--<b>-->
-                      <!--BUY Now!-->
-                    <!--</b>-->
-                  <!--</span>-->
-                            <!--</v-btn>-->
-                        <!--</v-hover>-->
-                    <!--</v-img>-->
-                <!--</v-card-text>-->
-            <!--</v-card>-->
-        <!--</v-dialog>-->
+        Popup section
+        <v-dialog class="popup-bg" v-model="dialog" max-width="500px" eager persistent>
+            <v-card class="mx-auto" align-content="center" eager>
+                <v-card-text>
+                    <v-img src="../assets/sorry.png" eager>
+                    </v-img>
+                </v-card-text>
+            </v-card>
+        </v-dialog>
     </div>
 </template>
 
