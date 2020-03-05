@@ -24,15 +24,6 @@
                 </v-row>
             </v-container>
         </v-parallax>
-        Popup section
-        <v-dialog class="popup-bg" v-model="dialog" max-width="500px" eager persistent>
-            <v-card class="mx-auto" align-content="center" eager>
-                <v-card-text>
-                    <v-img src="../assets/sorry.png" eager>
-                    </v-img>
-                </v-card-text>
-            </v-card>
-        </v-dialog>
     </div>
 </template>
 
